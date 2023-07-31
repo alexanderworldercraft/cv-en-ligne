@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- style icon -->
 
     <link rel="stylesheet" href="../css/style.css"><!-- Feuille en style -->
+
+    <!-- bibliothèque lightbox (image) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <!-- section01 -->
@@ -144,12 +147,12 @@
     <section id="section04">
         <h1>Portofolio</h1>
         <div class="cards">
-            <div class="card"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></div>
-            <div class="card"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></div>
-            <div class="card"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></div>
-            <div class="card"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></div>
-            <div class="card"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></div>
-            <div class="card"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></div>
+            <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
+            <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test" data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></a></div>
+            <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test" data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></a></div>
+            <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test" data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></a></div>
+            <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
+            <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
         </div>
 
         <a href="index.html#base">
@@ -220,5 +223,8 @@
             });
         });
         </script><!-- jQuery -->
+
+        <!-- script pour lightbox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
