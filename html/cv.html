@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV en ligne</title><!-- Titre de l'onglet -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- Police d'écriture -->
-    <link rel="stylesheet" href="style.css"><!-- Feuille en style -->
+    <link rel="stylesheet" href="../css/style.css"><!-- Feuille en style -->
 </head>
 <body>
     <!-- section01 -->
@@ -15,7 +15,7 @@
         <table>
             <tr>
                 <td colspan="2"><h3>TARROZ Patrick</h3></td>
-                <td rowspan="3"><img src="profil.jpg" alt="photo de profil" id="photo-de-profil"></td>
+                <td rowspan="3"><img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil"></td>
             </tr>
             <tr>
                 <td><h3>Developpeur Web, Web Mobile</h3></td>
@@ -140,6 +140,15 @@
     <!-- section04 -->
     <section id="section04">
         <h1>Portofolio</h1>
+        <div class="cards">
+            <div class="card"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></div>
+            <div class="card"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></div>
+            <div class="card"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></div>
+            <div class="card"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></div>
+            <div class="card"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></div>
+            <div class="card"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></div>
+        </div>
+
         <a href="index.html#base">
             <span class="material-symbols-outlined arrow">arrow_upward</span>
         </a>
@@ -155,7 +164,7 @@
             <h1>Contact</h1>
             <div class="cards">
                 <div class="input-group card">
-                    <input type="text" id="nom" class="input-group__input" autofocus required/>
+                    <input type="text" id="nom" class="input-group__input" required/>
                     <label for="nom" class="input-group__label">Nom</label>
                 </div>
                 <div class="input-group card">
