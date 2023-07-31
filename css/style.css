@@ -12,6 +12,7 @@ body {
 h1 { 
     text-align: center;
     padding: 20px;
+    text-shadow: 0px 0px 3px white;
 }
 
 /* Class */
@@ -74,7 +75,7 @@ h1 {
 }
 
 #section04 {
-    background-image: linear-gradient(180deg, #871189, #fc37ff);
+    background-image: linear-gradient(180deg, rgba(77,9,75,1) 0%, rgba(121,9,117,1) 20%, rgba(255,0,236,1) 100%);
     border-radius: 15px;
 }
 .img-portofolio {
