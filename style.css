@@ -1,0 +1,185 @@
+
+/* Balises */
+
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: black;
+    font-family: "roboto", sans-serif;
+}
+
+h1 { 
+    text-align: center;
+}
+
+/* Class */
+
+.arrow {
+    margin: 20px;
+    color: white;
+}
+
+/* Id */
+
+#section01 {
+    background-image: linear-gradient(180deg, #111e89, #3789ff);
+}
+#section01 table {
+    width: 100%;
+    text-align: center;
+}
+/* photo de profil */
+#photo-de-profil {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#section02 {
+    background-image: linear-gradient(180deg, #891111 ,#ff3737);
+}
+
+#section02 table tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section02 table tr td p {
+    width: 80%;
+}
+
+#section03 {
+    background-image: linear-gradient(180deg, #118911, #37ff3a);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "titre-competences titre-competences"
+        "liste-competences liste-competences";
+}
+/* agencement de la section 03 */
+#titre-competences {
+    grid-area: titre-competences;
+}
+#liste-competences {
+    grid-area: liste-competences;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+#section04 {
+    background-image: linear-gradient(180deg, #871189, #fc37ff);
+}
+
+#section05 {
+    background-image: linear-gradient(180deg, #118789, #37fff6);
+}
+
+/* formulaire */
+
+
+:root {
+    --color-hover-contact: rgb(0,255,0);
+    --background-color-contact: rgb(255,255,255);
+}
+
+.input-group {
+    position: relative;
+    margin: 10px;
+}
+.input-group__input,
+.input-group__textarea,
+.input-group__button {
+    font: inherit;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #fff;
+    background-color:  transparent;
+    transition: outline-color 500ms;
+}
+.input-group__button {
+    color: white;
+}
+.input-group__input:is(:focus, :valid),
+.input-group__textarea:is(:focus, :valid) {
+    outline: 2px solid black;
+}
+.input-group__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: #ffffff;
+    transition: translate 500ms, scale 500ms;
+}
+.input-group__input:focus + .input-group__label,
+.input-group__input:valid + .input-group__label {
+    padding-inline: 5px;
+    translate: 10px -20px;
+    scale: 0.9;
+    background-color: transparent;
+    color: #000;
+}
+.input-group__input::selection {
+    background-color: white;
+    color: black;
+}
+.textarea {
+    width: 182px;
+    height: 19px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    flex: 1 0 1;
+}
+.pulsate:hover {
+    animation: pulse 1s infinite;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid black;
+}
+#button:hover {
+    color: black;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ui-widget-content {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+.ui-widget.ui-widget-content {
+    border: 2px solid black;
+    border-radius: 0px;
+}
+.ui-widget-header {
+    padding: 5px;
+    background: grey;
+    border: 0;
+    color: black;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: white;
+    border: 0;
+}

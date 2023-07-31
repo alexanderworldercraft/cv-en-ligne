@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><!-- Encodage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV en ligne</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>CV en ligne</title><!-- Titre de l'onglet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- Police d'écriture -->
+    <link rel="stylesheet" href="style.css"><!-- Feuille en style -->
 </head>
-<body bgcolor="black">
-    <!-- Résultats 1 -->
-    <section id="resultats01" style="background-image: linear-gradient(90deg, #111e89, #3789ff);">
-        <h3><b>Accueil</b></h3>
+<body>
+    <!-- section01 -->
+    <section id="section01">
+        <h1>Accueil</h1>
 
         <table>
             <tr>
-                <td><h3>TARROZ</h3></td>
-                <td rowspan="3"><img src="profil.jpg" alt="photo de profil" width="300"></td>
-            </tr>
-            <tr>
-                <td><h3>Patrick</h3></td>
+                <td colspan="2"><h3>TARROZ Patrick</h3></td>
+                <td rowspan="3"><img src="profil.jpg" alt="photo de profil" id="photo-de-profil"></td>
             </tr>
             <tr>
                 <td><h3>Developpeur Web, Web Mobile</h3></td>
             </tr>
         </table>
-        <a href="index.html#base"><span class="material-symbols-outlined">
+        <a href="index.html#base"><span class="material-symbols-outlined arrow">
             arrow_upward
             </span></a>
     </section>
@@ -32,9 +30,9 @@
     <hr>
     <br><br><br><br><br><br>
 
-    <!-- Résultats 1 -->
-    <section id="resultats02" style="background-image: linear-gradient(90deg, #891111 ,#ff3737);">
-        <h3>Présentation</h3>
+    <!-- section02 -->
+    <section id="section02">
+        <h1>Présentation</h1>
         <table>
             <tr>
                 
@@ -44,7 +42,8 @@
                 <td>
                     <h3>À PROPOS</h3>
                     <p>Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
-                    <br>
+                    </p>
+                    <p>
                     De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
                     </p>
                 </td>
@@ -52,7 +51,7 @@
         </table>
 
         <a href="index.html#base">
-            <span class="material-symbols-outlined">arrow_upward</span>
+            <span class="material-symbols-outlined arrow">arrow_upward</span>
         </a>
     </section>
     
@@ -60,14 +59,37 @@
     <hr>
     <br><br><br><br><br><br>
 
-    <!-- Résultats 3 -->
-    <section id="resultats03" style="background-image: linear-gradient(90deg, #118911, #37ff3a);">
-        <h3>Compétences</h3>
-        <ul>
+    <!-- section03 -->
+    <section id="section03">
+        <h1 id="titre-competences">Compétences</h1>
+        <ul id="liste-competences">
             <li>Cahier des charges</li>
             <li>github</li>
             <li>Maquettage</li>
             <li>Conception</li>
+            
+            <li>Système d'exploitation
+                <ul>
+                    <li>Windows xp à 11</li>
+                    <li>Ubuntu</li>
+                    <li>Débian</li>
+                    <li>Android</li>
+                </ul>
+            </li>
+
+            <li>Softs Skill
+                <ul>
+                    <li>Travail d'équipe</li>
+                    <li>Clean code</li>
+                    <li>Indépendant</li>
+                    <li>Avide de connaissances</li>
+                    <li>Flexibilité</li>
+                    <li>Sérieux</li>
+                    <li>Ponctuel</li>
+                    <li>Autonome</li>
+                </ul>
+            </li>
+
             <li>Logiciel
                 <ul>
                     <li>VsCode</li>
@@ -104,32 +126,10 @@
                     <li>Fusion360</li>
                 </ul>
             </li>
-            <li>Système d'exploitation
-                <ul>
-                    <li>Windows xp à 11</li>
-                    <li>Ubuntu</li>
-                    <li>Débian</li>
-                    <li>Android</li>
-                </ul>
-            </li>
-            <li>Softs Skill
-                <ul>
-                    <li>Travail d'équipe</li>
-                    <li>Clean code</li>
-                    <li>Indépendant</li>
-                    <li>Avide de connaissances</li>
-                    <li>Flexibilité</li>
-                    <li>Sérieux</li>
-                    <li>Ponctuel</li>
-                    <li>Autonome</li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </li>
         </ul>
 
         <a href="index.html#base">
-            <span class="material-symbols-outlined">arrow_upward</span>
+            <span class="material-symbols-outlined arrow">arrow_upward</span>
         </a>
     </section>
     
@@ -137,11 +137,11 @@
     <hr>
     <br><br><br><br><br><br>
 
-    <!-- Résultats 4 -->
-    <section id="resultats04" style="background-image: linear-gradient(90deg, #871189, #fc37ff);">
-        <h3>Portofolio</h3>
+    <!-- section04 -->
+    <section id="section04">
+        <h1>Portofolio</h1>
         <a href="index.html#base">
-            <span class="material-symbols-outlined">arrow_upward</span>
+            <span class="material-symbols-outlined arrow">arrow_upward</span>
         </a>
     </section>
 
@@ -149,43 +149,64 @@
     <hr>
     <br><br><br><br><br><br>
 
-    <!-- Résultats 5 -->
-    <section id="resultats05" style="background-image: linear-gradient(90deg, #118789, #37fff6);">
-        <form action="">
-            <table>
-                <thead>
-                    <tr>
-                        <th><h3>Contact</h3></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label for="Text">Nom</label></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Text">Prènom</label></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email</label></td>
-                        <td><input type="email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Text">Commentaire</label></td>
-                        <td><textarea name="" id="" cols="21" rows="5"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="Annulez"></td>
-                        <td><input type="submit" value="Envoyer"></td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- section05 -->
+    <section id="section05">
+        <form action="mail_handler.php" method="post">
+            <h1>Contact</h1>
+            <div class="cards">
+                <div class="input-group card">
+                    <input type="text" id="nom" class="input-group__input" autofocus required/>
+                    <label for="nom" class="input-group__label">Nom</label>
+                </div>
+                <div class="input-group card">
+                    <input type="text" id="prenom" class="input-group__input" required/>
+                    <label for="prenom" class="input-group__label">Prènom</label>
+                </div>
+                <div class="input-group card">
+                    <input type="email" id="email" class="input-group__input" required/>
+                    <label for="email" class="input-group__label">Email</label>
+                </div>
+                <div class="input-group card">
+                    <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire" required></textarea>
+                </div>
+                <div class="input-group card pulsate">
+                    <input type="submit" class="input-group__button" value="Envoyer" id="button">
+                </div>
+            </div>
+            
+            <div id="dialog" title="Message" style="display: none;"></div><!-- dialoge pour la valitation du message -->
         </form>
 
         <a href="index.html#base">
-            <span class="material-symbols-outlined">arrow_upward</span>
+            <span class="material-symbols-outlined arrow">arrow_upward</span>
         </a>
     </section>
+
+    <!-- Script pour le dialogue du formulaire -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!-- jQueryUI -->
+
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function(event) {
+                event.preventDefault();
+        
+                $.ajax({
+                    url: "mail_handler.php",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function(data) {
+                        $("#dialog").html("Votre message a été envoyé avec succès !");
+                        $("#dialog").dialog();
+                    },
+                    error: function() {
+                        $("#dialog").html("Une erreur s'est produite, veuillez réessayer. lol");
+                        $("#dialog").dialog();
+                    }
+                });
+            });
+        });
+        </script><!-- jQuery -->
 </body>
 </html>
