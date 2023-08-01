@@ -7,12 +7,14 @@ body {
     background-color: black;
     font-family: "roboto", sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
 h1 { 
     text-align: center;
     padding: 20px;
     text-shadow: 0px 0px 3px white;
+    font-size: 18px;
 }
 
 /* Class */
@@ -27,6 +29,7 @@ h1 {
 #section01 {
     background-image: linear-gradient(180deg, #111e89, #3789ff);
     border-radius: 15px;
+    padding: 0px 10%;
 }
 #section01 table {
     width: 100%;
