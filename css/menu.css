@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	/* fond du menu */
+	background-color: black;
+	}
+
+a {
+	color: #99CC00;
+	text-decoration: none;
+
+	-webkit-transition: 0.15s color ease;
+	   -moz-transition: 0.15s color ease;
+	    -ms-transition: 0.15s color ease;
+	     -o-transition: 0.15s color ease;
+	        transition: 0.15s color ease;
+}
+	a:hover {
+		color: #FFFFFF;
+	}
+
+h1,
+h2 {
+	font-size: 24px;
+}
+
+.menu {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	color: #eee;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+	.menu ul {
+		margin-top: 5px;
+	}
+		.menu ul li {
+			display: inline-block;
+			width: 200px;
+			list-style: none;
+			font-size: 20px;
+			padding: 3px 10px;
+		}
+			.menu ul li:before {
+				content: '-';
+				margin-right: 5px;
+				color: rgba( 255, 255, 255, 0.2 );
+			}
+
+/**
+ * Hint graphic that appears while menu is inactive
+ */
+.menu-arrow {
+	position: absolute;
+	z-index: 10;
+	border: 10px solid transparent;
+
+	-webkit-transition: opacity 0.4s ease 0.4s;
+	   -moz-transition: opacity 0.4s ease 0.4s;
+	    -ms-transition: opacity 0.4s ease 0.4s;
+	     -o-transition: opacity 0.4s ease 0.4s;
+	        transition: opacity 0.4s ease 0.4s;
+}
+	.menu-left .menu-arrow {
+		left: 14px;
+		top: 50%;
+		margin-top: -16px;
+		border-left: 16px solid #333;
+	}
+	.menu-right .menu-arrow {
+		right: 14px;
+		top: 50%;
+		margin: -16px;
+		border-right: 16px solid #333;
+	}
+	.menu-top .menu-arrow {
+		left: 40%;
+        background-color: rgba( 255, 255, 255, 0.6 );
+        top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px black;
+	}
+	.menu-bottom .menu-arrow {
+		left: 50%;
+		bottom: 14px;
+		margin-left: -16px;
+		border-bottom: 16px solid #333;
+	}
+	.menu-active .menu-arrow {
+		opacity: 0;
+
+		-webkit-transition: opacity 0.2s ease;
+		   -moz-transition: opacity 0.2s ease;
+		    -ms-transition: opacity 0.2s ease;
+		     -o-transition: opacity 0.2s ease;
+		        transition: opacity 0.2s ease;
+	}
+
+/**
+ * Main contents area
+ */
+.contents {
+	padding: 20px 40px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+    transform-style: preserve-3d;
+	/* fond du contenu */
+    background-image: url(../img/fond.png);
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform-style: preserve-3d;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+	.contents>article {
+		max-width: 90%;
+	}
+	.contents p {
+		margin: 10px 0 10px 0;
+		font-size: 16px;
+		line-height: 1.32;
+	}

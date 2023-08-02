@@ -12,186 +12,237 @@
 
     <!-- bibliothèque lightbox (image) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <!-- Menu -->
+
+	<meta name="description" content="L'apparition de la barre de menu se fait par le haut de la page." />
+	<meta name="viewport" content="width=800, user-scalable=no">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
-    <!-- section01 -->
-    <section id="section01">
-        <h1>Accueil</h1>
-
-        <table>
-            <tr>
-                <td colspan="2"><h3>TARROZ Patrick</h3></td>
-                <td rowspan="3"><img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil"></td>
-            </tr>
-            <tr>
-                <td><h3>Developpeur Web, Web Mobile</h3></td>
-            </tr>
-        </table>
-        <a href="index.html#base" class="a-width"><span class="material-symbols-outlined arrow  a-accueil">
-            arrow_upward
-            </span></a>
-    </section>
-
-    <!-- section02 -->
-    <section id="section02">
-        <h1>Présentation</h1>
-        <table>
-            <tr>
-                
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <h3>À PROPOS</h3>
-                    <p>Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
-                    </p>
-                    <p>
-                    De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
-                    </p>
-                </td>
-            </tr>
-        </table>
-
-        <a href="index.html#base" class="a-width">
-            <span class="material-symbols-outlined arrow">arrow_upward</span>
-        </a>
-    </section>
-
-    <!-- section03 -->
-    <section id="section03">
-        <h1 id="titre-competences">Compétences</h1>
-        <ul id="liste-competences">
-            
-            <li class="titre-liste">
-                Système d'exploitation
-                <span class="material-symbols-outlined">redo</span>
-                <ul class="sous-titre-liste">
-                    <li>Windows xp à 11</li>
-                    <li>Ubuntu</li>
-                    <li>Débian</li>
-                    <li>Android</li>
-                </ul>
-            </li>            
-
-            <li class="titre-liste">
-                Logiciel
-                <span class="material-symbols-outlined">redo</span>
-                <ul class="sous-titre-liste">
-                    <li>VsCode</li>
-                    <li>Sublime Text</li>
-                    <li>Notepad++</li>
-                    <li>Pencil</li>
-                    <li>Github Desktop</li>
-                    
-                    <li>Discord</li>
-                    <li>KeepassXC</li>
-                    <li>Fusion360</li>
-                </ul>
-            </li>
-
-            <li class="titre-liste">
-                Microsoft
-                <span class="material-symbols-outlined">redo</span>
-                <ul class="sous-titre-liste">
-                    <li>Excel</li>
-                    <li>Word</li>
-                    <li>Powerpoint</li>
-                </ul>
-            </li>
-
-            <li class="titre-liste">
-                Adobe
-                <span class="material-symbols-outlined">redo</span>
-                <ul class="sous-titre-liste">
-                    <li>XD</li>
-                    <li>Illustrator</li>
-                    <li>Première</li>
-                    <li>Photoshop</li>
-                </ul>
-            </li>
-
-            <li class="titre-liste">
-                Google
-                <span class="material-symbols-outlined">redo</span>
-                <ul class="sous-titre-liste">
-                    <li>Gmail</li>
-                    <li>Sheets</li>
-                    <li>Docs</li>
-                    <li>Slides</li>
-                    <li>Keep</li>
-                </ul>
-            </li>
-
-            <li class="titre-liste">
-                Softs Skill
-                <span class="material-symbols-outlined">arrow_downward</span>
-                <ul class="sous-titre-liste">
-                    <li>Travail d'équipe</li>
-                    <li>Clean code</li>
-                    <li>Indépendant</li>
-                    <li>Avide de connaissances</li>
-                    <li>Flexibilité</li>
-                    <li>Sérieux</li>
-                    <li>Ponctuel</li>
-                    <li>Autonome</li>
-                </ul>
-            </li>
+    <div class="menu">
+        <h2>Menu-CV</h2>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Compétences</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
+    </div>
+    <div class="menu-arrow">Passez votre souris en haut de la page pour ouvrir le menu.</div>
+    <div class="contents">
 
-        <a href="index.html#base" class="a-width">
-            <span class="material-symbols-outlined arrow">arrow_upward</span>
-        </a>
-    </section>
+        <!-- Contenue de la page -->
 
-    <!-- section04 -->
-    <section id="section04">
-        <h1>Portofolio</h1>
-        <div class="cards">
-            <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
-            <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test" data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></a></div>
-            <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test" data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></a></div>
-            <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test" data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></a></div>
-            <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
-            <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
-        </div>
+        <!-- section01 -->
+        <section id="section01">
+            <h1>Accueil</h1>
 
-        <a href="index.html#base" class="a-width">
-            <span class="material-symbols-outlined arrow">arrow_upward</span>
-        </a>
-    </section>
+            <table>
+                <tr>
+                    <td colspan="2"><h3>TARROZ Patrick</h3></td>
+                    <td rowspan="3"><img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil"></td>
+                </tr>
+                <tr>
+                    <td><h3>Developpeur Web, Web Mobile</h3></td>
+                </tr>
+            </table>
+            <a href="index.html#base" class="a-width"><span class="material-symbols-outlined arrow  a-accueil">
+                arrow_upward
+                </span></a>
+        </section>
 
-    <!-- section05 -->
-    <section id="section05">
-        <form action="mail_handler.php" method="post">
-            <h1>Contact</h1>
+        <!-- section02 -->
+        <section id="section02">
+            <h1>Présentation</h1>
+            <table>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <h3>À PROPOS</h3>
+                        <p>Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
+                        </p>
+                        <p>
+                        De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+            <a href="index.html#base" class="a-width">
+                <span class="material-symbols-outlined arrow">arrow_upward</span>
+            </a>
+        </section>
+
+        <!-- section03 -->
+        <section id="section03">
+            <h1 id="titre-competences">Compétences</h1>
+            <ul id="liste-competences">
+                
+                <li class="titre-liste">
+                    Système d'exploitation
+                    <span class="material-symbols-outlined">redo</span>
+                    <ul class="sous-titre-liste">
+                        <li>Windows xp à 11</li>
+                        <li>Ubuntu</li>
+                        <li>Débian</li>
+                        <li>Android</li>
+                    </ul>
+                </li>            
+
+                <li class="titre-liste">
+                    Logiciel
+                    <span class="material-symbols-outlined">redo</span>
+                    <ul class="sous-titre-liste">
+                        <li>VsCode</li>
+                        <li>Sublime Text</li>
+                        <li>Notepad++</li>
+                        <li>Pencil</li>
+                        <li>Github Desktop</li>
+                        
+                        <li>Discord</li>
+                        <li>KeepassXC</li>
+                        <li>Fusion360</li>
+                    </ul>
+                </li>
+
+                <li class="titre-liste">
+                    Microsoft
+                    <span class="material-symbols-outlined">redo</span>
+                    <ul class="sous-titre-liste">
+                        <li>Excel</li>
+                        <li>Word</li>
+                        <li>Powerpoint</li>
+                    </ul>
+                </li>
+
+                <li class="titre-liste">
+                    Adobe
+                    <span class="material-symbols-outlined">redo</span>
+                    <ul class="sous-titre-liste">
+                        <li>XD</li>
+                        <li>Illustrator</li>
+                        <li>Première</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </li>
+
+                <li class="titre-liste">
+                    Google
+                    <span class="material-symbols-outlined">redo</span>
+                    <ul class="sous-titre-liste">
+                        <li>Gmail</li>
+                        <li>Sheets</li>
+                        <li>Docs</li>
+                        <li>Slides</li>
+                        <li>Keep</li>
+                    </ul>
+                </li>
+
+                <li class="titre-liste">
+                    Softs Skill
+                    <span class="material-symbols-outlined">arrow_downward</span>
+                    <ul class="sous-titre-liste">
+                        <li>Travail d'équipe</li>
+                        <li>Clean code</li>
+                        <li>Indépendant</li>
+                        <li>Avide de connaissances</li>
+                        <li>Flexibilité</li>
+                        <li>Sérieux</li>
+                        <li>Ponctuel</li>
+                        <li>Autonome</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="index.html#base" class="a-width">
+                <span class="material-symbols-outlined arrow">arrow_upward</span>
+            </a>
+        </section>
+
+        <!-- section04 -->
+        <section id="section04">
+            <h1>Portofolio</h1>
             <div class="cards">
-                <div class="input-group card">
-                    <input type="text" id="nom" class="input-group__input" required/>
-                    <label for="nom" class="input-group__label">Nom</label>
-                </div>
-                <div class="input-group card">
-                    <input type="text" id="prenom" class="input-group__input" required/>
-                    <label for="prenom" class="input-group__label">Prènom</label>
-                </div>
-                <div class="input-group card">
-                    <input type="email" id="email" class="input-group__input" required/>
-                    <label for="email" class="input-group__label">Email</label>
-                </div>
-                <div class="input-group card">
-                    <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire" required></textarea>
-                </div>
-                <div class="input-group card pulsate">
-                    <input type="submit" class="input-group__button" value="Envoyer" id="button">
-                </div>
+                <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test" data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test" data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test" data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
             </div>
-            
-            <div id="dialog" title="Message" style="display: none;"></div><!-- dialoge pour la valitation du message -->
-        </form>
 
-        <a href="index.html#base" class="a-width">
-            <span class="material-symbols-outlined arrow">arrow_upward</span>
-        </a>
-    </section>
+            <a href="index.html#base" class="a-width">
+                <span class="material-symbols-outlined arrow">arrow_upward</span>
+            </a>
+        </section>
+
+        <!-- section05 -->
+        <section id="section05">
+            <form action="mail_handler.php" method="post">
+                <h1>Contact</h1>
+                <div class="cards">
+                    <div class="input-group card">
+                        <input type="text" id="nom" class="input-group__input" required/>
+                        <label for="nom" class="input-group__label">Nom</label>
+                    </div>
+                    <div class="input-group card">
+                        <input type="text" id="prenom" class="input-group__input" required/>
+                        <label for="prenom" class="input-group__label">Prènom</label>
+                    </div>
+                    <div class="input-group card">
+                        <input type="email" id="email" class="input-group__input" required/>
+                        <label for="email" class="input-group__label">Email</label>
+                    </div>
+                    <div class="input-group card">
+                        <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire" required></textarea>
+                    </div>
+                    <div class="input-group card pulsate">
+                        <input type="submit" class="input-group__button" value="Envoyer" id="button">
+                    </div>
+                </div>
+                
+                <div id="dialog" title="Message" style="display: none;"></div><!-- dialoge pour la valitation du message -->
+            </form>
+
+            <a href="index.html#base" class="a-width">
+                <span class="material-symbols-outlined arrow">arrow_upward</span>
+            </a>
+        </section>
+    </div>
+
+    <!-- Script du menu -->
+
+    <script src="../js/menu.js"></script>
+
+	<script>
+		var menu = menu.create({
+		menuElement: document.querySelector( '.menu' ),
+		contentsElement: document.querySelector( '.contents' ),
+	// [optional] alignement du menu (top/right/bottom/left)
+		position: menu.getQuery().p || 'top',
+	// [optional] hauteur du menu (pour la position top ou bottom)
+		height: 200,
+	// [optional] largeur du menu (pour la position left ou right)
+		width: 260,
+	// [optional] distance de déclenchement du menu par rapport au menu
+		threshold: 40,
+	// [optional] utilisation des mouvement de la souris pour l'ouverture ou la fermeture
+		mouse: true,
+	// [optional] utilisation de l'approche
+		touch: true
+		});
+
+		if( menu.getQuery().u && menu.getQuery().u.match( /^http/gi ) ) {
+			var contents = document.querySelector( '.contents' );
+			contents.style.padding = '0px';
+			contents.innerHTML = '<div class="cover"></div><iframe src="'+ menu.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+		}
+	</script>
 
     <!-- Script pour le dialogue du formulaire -->
 
