@@ -50,7 +50,7 @@ var menu = {
 				overlap: 6,
 				transitionDuration: '0.5s',
 				transitionEasing: 'ease',
-				gradient: 'rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.65) 100%)',
+				gradient: 'rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.6) 100%)',
 				mouse: true,
 				touch: true
 			};
@@ -122,7 +122,7 @@ var menu = {
 				menuTransformOpened = '';
 				contentsTransformClosed = '';
 				menuAngle = config.angle;
-				contentsAngle = config.angle / -2;
+				contentsAngle = config.angle / 100;
 
 				switch( config.position ) {
 					case POSITION_T:
@@ -211,11 +211,12 @@ var menu = {
 				// Disabled until a falback fade in animation is added
 				dom.cover.style.position = 'absolute';
 				dom.cover.style.display = 'block';
+				//fond noir
 				dom.cover.style.width = '100%';
 				dom.cover.style.height = '100%';
 				dom.cover.style.left = 0;
 				dom.cover.style.top = 0;
-				dom.cover.style.zIndex = 1000;
+				dom.cover.style.zIndex = 9999;
 				dom.cover.style.visibility = 'hidden';
 				dom.cover.style.opacity = 0;
 
@@ -352,15 +353,20 @@ var menu = {
 
 						dom.cover.style.opacity = 1;
 
+						
 						dom.contents.style[ menu.prefix( 'transform' ) ] = contentsTransformOpened;
+						document.getElementById("background-video").style[ menu.prefix( 'transform' ) ] = contentsTransformOpened;
+
 						dom.menu.style[ menu.prefix( 'transform' ) ] = menuTransformOpened;
 					}
 					// ...fall back on JS animation
 					else {
 						menuAnimation && menuAnimation.stop();
 						menuAnimation = menu.animate( dom.menu, menuStyleOpened, 500 );
+						backgroundAnimation = menu.animate( document.getElementById("background-video"), contentsStyleOpened, 500 );
 						contentsAnimation && contentsAnimation.stop();
 						contentsAnimation = menu.animate( dom.contents, contentsStyleOpened, 500 );
+
 						coverAnimation && coverAnimation.stop();
 						coverAnimation = menu.animate( dom.cover, { opacity: 1 }, 500 );
 					}
@@ -389,12 +395,15 @@ var menu = {
 						dom.cover.style.opacity = 0;
 
 						dom.contents.style[ menu.prefix( 'transform' ) ] = contentsTransformClosed;
+						document.getElementById("background-video").style[ menu.prefix( 'transform' ) ] = contentsTransformClosed;
+
 						dom.menu.style[ menu.prefix( 'transform' ) ] = menuTransformClosed;
 					}
 					// ...fall back on JS animation
 					else {
 						menuAnimation && menuAnimation.stop();
 						menuAnimation = menu.animate( dom.menu, menuStyleClosed, 500 );
+						backgroundAnimation = menu.animate( document.getElementById("background-video"), contentsStyleClosed, 500 );
 						contentsAnimation && contentsAnimation.stop();
 						contentsAnimation = menu.animate( dom.contents, contentsStyleClosed, 500 );
 						coverAnimation && coverAnimation.stop();

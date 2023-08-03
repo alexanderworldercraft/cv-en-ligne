@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
+    
     <div class="menu">
-        <h2>Menu-CV</h2>
-        <ul>
+        <h2 class="menu-title">Menu-CV</h2>
+        <ul class="menu-title">
             <li><a href="#section01-ancre">Accueil</a></li>
             <li><a href="#section02-ancre">Présentation</a></li>
             <li><a href="#section03-ancre">Compétences</a></li>
@@ -31,7 +32,13 @@
         </ul>
     </div>
     <div class="menu-arrow"><p class="menu-title">Passez votre souris en haut de la page pour ouvrir le menu.</p></div>
+    
+    
+    <!-- vidéo de fond -->
+    <video autoplay muted loop id="background-video"><source src="../img/video-fond.mp4"></video>
+
     <div class="contents">
+
 
         <!-- Contenue de la page -->
         
@@ -40,20 +47,13 @@
 
         <!-- section01 -->
         <section id="section01">
-            <h1>Accueil</h1>
+            <div class="blocs">
+                <h1>Présentation</h1>
 
-            <table>
-                <tr>
-                    <td colspan="2"><h3>TARROZ Patrick</h3></td>
-                    <td rowspan="3"><img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil"></td>
-                </tr>
-                <tr>
-                    <td><h3>Developpeur Web, Web Mobile</h3></td>
-                </tr>
-            </table>
-            <a href="index.html#base" class="a-width"><span class="material-symbols-outlined arrow  a-accueil">
-                arrow_upward
-                </span></a>
+                <p>TARROZ Patrick</p>
+                <p>Developpeur Web, Web Mobile</p>
+            </div>
+            <img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil">
         </section>
 
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -62,27 +62,14 @@
 
         <!-- section02 -->
         <section id="section02">
-            <h1>Présentation</h1>
-            <table>
-                <tr>
-                    
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <h3>À PROPOS</h3>
-                        <p>Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
-                        </p>
-                        <p>
-                        De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
-                        </p>
-                    </td>
-                </tr>
-            </table>
+            <h1>À PROPOS</h1>
+            <p>
+                Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
+            </p>
+            <p>
+                De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
+            </p>
 
-            <a href="index.html#base" class="a-width">
-                <span class="material-symbols-outlined arrow">arrow_upward</span>
-            </a>
         </section>
 
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -170,9 +157,6 @@
                 </li>
             </ul>
 
-            <a href="index.html#base" class="a-width">
-                <span class="material-symbols-outlined arrow">arrow_upward</span>
-            </a>
         </section>
 
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -191,9 +175,6 @@
                 <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
             </div>
 
-            <a href="index.html#base" class="a-width">
-                <span class="material-symbols-outlined arrow">arrow_upward</span>
-            </a>
         </section>
         
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -228,9 +209,6 @@
                 <div id="dialog" title="Message" style="display: none;"></div><!-- dialoge pour la valitation du message -->
             </form>
 
-            <a href="index.html#base" class="a-width">
-                <span class="material-symbols-outlined arrow">arrow_upward</span>
-            </a>
         </section>
         
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -239,9 +217,11 @@
         <footer>
             <div class="footer">
                 <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
-                <p>Image génére par IA sous licence commercial</p>
+                <p>Image génére par IA sous licence commercial <br>User ID: f2509192-73e1-49bd-97e7-51703866a878</p>
             </div>
         </footer>
+
+        <br><br>
 
     </div>
 

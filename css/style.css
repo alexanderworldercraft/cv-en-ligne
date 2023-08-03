@@ -18,6 +18,7 @@ section {
     margin: 0px 20px;
 }
 
+
 /* Class */
 
 .arrow {
@@ -34,16 +35,21 @@ section {
 
 /* Id  - cv*/
 
-#section01 {
+#section01 .blocs {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     box-shadow: 3px 3px 15px black;
     border-radius: 15px;
-    padding: 0px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    float: left;
 }
-#section01 table {
-    width: 100%;
-    text-align: center;
+#section01 .blocs p {
+    padding-bottom: 2em;
 }
+
 /* photo de profil - cv */
 #photo-de-profil {
     width: 150px;
@@ -55,17 +61,18 @@ section {
 #section02 {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
-}
-
-#section02 table tr td {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 40vw;
+    float: right;
 }
 
-#section02 table tr td p {
-    width: 80%;
+#section02 p {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 2em;
 }
 
 #section03 {
