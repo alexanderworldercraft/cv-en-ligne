@@ -86,8 +86,10 @@ h2 {
 		border-right: 16px solid #333;
 	}
 	.menu-top .menu-arrow {
-		left: 40%;
-        background-color: rgba( 255, 255, 255, 0.6 );
+		left: 30%;
+        right: 30%;
+        background-color: rgba( 0, 0, 0, 0.7 );
+        color: white;
         top: 10px;
         border-radius: 10px;
         box-shadow: 0px 0px 15px black;
@@ -107,6 +109,9 @@ h2 {
 		     -o-transition: opacity 0.2s ease;
 		        transition: opacity 0.2s ease;
 	}
+    .menu-title {
+        text-align: center;
+    }
 
 /**
  * Main contents area
@@ -119,6 +124,8 @@ h2 {
     transform-style: preserve-3d;
 	/* fond du contenu */
     background-image: url(../img/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transform-style: preserve-3d;
 

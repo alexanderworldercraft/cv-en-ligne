@@ -11,12 +11,11 @@ body {
 h1 { 
     text-align: center;
     padding: 20px;
-    text-shadow: 0px 0px 3px white;
     font-size: xx-large;
 }
 
 section {
-    margin: 300px 20px;
+    margin: 0px 20px;
 }
 
 /* Class */
@@ -36,7 +35,8 @@ section {
 /* Id  - cv*/
 
 #section01 {
-    background-image: linear-gradient(180deg, #111e89, #3789ff);
+    background-image: linear-gradient(180deg, #d3251f, #630801);
+    box-shadow: 3px 3px 15px black;
     border-radius: 15px;
     padding: 0px 10%;
 }
@@ -48,10 +48,12 @@ section {
 #photo-de-profil {
     width: 150px;
     border-radius: 50%;
+    box-shadow: 5px 5px 15px black;
+    border: 2px solid white;
 }
 
 #section02 {
-    background-image: linear-gradient(180deg, #891111 ,#ff3737);
+    background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
 }
 
@@ -67,7 +69,7 @@ section {
 }
 
 #section03 {
-    background-image: linear-gradient(180deg, #118911, #37ff3a);
+    background-image: linear-gradient(180deg, #d3251f, #630801);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -104,12 +106,12 @@ section {
 
 
 #section04 {
-    background-image: linear-gradient(180deg, rgba(77,9,75,1) 0%, rgba(121,9,117,1) 20%, rgba(255,0,236,1) 100%);
+    background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
 }
 
 #section05 {
-    background-image: linear-gradient(180deg, #118789, #37fff6);
+    background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
 }
 
@@ -244,4 +246,20 @@ td a {
 .img-portofolio {
     width: 300px;
     border-radius: 15px;
+}
+
+footer {
+    position: absolute;
+    left: 35%;
+    right: 35%;
+}
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 3px 15px black;
+    border-radius: 10px;
+}
+footer .footer p {
+    text-align: center;
+    padding: 2px 5px;
+    color: white;
 }
