@@ -18,13 +18,6 @@ section {
     margin: 0px 20px;
 }
 
-
-/* Class */
-
-.arrow {
-    margin: 20px;
-    color: white;
-}
 .a-width {
     width: 24px;
 }
@@ -33,8 +26,7 @@ section {
     left: -13%;
 }
 
-/* Id  - cv*/
-
+/* Présentation */
 #section01 .blocs {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     box-shadow: 3px 3px 15px black;
@@ -60,6 +52,7 @@ section {
     margin-right: 15vw;
 }
 
+/* A propos */
 #section02 {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
@@ -77,6 +70,7 @@ section {
     padding-bottom: 2em;
 }
 
+/* Compétences */
 #section03 {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     display: grid;
@@ -115,7 +109,7 @@ section {
     display: block;
 }
 
-
+/* Portofolio */
 #section04 {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
@@ -123,6 +117,7 @@ section {
     float: right;
 }
 
+/* Contact */
 #section05 {
     background-image: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 15px;
@@ -277,3 +272,22 @@ footer .footer p {
     padding: 2px 5px;
     color: white;
 }
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    /* Styles pour les téléphones mobiles */
+  }
+  
+  @media (min-width: 600px) and (max-width: 900px) {
+    /* Styles pour les tablettes en mode portrait */
+  }
+  
+  @media (min-width: 900px) and (max-width: 1200px) {
+    /* Styles pour les tablettes en mode paysage et petits ordinateurs de bureau */
+  }
+  
+  @media (min-width: 1200px) {
+    /* Styles pour les ordinateurs de bureau */
+  }
+  
