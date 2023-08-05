@@ -1,0 +1,213 @@
+/* Police d'écriture */
+body {
+    font-family: "roboto", sans-serif;
+}
+
+/* Structure auto responsive */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    flex: 1 0 1;
+}
+
+/* boite de dialogue du contact */
+.ui-widget-content {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+.ui-widget .ui-widget-content {
+    border: 2px solid black;
+    border-radius: 0px;
+}
+.ui-widget-header {
+    padding: 5px;
+    background: grey;
+    border: 0;
+    color: black;
+}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default,
+.ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    background: white;
+    border: 0;
+}
+
+/* Animation du bouton ENVOYER du contact */
+.pulsate:hover {
+    animation: pulse 1s infinite;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid black;
+}
+#button:hover {
+    color: black;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Structure du formulaire de contact */
+.input-group {
+    position: relative;
+    margin: 10px;
+}
+.input-group__input,
+.input-group__textarea,
+.input-group__button {
+    font: inherit;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid #fff;
+    background-color:  transparent;
+    transition: outline-color 500ms;
+}
+.input-group__button {
+    color: white;
+}
+.input-group__input:is(:focus, :valid),
+.input-group__textarea:is(:focus, :valid) {
+    outline: 2px solid black;
+}
+.input-group__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: #ffffff;
+    transition: translate 500ms, scale 500ms;
+}
+.input-group__input:focus + .input-group__label,
+.input-group__input:valid + .input-group__label {
+    padding-inline: 5px;
+    translate: 10px -20px;
+    scale: 0.9;
+    background-color: transparent;
+    color: #000;
+}
+.input-group__input::selection {
+    background-color: white;
+    color: black;
+}
+.textarea {
+    width: 182px;
+    height: 19px;
+}
+
+/* Centrage des titre */
+h1 {
+    text-align: center;
+    padding: 0 0 1em 0;
+}
+
+/* Base du footer */
+footer {
+    background-color: rgba( 0, 0, 0, 0.7 );
+    color: white;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+}
+
+/* Structure des sections */
+section {
+    background: linear-gradient(180deg, #d3251f, #630801);
+    border-radius: 1em;
+    padding: 1% 1% 2% 1%;/* top right bottom left */
+    margin: 10% 2% 10% 2%;/* top right bottom left */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    /* Styles pour les téléphones mobiles */
+
+    /* Portofolio */
+    #portofolio .img-portofolio{
+        width: 120px;
+    }
+    footer {
+        left: 5%;
+        right: 5%;
+	}
+    .menu-top .menu-arrow {
+		left: 1%;
+        right: 1%;
+    }
+}
+
+/* Crée un décalage de position pour les ancres */
+[id]:target {
+    scroll-margin-top: 100px;
+}
+
+  
+@media (min-width: 600px) and (max-width: 900px) {
+    /* Styles pour les tablettes en mode portrait */
+
+    /* Portofolio */
+    #portofolio .img-portofolio{
+        width: 200px;
+    }
+    footer {
+        left: 15%;
+        right: 15%;
+	}
+    .menu-top .menu-arrow {
+		left: 10%;
+        right: 10%;
+    }
+}
+  
+@media (min-width: 900px) and (max-width: 1200px) {
+    /* Styles pour les tablettes en mode paysage et petits ordinateurs de bureau */ 
+
+    /* Portofolio */
+    #portofolio .img-portofolio{
+        width: 300px;
+    }
+    footer {
+        left: 25%;
+        right: 25%;
+	}
+    .menu-top .menu-arrow {
+		left: 20%;
+        right: 20%;
+    }
+}
+  
+@media (min-width: 1200px) {
+    /* Styles pour les ordinateurs de bureau */
+
+    /* Portofolio */
+    #portofolio .img-portofolio{
+        width: 400px;
+    }
+    footer {
+        left: 20%;
+        right: 20%;
+	}
+    .menu-top .menu-arrow {
+		left: 30%;
+        right: 30%;
+    }
+}

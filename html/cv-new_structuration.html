@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><!-- Encodage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV en ligne (beta)</title><!-- Titre de l'onglet -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><!-- Police d'écriture -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- style icon -->
+    <link rel="stylesheet" href="../css/style-new_structuration.css"><!-- Feuille en style -->
+
+    <!-- bibliothèque lightbox (image) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <!-- Menu -->
+
+	<meta name="description" content="L'apparition de la barre de menu se fait par le haut de la page." />
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    
+    <div class="menu">
+        <h2 class="menu-title">Menu-CV</h2>
+        <ul class="menu-title">
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#a_propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-arrow"><p class="menu-title">Passez votre souris en haut de la page pour ouvrir le menu.</p></div>
+    
+    
+    <!-- vidéo de fond -->
+    <video autoplay muted loop id="background-video"><source src="../img/video-fond.mp4"></video>
+
+    <div class="contents">
+
+
+        <!-- section04 portofolio -->
+        <section id="portofolio">
+            <h1>Portofolio</h1>
+            <div class="cards">
+                <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test" data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test" data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test" data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
+                <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
+            </div>
+
+        </section>
+        
+        <!-- section05 Contact -->
+        <section id="contact">
+            <form action="mail_handler.php" method="post">
+                <h1>Contact</h1>
+                <div class="cards">
+                    <!-- Input Nom -->
+                    <div class="input-group card">
+                        <input type="text" id="nom" class="input-group__input" required/>
+                        <label for="nom" class="input-group__label">Nom*</label>
+                    </div>
+                    <!-- Input Prenom -->
+                    <div class="input-group card">
+                        <input type="text" id="prenom" class="input-group__input" required/>
+                        <label for="prenom" class="input-group__label">Prènom*</label>
+                    </div>
+                    <!-- Input Email -->
+                    <div class="input-group card">
+                        <input type="email" id="email" class="input-group__input" required/>
+                        <label for="email" class="input-group__label">Email*</label>
+                    </div>
+                    <!-- textarea Commentaire -->
+                    <div class="input-group card">
+                        <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire*" required></textarea>
+                    </div>
+                    <!-- Button Envoyer -->
+                    <div class="input-group card pulsate" id="envoyer-button">
+                        <input type="submit" class="input-group__button" value="Envoyer" id="button">
+                    </div>
+                </div>
+                <!-- dialoge pour la valitation du message -->
+                <div id="dialog" title="Message" style="display: none;"></div>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
+            <p>Image génére par IA sous licence commercial User ID: f2509192-73e1-49bd-97e7-51703866a878</p>
+        </footer>
+
+    </div>
+
+    <!-- Script du menu -->
+
+    <script src="../js/menu.js"></script>
+
+	<script>
+		var menu = menu.create({
+		menuElement: document.querySelector( '.menu' ),
+		contentsElement: document.querySelector( '.contents' ),
+	// [optional] alignement du menu (top/right/bottom/left)
+		position: menu.getQuery().p || 'top',
+	// [optional] hauteur du menu (pour la position top ou bottom)
+		height: 200,
+	// [optional] largeur du menu (pour la position left ou right)
+		width: 260,
+	// [optional] distance de déclenchement du menu par rapport au menu
+		threshold: 40,
+	// [optional] utilisation des mouvement de la souris pour l'ouverture ou la fermeture
+		mouse: true,
+	// [optional] utilisation de l'approche
+		touch: true
+		});
+	</script>
+
+    <!-- Script pour le dialogue du formulaire -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!-- jQueryUI -->
+
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function(event) {
+                event.preventDefault();
+        
+                $.ajax({
+                    url: "mail_handler.php",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function(data) {
+                        $("#dialog").html("Votre message a été envoyé avec succès !");
+                        $("#dialog").dialog();
+                    },
+                    error: function() {
+                        $("#dialog").html("Une erreur s'est produite, veuillez réessayer. lol");
+                        $("#dialog").dialog();
+                    }
+                });
+            });
+        });
+        </script><!-- jQuery -->
+
+        <!-- script pour lightbox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
