@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8"><!-- Encodage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV en ligne</title><!-- Titre de l'onglet -->
+    <title>CV en ligne (beta)</title><!-- Titre de l'onglet -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><!-- Police d'écriture -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- style icon -->
 
-    <link rel="stylesheet" href="../css/style.css"><!-- Feuille en style -->
+    <link rel="stylesheet" href="../css/styletest.css"><!-- Feuille en style -->
 
     <!-- bibliothèque lightbox (image) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
@@ -48,7 +48,6 @@
         <section id="section01">
             <div class="blocs">
                 <h1>Présentation</h1>
-
                 <p>TARROZ Patrick</p>
                 <p>Developpeur Web, Web Mobile</p>
             </div>
@@ -184,23 +183,23 @@
         <section id="section05">
             <form action="mail_handler.php" method="post">
                 <h1>Contact</h1>
-                <div class="cards">
-                    <div class="input-group card">
+                <div class="cards" id="section05-form">
+                    <div class="input-group card" id="nom-input">
                         <input type="text" id="nom" class="input-group__input" required/>
-                        <label for="nom" class="input-group__label">Nom</label>
+                        <label for="nom" class="input-group__label">Nom*</label>
                     </div>
-                    <div class="input-group card">
+                    <div class="input-group card" id="prenom-input">
                         <input type="text" id="prenom" class="input-group__input" required/>
-                        <label for="prenom" class="input-group__label">Prènom</label>
+                        <label for="prenom" class="input-group__label">Prènom*</label>
                     </div>
-                    <div class="input-group card">
+                    <div class="input-group card" id="email-input">
                         <input type="email" id="email" class="input-group__input" required/>
-                        <label for="email" class="input-group__label">Email</label>
+                        <label for="email" class="input-group__label">Email*</label>
                     </div>
-                    <div class="input-group card">
-                        <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire" required></textarea>
+                    <div class="input-group card" id="commentaire-textarea">
+                        <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire*" required></textarea>
                     </div>
-                    <div class="input-group card pulsate">
+                    <div class="input-group card pulsate" id="envoyer-button">
                         <input type="submit" class="input-group__button" value="Envoyer" id="button">
                     </div>
                 </div>
@@ -214,10 +213,8 @@
 
         <!-- Footer -->
         <footer>
-            <div class="footer">
-                <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
-                <p>Image génére par IA sous licence commercial <br>User ID: f2509192-73e1-49bd-97e7-51703866a878</p>
-            </div>
+            <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
+            <p class="footer">Image génére par IA sous licence commercial User ID: f2509192-73e1-49bd-97e7-51703866a878</p>
         </footer>
 
         <br><br>
