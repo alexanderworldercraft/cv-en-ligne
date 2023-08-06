@@ -117,6 +117,39 @@ h1 {
     text-align: center;
     padding: 0 0 1em 0;
 }
+/* centrage de présentation */
+#presentation p {
+    text-align: center;
+}
+/* blocs des paragraphs */
+p:not(footer p, menu-title) {
+    padding: 1em 1em;
+    text-align: justify;
+}
+/* photo de profil */
+#photo-de-profil {
+    grid-area: photo-de-profil;
+    width: 10em;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px black;
+    border: 2px solid white;
+    margin: auto;
+    margin-bottom: 1em;
+}
+/* Grille de présentation */
+#grid-presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p-un-presentation photo-de-profil"
+    "p-deux-presentation photo-de-profil";
+}
+#p-un-presentation {
+    grid-area: p-un-presentation;
+}
+#p-deux-presentation {
+    grid-area: p-deux-presentation;
+}
 
 /* Base du footer */
 footer {
@@ -133,8 +166,9 @@ footer {
 section {
     background: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 1em;
+    box-shadow: 5px 5px 15px black;
     padding: 1% 1% 2% 1%;/* top right bottom left */
-    margin: 10% 2% 10% 2%;/* top right bottom left */
+    margin: 10% 2% 10% 2%;
 }
 
 /* Responsive */
@@ -152,6 +186,13 @@ section {
     .menu-top .menu-arrow {
 		left: 1%;
         right: 1%;
+    }#grid-presentation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "photo-de-profil"
+        "p-un-presentation"
+        "p-deux-presentation";
     }
 }
 
@@ -193,6 +234,13 @@ section {
 		left: 20%;
         right: 20%;
     }
+    #a_propos {
+        width: 50vw;
+    }
+    #presentation {
+        width: 50vw;
+        margin-left: 37vw;
+    }
 }
   
 @media (min-width: 1200px) {
@@ -209,5 +257,12 @@ section {
     .menu-top .menu-arrow {
 		left: 30%;
         right: 30%;
+    }
+    #a_propos {
+        width: 40vw;
+    }
+    #presentation {
+        width: 40vw;
+        margin-left: 50vw;
     }
 }
