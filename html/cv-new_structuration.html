@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"><!-- Encodage -->
+    <!-- Encodage -->
+    <meta charset="UTF-8">
+    <!-- Mise en page et mise à l'échelle de la page web -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description de la page web -->
+	<meta name="description" content="CV en ligne fait comme projet pour la formation AFPA" />
 
-    <title>CV en ligne (beta)</title><!-- Titre de l'onglet -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><!-- Police d'écriture -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!-- style icon -->
-    <link rel="stylesheet" href="../css/style-new_structuration.css"><!-- Feuille en style -->
-
+    <!-- Titre de l'onglet -->
+    <title>CV en ligne (beta)</title>
+    
+    <!-- Un "CSS Reset" est un ensemble de styles CSS qui réinitialise ou normalise les styles par défaut des navigateurs. Chaque navigateur a ses propres styles par défaut pour divers éléments HTML, et ces styles peuvent varier d'un navigateur à l'autre. Cela peut entraîner des incohérences dans l'apparence d'un site web lorsqu'il est visualisé sur différents navigateurs. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- Police d'écriture -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- style icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Feuille en style -->
+    <link rel="stylesheet" href="../css/style-new_structuration.css">
     <!-- bibliothèque lightbox (image) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-
     <!-- Menu -->
-
-	<meta name="description" content="L'apparition de la barre de menu se fait par le haut de la page." />
     <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
@@ -58,6 +64,31 @@
             <p>
                 De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
             </p>
+
+        </section>
+
+        <!-- section02 À propos -->
+        <section id="competences">
+            <h1>Compétences</h1>
+            <div id="table-competences">
+                <div id="frontend">
+                    <h2>Front-end</h2>
+                    <div class="active bar mint" data-percent="5" data-skill="HTML5"></div>
+                    <div class="active bar red" data-percent="5" data-skill="CSS3"></div>
+                    <div class="active bar lila" data-percent="5" data-skill="JavaScript"></div>
+                    <div class="active bar orange" data-percent="5" data-skill="jQuery"></div>
+                    <div class="active bar gray" data-percent="5" data-skill="GitHub"></div>
+                </div>
+                <div id="backend">
+                    <h2>Back-end</h2>
+                    <div class="active bar mint" data-percent="5" data-skill="PHP"></div>
+                    <div class="active bar red" data-percent="5" data-skill="Python"></div>
+                    <div class="active bar lila" data-percent="5" data-skill="Node.js"></div>
+                    <div class="active bar orange" data-percent="5" data-skill="Ruby"></div>
+                    <div class="active bar gray" data-percent="5" data-skill="MySQL"></div>
+                </div>
+                
+            </div>
 
         </section>
 
@@ -117,57 +148,23 @@
 
     </div>
 
-    <!-- Script du menu -->
+    <!-- Bibliothèque prefixfree
 
+        "prefixfree" est une petite bibliothèque JavaScript qui permet aux développeurs d'écrire du code CSS sans avoir à utiliser de préfixes spécifiques aux navigateurs. Par exemple, au lieu d'écrire plusieurs versions d'une propriété CSS avec des préfixes comme -webkit-, -moz-, -ms-, etc., vous pouvez simplement écrire la propriété standard, et "prefixfree" s'occupera automatiquement d'ajouter les préfixes nécessaires en fonction du navigateur de l'utilisateur.
+
+        En intégrant ce script à une page web, les développeurs peuvent simplifier leur code CSS et s'assurer qu'il fonctionne correctement sur différents navigateurs sans avoir à ajouter manuellement tous les préfixes spécifiques aux navigateurs. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- script du menu -->
     <script src="../js/menu.js"></script>
-
-	<script>
-		var menu = menu.create({
-		menuElement: document.querySelector( '.menu' ),
-		contentsElement: document.querySelector( '.contents' ),
-	// [optional] alignement du menu (top/right/bottom/left)
-		position: menu.getQuery().p || 'top',
-	// [optional] hauteur du menu (pour la position top ou bottom)
-		height: 200,
-	// [optional] largeur du menu (pour la position left ou right)
-		width: 260,
-	// [optional] distance de déclenchement du menu par rapport au menu
-		threshold: 40,
-	// [optional] utilisation des mouvement de la souris pour l'ouverture ou la fermeture
-		mouse: true,
-	// [optional] utilisation de l'approche
-		touch: true
-		});
-	</script>
-
-    <!-- Script pour le dialogue du formulaire -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><!-- jQueryUI -->
-
-    <script>
-        $(document).ready(function() {
-            $("form").on("submit", function(event) {
-                event.preventDefault();
-        
-                $.ajax({
-                    url: "mail_handler.php",
-                    type: "POST",
-                    data: $(this).serialize(),
-                    success: function(data) {
-                        $("#dialog").html("Votre message a été envoyé avec succès !");
-                        $("#dialog").dialog();
-                    },
-                    error: function() {
-                        $("#dialog").html("Une erreur s'est produite, veuillez réessayer. lol");
-                        $("#dialog").dialog();
-                    }
-                });
-            });
-        });
-        </script><!-- jQuery -->
-
-        <!-- script pour lightbox -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Script du contrôle du menu -->
+	<script src="../js/controle-menu.js"></script>
+    <!-- Bibliothèque jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bibliothèque jQueryUI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Script de contrôle de jQuery -->
+    <script src="../js/formulaire-jQueryUI.js"></script>
+    <!-- script pour lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
