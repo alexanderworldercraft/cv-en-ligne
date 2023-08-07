@@ -213,40 +213,13 @@ section {
     position: relative;
     margin: 0.5rem 0;
     border-radius: 4px;
-  }.bar.mint {
-    background-color: #14C3A2;
-    background-image: repeating-linear-gradient(-45deg, #14C3A2, #14C3A2 30px, #22e8c3 30px, #22e8c3 60px);
-    background-size: 600px 100%;
-    animation: barberpole 12s linear infinite;
-    border-bottom: 0.2rem solid #0d7e68;
-  }
-  .bar.red {
-    background-color: #CF4647;
-    background-image: repeating-linear-gradient(-45deg, #CF4647, #CF4647 30px, #da6e6f 30px, #da6e6f 60px);
-    background-size: 600px 100%;
-    animation: barberpole 12s linear infinite;
-    border-bottom: 0.2rem solid #6c1d1e;
-  }
-  .bar.orange {
-    background-color: #EB7B59;
-    background-image: repeating-linear-gradient(-45deg, #EB7B59, #EB7B59 30px, #f09f87 30px, #f09f87 60px);
-    background-size: 600px 100%;
-    animation: barberpole 12s linear infinite;
-    border-bottom: 0.2rem solid #dd481b;
   }
   .bar.lila {
     background-color: #524656;
-    background-image: repeating-linear-gradient(-45deg, #524656, #524656 30px, #6d5d72 30px, #6d5d72 60px);
+    background-image: repeating-linear-gradient(-45deg, #524656, #524656 30px, #5a4d5e 30px, #5a4d5e 60px);
     background-size: 600px 100%;
     animation: barberpole 12s linear infinite;
     border-bottom: 0.2rem solid #2a242c;
-  }
-  .bar.gray {
-    background-color: #595B5A;
-    background-image: repeating-linear-gradient(-45deg, #595B5A, #595B5A 30px, #727574 30px, #727574 60px);
-    background-size: 600px 100%;
-    animation: barberpole 12s linear infinite;
-    border-bottom: 0.2rem solid #333434;
   }
   .bar.active:after, .bar.active:before {
     opacity: 1;
