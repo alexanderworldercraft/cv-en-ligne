@@ -1,6 +1,19 @@
 /* Police d'écriture */
 body {
     font-family: "roboto", sans-serif;
+    color: white;
+}
+
+/* Barre de scroll page web */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d3251f;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #350c0c;
 }
 
 /* Structure auto responsive */
@@ -172,8 +185,6 @@ section {
     box-sizing: border-box;
 }
 
-
-
 /* Crée un décalage de position pour les ancres */
 [id]:target {
     scroll-margin-top: 140px;
@@ -214,7 +225,7 @@ section {
     background-image: repeating-linear-gradient(-45deg, #CF4647, #CF4647 30px, #da6e6f 30px, #da6e6f 60px);
     background-size: 600px 100%;
     animation: barberpole 12s linear infinite;
-    border-bottom: 0.2rem solid #9f292a;
+    border-bottom: 0.2rem solid #6c1d1e;
   }
   .bar.orange {
     background-color: #EB7B59;
