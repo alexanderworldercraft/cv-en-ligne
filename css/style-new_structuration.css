@@ -183,8 +183,8 @@ section {
     background: linear-gradient(180deg, #d3251f, #630801);
     border-radius: 1em;
     box-shadow: 5px 5px 15px black;
-    padding: 1% 1% 2% 1%;/* top right bottom left */
-    margin: 20% 2% 20% 2%;
+    padding: 1em 1em 2em 1em;/* top right bottom left */
+    margin: 20em 2em 20em 2em;
     box-sizing: border-box;
 }
 
@@ -364,6 +364,11 @@ section {
         grid-template-areas: 
             "frontend"
             "backend";
+    } 
+    .input-group__input,
+    .input-group__textarea{
+        width: 80%;
+        padding: 10px 10% 10px 10%;
     }
 }
 
