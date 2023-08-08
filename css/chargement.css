@@ -1,0 +1,171 @@
+#loading {
+    /* définit la position de l'élément comme étant fixe.*/
+    position: fixed;
+    /*définit la position verticale de l'élément fixe en tant que 0 pixels.*/
+    top: 0;
+    /* définit la position horizontale de l'élément fixe en tant que 0 pixels*/
+    left: 0;
+    /*définit la largeur de l'élément fixe comme étant de 100% de la largeur de la fenêtre du navigateur.*/
+    width: 100%;
+    /* définit la hauteur de l'élément fixe comme étant de 100% de la hauteur de la fenêtre du navigateur.*/
+    height: 100%;
+    /*définit la couleur de fond de l'élément fixe.*/
+    background-color: white;
+    /*définit la propriété d'index de l'élément fixe*/
+    z-index: 9999;
+    /*définit le mode d'affichage de l'élément en tant que conteneur flex*/
+    display: flex;
+    /*définit la direction de disposition des éléments fils à l'intérieur du conteneur flex.*/
+    flex-direction: column;
+    /*définit l'alignement vertical des éléments fils à l'intérieur du conteneur flex.*/
+    justify-content: center;
+    /*définit l'alignement horizontal des éléments fils à l'intérieur du conteneur flex.*/
+    align-items: center;
+  }
+.ray-wrapper {
+    position: absolute;
+    left: -20vw;
+    top: -20vw;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 100%;
+    -webkit-animation: rotate 60s linear infinite;
+            animation: rotate 60s linear infinite;
+    will-change: transform;
+  }
+  
+  @-webkit-keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .ray {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 120vw;
+    width: 15vw;
+    -webkit-clip-path: polygon(50% 100%, 50% 100%, 100% 0%, 0% 0%);
+            clip-path: polygon(50% 100%, 50% 100%, 100% 0%, 0% 0%);
+    background: linear-gradient(to top, #C70025 0%, #C70025 10%, rgba(199, 0, 37, 0));
+    transform-origin: center bottom;
+  }
+  
+  .ray:nth-of-type(1) {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  
+  .ray:nth-of-type(2) {
+    transform: translateX(-50%) rotate(15deg);
+  }
+  
+  .ray:nth-of-type(3) {
+    transform: translateX(-50%) rotate(30deg);
+  }
+  
+  .ray:nth-of-type(4) {
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+  .ray:nth-of-type(5) {
+    transform: translateX(-50%) rotate(60deg);
+  }
+  
+  .ray:nth-of-type(6) {
+    transform: translateX(-50%) rotate(75deg);
+  }
+  
+  .ray:nth-of-type(7) {
+    transform: translateX(-50%) rotate(90deg);
+  }
+  
+  .ray:nth-of-type(8) {
+    transform: translateX(-50%) rotate(105deg);
+  }
+  
+  .ray:nth-of-type(9) {
+    transform: translateX(-50%) rotate(120deg);
+  }
+  
+  .ray:nth-of-type(10) {
+    transform: translateX(-50%) rotate(135deg);
+  }
+  
+  .ray:nth-of-type(11) {
+    transform: translateX(-50%) rotate(150deg);
+  }
+  
+  .ray:nth-of-type(12) {
+    transform: translateX(-50%) rotate(165deg);
+  }
+  
+  .ray:nth-of-type(13) {
+    transform: translateX(-50%) rotate(180deg);
+  }
+  
+  .ray:nth-of-type(14) {
+    transform: translateX(-50%) rotate(195deg);
+  }
+  
+  .ray:nth-of-type(15) {
+    transform: translateX(-50%) rotate(210deg);
+  }
+  
+  .ray:nth-of-type(16) {
+    transform: translateX(-50%) rotate(225deg);
+  }
+  
+  .ray:nth-of-type(17) {
+    transform: translateX(-50%) rotate(240deg);
+  }
+  
+  .ray:nth-of-type(18) {
+    transform: translateX(-50%) rotate(255deg);
+  }
+  
+  .ray:nth-of-type(19) {
+    transform: translateX(-50%) rotate(270deg);
+  }
+  
+  .ray:nth-of-type(20) {
+    transform: translateX(-50%) rotate(285deg);
+  }
+  
+  .ray:nth-of-type(21) {
+    transform: translateX(-50%) rotate(300deg);
+  }
+  
+  .ray:nth-of-type(22) {
+    transform: translateX(-50%) rotate(315deg);
+  }
+  
+  .ray:nth-of-type(23) {
+    transform: translateX(-50%) rotate(330deg);
+  }
+  
+  .ray:nth-of-type(24) {
+    transform: translateX(-50%) rotate(345deg);
+  }
+  
+  .circle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 30vw;
+    width: 30vw;
+    background-color: #C70025;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+  }
