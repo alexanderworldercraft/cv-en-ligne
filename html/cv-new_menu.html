@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Encodage -->
+    <meta charset="UTF-8">
+    <!-- Mise en page et mise à l'échelle de la page web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description de la page web -->
+	<meta name="description" content="CV en ligne fait comme projet pour la formation AFPA" />
+
+    <!-- Titre de l'onglet -->
+    <title>CV en ligne (beta)</title>
+    
+    <!-- Un "CSS Reset" est un ensemble de styles CSS qui réinitialise ou normalise les styles par défaut des navigateurs. Chaque navigateur a ses propres styles par défaut pour divers éléments HTML, et ces styles peuvent varier d'un navigateur à l'autre. Cela peut entraîner des incohérences dans l'apparence d'un site web lorsqu'il est visualisé sur différents navigateurs. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- Police d'écriture -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Icon dans l'onglet -->
+	<link rel="shortcut icon" href="../img/profil.jpg">
+    <!-- Bibliothèque RemixIcon -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+    <!-- Bibliothèque googleicon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bibliothèque icon réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Feuille de style du menu p1 de la sidebar -->
+    <link rel="stylesheet" href="../css/menu01-sidebar.css">
+    <!-- Feuille de style du menu p2 de la sidebar -->
+    <link rel="stylesheet" href="../css/menu02-sidebar.css">
+    <!-- Feuille en style -->
+    <link rel="stylesheet" href="../css/style-new_menu.css">
+    <!-- bibliothèque lightbox (image) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- chargement -->
+    <link rel="stylesheet" href="../css/chargement.css">
+    <!-- cardteam -->
+    <link rel="stylesheet" href="../css/cardteam.css">
+</head>
+<body>
+    <div class="layout has-sidebar fixed-sidebar fixed-header">
+        <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+            <a id="btn-collapse" class="sidebar-collapser"><span class="material-symbols-outlined">chevron_left</span></a>
+            <div class="sidebar-layout">
+                <div class="sidebar-header">
+                    <div class="pro-sidebar-logo">
+                        <div>CV</div>
+                        <h5>Curriculum Vitae</h5>
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <nav class="menu open-current-submenu">
+                        <ul>
+                            <li class="menu-header"><span>GÉNÉRAL</span></li>
+
+                        
+                            <li class="menu-item">
+                                <a href="#presentation">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            sentiment_satisfied
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">Présentation</span>
+                                    <span class="menu-suffix"><span class="badge one">Ok</span></span>
+                                </a>
+                            </li>
+                        
+                            <li class="menu-item">
+                                <a href="#a_propos">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            info_i
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">À propos</span>
+                                    <span class="menu-suffix"><span class="badge one">Ok</span></span>
+                                </a>
+                            </li>
+                        
+                            <li class="menu-item">
+                                <a href="#competences">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            browse_activity
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">Compétences</span>
+                                    <span class="menu-suffix"><span class="badge two">en cours de teste</span></span>
+                                </a>
+                            </li>
+                        
+                            <li class="menu-item">
+                                <a href="#portofolio">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            import_contacts
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">Portofolio</span>
+                                    <span class="menu-suffix"><span class="badge one">Ok</span></span>
+                                </a>
+                            </li>
+                        
+                            <li class="menu-item">
+                                <a href="#contact">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            contact_support
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">Contact</span>
+                                    <span class="menu-suffix"><span class="badge two">Back-end non actif</span></span>
+                                </a>
+                            </li>
+
+                            <li class="menu-header" style="padding-top: 20px"><span> EXTRA </span></li>
+
+                            <li class="menu-item">
+                                <a href="" onclick="reloadPage()">
+                                    <span class="menu-icon"><span class="material-symbols-outlined">autorenew</span></span>
+                                    <span class="menu-title">Rechargement <br>de la page</span>
+                                    <span class="menu-suffix"><span class="badge one">Actif</span></span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="http://worldercraft.42web.io/vitrine%20responsive/html/index.html">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            keyboard_return
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">Vitrine en roue libre</span>
+                                    <span class="menu-suffix"><span class="badge two">En cours de Dev</span></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="sidebar-footer">
+
+                    <article class="footer-box cardteam" data-visible="false">
+                        <div data-card="front" class="card__front flow-content">
+                            <img class="card__img mx-auto" src="../img/profil.jpg" alt="photo" />
+                            <div class="flow-content" data-spacing="sm">
+                                <p class="card__name">Patrick Tarroz</p>
+                                <p class="card__position">Apprenti Developpeur</p>
+                            </div>
+                        </div>
+                        <div data-card="back" class="card__back flow-content">
+                            <p class="card__name">Patrick Tarroz</p>
+                            <q>La passion et la persévérance finissent toujours par porter leurs fruits.</q>
+                            <ul role="list" class="card__social flex-group">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/patrick-tarroz-56116a1aa/">
+                                        <i class="fa-brands fa-linkedin fa-xls"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <footer class="card__footer">
+                            <button data-card-controller class="card__toggle">
+                                <i class="fa-solid fa-plus card__toggle-icon"></i>
+                            </button>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </aside>
+        <div id="overlay" class="overlay"></div>
+        <div class="layout">
+            <main class="content">
+                <div>
+                    <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm" style="z-index: 9999;">
+                        <i class="ri-menu-line ri-xl background-boutton-and-shadow"></i>
+                    </a>
+                    <!-- contenu -->
+
+                    <!-- vidéo de fond -->
+<!-- <video autoplay muted loop id="background-video"><source src="../img/video-fond.mp4"></video> -->
+
+<!-- section01 Présentation -->
+<section id="presentation">
+        <div id="grid-presentation">
+            <p id="p-un-presentation">TARROZ Patrick</p>
+            <p id="p-deux-presentation">Developpeur Web, Web Mobile</p>
+            <img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil">
+        </div>
+        
+</section>
+
+<!-- section02 À propos -->
+<section id="a_propos">
+    <h1>À propos</h1>
+    <p>
+        Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
+    </p>
+    <p>
+        De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
+    </p>
+
+</section>
+
+<!-- section02 À propos -->
+<section id="competences">
+    <h1>Compétences</h1>
+    <div id="table-competences">
+        <div id="frontend">
+            <h2>Front-end</h2>
+            <!-- test https://www.alsacreations.com/quiz/ -->
+
+            <!-- 95% -->
+            <div class="active bar lila" data-percent="95" data-skill="HTML5"></div>
+            <!-- 56% -->
+            <div class="active bar lila" data-percent="55" data-skill="CSS3"></div>
+            <div class="active bar lila" data-percent="5" data-skill="Vue.js"></div>
+            <div class="active bar lila" data-percent="5" data-skill="jQuery"></div>
+            <!-- 70% -->
+            <div class="active bar lila" data-percent="70" data-skill="Responsive"></div>
+        </div>
+        <div id="backend">
+            <h2>Back-end</h2>
+            <div class="active bar lila" data-percent="5" data-skill="PHP"></div>
+            <div class="active bar lila" data-percent="5" data-skill="Python"></div>
+            <div class="active bar lila" data-percent="5" data-skill="Node.js"></div>
+            <div class="active bar lila" data-percent="5" data-skill="Ruby"></div>
+            <div class="active bar lila" data-percent="5" data-skill="MySQL"></div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- section04 portofolio -->
+<section id="portofolio">
+    <h1>Portofolio</h1>
+    <div class="cards">
+        <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
+        <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test" data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></a></div>
+        <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test" data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></a></div>
+        <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test" data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></a></div>
+        <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
+        <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
+    </div>
+
+</section>
+
+<!-- section05 Contact -->
+<section id="contact">
+    <form action="mail_handler.php" method="post">
+        <h1>Contact</h1>
+        <div class="cards">
+            <!-- Input Nom -->
+            <div class="input-group card">
+                <input type="text" id="nom" class="input-group__input" required/>
+                <label for="nom" class="input-group__label">Nom*</label>
+            </div>
+            <!-- Input Prenom -->
+            <div class="input-group card">
+                <input type="text" id="prenom" class="input-group__input" required/>
+                <label for="prenom" class="input-group__label">Prènom*</label>
+            </div>
+            <!-- Input Email -->
+            <div class="input-group card">
+                <input type="email" id="email" class="input-group__input" required/>
+                <label for="email" class="input-group__label">Email*</label>
+            </div>
+            <!-- textarea Commentaire -->
+            <div class="input-group card">
+                <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire*" required></textarea>
+            </div>
+            <!-- Button Envoyer -->
+            <div class="input-group card pulsate" id="envoyer-button">
+                <input type="submit" class="input-group__button" value="Envoyer" id="button">
+            </div>
+        </div>
+        <!-- dialoge pour la valitation du message -->
+        <div id="dialog" title="Message" style="display: none;"></div>
+    </form>
+</section>
+
+
+                </div>
+    	    	<footer class="footer">
+    				<small style="margin-bottom: 20px; display: inline-block" class="background-text and-shadow">©2023 made with<span style="color: red; font-size: 18px">&#10084;</span> by - WorlderCraft
+        				<br>
+                        <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
+                        Image génére par IA sous licence commercial User ID: f2509192-73e1-49bd-97e7-51703866a878
+    				</small>
+        			<br>
+	    		</footer>
+    	    </main>
+        	<div class="overlay"></div>
+    	  	</div>
+    	</div>
+
+        <!-- Chargement de la page web -->
+        <div id="loading">
+            <div class="ray-wrapper">
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="ray"></div>
+                <div class="circle"></div>
+            </div>
+      	</div>
+
+    <!-- Bibliothèque prefixfree
+
+        "prefixfree" est une petite bibliothèque JavaScript qui permet aux développeurs d'écrire du code CSS sans avoir à utiliser de préfixes spécifiques aux navigateurs. Par exemple, au lieu d'écrire plusieurs versions d'une propriété CSS avec des préfixes comme -webkit-, -moz-, -ms-, etc., vous pouvez simplement écrire la propriété standard, et "prefixfree" s'occupera automatiquement d'ajouter les préfixes nécessaires en fonction du navigateur de l'utilisateur.
+
+        En intégrant ce script à une page web, les développeurs peuvent simplifier leur code CSS et s'assurer qu'il fonctionne correctement sur différents navigateurs sans avoir à ajouter manuellement tous les préfixes spécifiques aux navigateurs. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- Script du chargement -->
+	<script src="../js/chargement.js"></script>
+    <!-- Script du rechargement de page -->
+	<script src="../js/reload-page.js"></script>
+    <!-- Bibliothèque jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bibliothèque jQueryUI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Script de contrôle de jQuery -->
+    <script src="../js/formulaire-jQueryUI.js"></script>
+    <!-- Bibliothèque lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Bibliothèque popper2 -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- contrôle popper2 -->
+    <script src="../js/control-poppers.js"></script>
+    <!-- Script cardteam --> 
+    <script src="../js/cardteam.js"></script>
+
+</body>
+</html>
