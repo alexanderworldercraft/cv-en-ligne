@@ -39,7 +39,7 @@
   .card__name {
     font-size: medium;
     font-weight: 700;
-    margin: 0;
+    margin: auto;
   }
   .card__position {
     font-style: italic;
