@@ -1,4 +1,13 @@
-
+/* Fond d'écran animé */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -9999;
+}
 /* Structure auto responsive */
 .cards {
     display: flex;
@@ -13,7 +22,7 @@
 
 .background-text {
   /*définit l'image d'arrière-plan du contenu. Elle utilise un dégradé linéaire.*/
-    background: linear-gradient(180deg, #870000, #190a05);
+    background: linear-gradient(180deg, #870000, #34150a);
   /*spécifie d'espace autour du contenu à l'intérieur de l'élément.*/
   padding: 15px;
   /*détermine le rayon de l'arrondi des coins de l'élément.*/
@@ -29,7 +38,7 @@
 }
 .background-boutton-and-shadow {
   /*définit l'image d'arrière-plan du contenu. Elle utilise un dégradé linéaire.*/
-    background: linear-gradient(180deg, #870000, #190a05);
+    background: linear-gradient(180deg, #870000, #34150a);
   /*spécifie d'espace autour du contenu à l'intérieur de l'élément.*/
   padding: 2px;
   /*détermine le rayon de l'arrondi des coins de l'élément.*/
@@ -199,7 +208,7 @@ p:not(footer p, menu-title) {
 
 /* Structure des sections */
 section {
-    background: linear-gradient(180deg, #870000, #190a05);
+    background: linear-gradient(180deg, #870000, #34150a);
     border-radius: 1em;
     box-shadow: 5px 5px 15px black;
     padding: 1em 1em 2em 1em;/* top right bottom left */
@@ -419,13 +428,6 @@ section {
 		left: 20%;
         right: 20%;
     }
-    #a_propos {
-        width: 50vw;
-    }
-    #presentation {
-        width: 50vw;
-        margin-left: 37vw;
-    }
     #table-competences {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -443,13 +445,6 @@ section {
     .menu-top .menu-arrow {
 		left: 30%;
         right: 30%;
-    }
-    #a_propos {
-        width: 40vw;
-    }
-    #presentation {
-        width: 40vw;
-        margin-left: 51vw;
     }
     #table-competences {
         grid-template-columns: 1fr 1fr;
