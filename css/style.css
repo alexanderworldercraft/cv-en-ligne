@@ -296,6 +296,10 @@ section {
 }
 
 /* Compétences beta */
+#competences {
+  margin-left: auto;
+  margin-right: auto;
+}
 #table-competences {
     padding: 0 1em;
     display: grid;
@@ -454,6 +458,14 @@ section {
   /* Portofolio */
   #portofolio .img-portofolio{
       width: 100px;
+  }
+  #grid-presentation {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "photo-de-profil"
+      "p-un-presentation"
+      "p-deux-presentation";
   }
   #table-competences {
     grid-template-columns: 1fr;
