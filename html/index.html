@@ -86,8 +86,20 @@
                                             browse_activity
                                         </span>
                                     </span>
-                                    <span class="menu-title">Compétences</span>
+                                    <span class="menu-title">Compétences professionnelle</span>
                                     <span class="menu-suffix"><span class="badge two">en cours de teste</span></span>
+                                </a>
+                            </li>
+                        
+                            <li class="menu-item">
+                                <a href="#experience">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined">
+                                            monitoring
+                                        </span>
+                                    </span>
+                                    <span class="menu-title">Expérience professionnelle</span>
+                                    <span class="menu-suffix"><span class="badge one">ok</span></span>
                                 </a>
                             </li>
                         
@@ -184,110 +196,155 @@
                         <i class="ri-menu-line ri-xl background-boutton-and-shadow"></i>
                     </a>
                     <!-- contenu -->
-
-<div class="bite">
-    <!-- section01 Présentation -->
-<section id="presentation">
-        <div id="grid-presentation">
-            <p id="p-un-presentation">TARROZ Patrick</p>
-            <p id="p-deux-presentation">Developpeur Web, Web Mobile</p>
-            <img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil">
-        </div>
-        
-</section>
-</div>
-
-<!-- section02 À propos -->
-<section id="a_propos">
-    <h1>À propos</h1>
-    <p>
-        Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc... Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
-    </p>
-    <p>
-        De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité, performance et sérieux.
-    </p>
-
-</section>
-
-<!-- section02 À propos -->
-<section id="competences">
-    <h1>Compétences</h1>
-    <div id="table-competences">
-        <div id="frontend">
-            <h2>Front-end</h2>
-            <!-- test https://www.alsacreations.com/quiz/ -->
-
-            <!-- 95% -->
-            <div class="active bar lila" data-percent="95" data-skill="HTML5"></div>
-            <!-- 56% -->
-            <div class="active bar lila" data-percent="55" data-skill="CSS3"></div>
-            <div class="active bar lila" data-percent="5" data-skill="Vue.js"></div>
-            <div class="active bar lila" data-percent="5" data-skill="jQuery"></div>
-            <!-- 70% -->
-            <div class="active bar lila" data-percent="70" data-skill="Responsive"></div>
-        </div>
-        <div id="backend">
-            <h2>Back-end</h2>
-            <div class="active bar lila" data-percent="5" data-skill="PHP"></div>
-            <div class="active bar lila" data-percent="5" data-skill="Python"></div>
-            <div class="active bar lila" data-percent="5" data-skill="Node.js"></div>
-            <div class="active bar lila" data-percent="5" data-skill="Ruby"></div>
-            <div class="active bar lila" data-percent="5" data-skill="MySQL"></div>
-        </div>
-        
-    </div>
-
-</section>
-
-<!-- section04 portofolio -->
-<section id="portofolio">
-    <h1>Portofolio</h1>
-    <div class="cards">
-        <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
-        <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test" data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt="" class="img-portofolio"></a></div>
-        <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test" data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt="" class="img-portofolio"></a></div>
-        <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test" data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt="" class="img-portofolio"></a></div>
-        <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
-        <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test" data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt="" class="img-portofolio"></a></div>
-    </div>
-
-</section>
-
-<!-- section05 Contact -->
-<section id="contact">
-    <form action="mail_handler.php" method="post">
-        <h1>Contact</h1>
-        <div class="cards">
-            <!-- Input Nom -->
-            <div class="input-group card">
-                <input type="text" id="nom" class="input-group__input" required/>
-                <label for="nom" class="input-group__label">Nom*</label>
-            </div>
-            <!-- Input Prenom -->
-            <div class="input-group card">
-                <input type="text" id="prenom" class="input-group__input" required/>
-                <label for="prenom" class="input-group__label">Prènom*</label>
-            </div>
-            <!-- Input Email -->
-            <div class="input-group card">
-                <input type="email" id="email" class="input-group__input" required/>
-                <label for="email" class="input-group__label">Email*</label>
-            </div>
-            <!-- textarea Commentaire -->
-            <div class="input-group card">
-                <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire*" required></textarea>
-            </div>
-            <!-- Button Envoyer -->
-            <div class="input-group card pulsate" id="envoyer-button">
-                <input type="submit" class="input-group__button" value="Envoyer" id="button">
-            </div>
-        </div>
-        <!-- dialoge pour la valitation du message -->
-        <div id="dialog" title="Message" style="display: none;"></div>
-    </form>
-</section>
-
-
+                    <div>
+                        <!-- section01 Présentation -->
+                        <section id="presentation">
+                            <div id="grid-presentation">
+                                <p id="p-un-presentation">TARROZ Patrick</p>
+                                <p id="p-deux-presentation">Developpeur Web, Web Mobile</p>
+                                <img src="../img/profil.jpg" alt="photo de profil" id="photo-de-profil">
+                            </div>
+                    
+                        </section>
+                    </div>
+                    
+                    <!-- section02 À propos -->
+                    <section id="a_propos">
+                        <h1>À propos</h1>
+                        <p>
+                            Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web, des scripts, etc...
+                            Les rendre vivants et les dynamiser avec des animations élégantes. Mes deux hobbys préférés sont d'apprendre de
+                            nouvelles choses et les jeux vidéo, que j'applique depuis mon plus jeune âge.
+                        </p>
+                        <p>
+                            De nature débrouillard et indépendant dans mon travail, j’aime apprendre de nouvelles technologies, passer du
+                            temps à résoudre des problèmes et réaliser du code de qualité. Mes valeurs de travail : clean code, flexibilité,
+                            performance et sérieux.
+                        </p>
+                    
+                    </section>
+                    
+                    <!-- section02 À propos -->
+                    <section id="competences">
+                        <h1>Compétences professionnelle</h1>
+                        <div id="table-competences">
+                            <div id="frontend">
+                                <h2>Front-end</h2>
+                                <!-- test https://www.alsacreations.com/quiz/ -->
+                    
+                                <!-- 95% -->
+                                <div class="active bar lila" data-percent="95" data-skill="HTML5"></div>
+                                <!-- 56% -->
+                                <div class="active bar lila" data-percent="55" data-skill="CSS3"></div>
+                                <div class="active bar lila" data-percent="5" data-skill="Vue.js"></div>
+                                <div class="active bar lila" data-percent="5" data-skill="jQuery"></div>
+                                <!-- 70% -->
+                                <div class="active bar lila" data-percent="70" data-skill="Responsive"></div>
+                            </div>
+                            <div id="backend">
+                                <h2>Back-end</h2>
+                                <div class="active bar lila" data-percent="5" data-skill="PHP"></div>
+                                <div class="active bar lila" data-percent="5" data-skill="Python"></div>
+                                <div class="active bar lila" data-percent="5" data-skill="Node.js"></div>
+                                <div class="active bar lila" data-percent="5" data-skill="Ruby"></div>
+                                <div class="active bar lila" data-percent="5" data-skill="MySQL"></div>
+                            </div>
+                    
+                        </div>
+                    
+                    </section>
+                    
+                    <!-- section04 expérience -->
+                    <section id="experience">
+                        <h1>expérience professionnelle</h1>
+                        <div class="card-content">
+                            <div class="card-timeline">
+                                <div class="card-item" data-year="2023">
+                                    <div class="card-item-title">Formation DWWM à l'AFPA</div>
+                                    <div class="card-item-desc">
+                                        <ul>
+                                            <li>Création d'un github</li>
+                                            <li>Apprentissage du Frond-End (en cours)</li>                                                
+                                            <li>Apprentissage du Back-End (pas encore vue)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-item" data-year="2023">
+                                    <div class="card-item-title">Création d'un site vitrine personnel</div>
+                                    <div class="card-item-desc">J'ai développer un site web professionnel qui reflète mes capacités et mes réalisations.</div>
+                                </div>
+                                <div class="card-item" data-year="2022">
+                                    <div class="card-item-title">Formation en informatique et numérique à l'AFPA</div>
+                                    <div class="card-item-desc">Se préparer aux métiers de l'informatique et du numérique.</div>
+                                </div>
+                                <div class="card-item" data-year="2022">
+                                    <div class="card-item-title">Stage Développement d'un site web</div>
+                                    <div class="card-item-desc">Création d'un serveur Windows sur lequel nous avons monté un serveur virtuel Linux (débian) qui nous a servi de support pour le développement du site web.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- section05 portofolio -->
+                    <section id="portofolio">
+                        <h1>Portofolio</h1>
+                        <div class="cards">
+                            <div class="card"><a href="../img/portofolio01.PNG" data-lightbox="test" data-title="CV plus stylé"><img
+                                        src="../img/portofolio01.PNG" alt="" class="img-portofolio"></a></div>
+                            <div class="card"><a href="../img/portofolio02.PNG" data-lightbox="test"
+                                    data-title="Carrousel avec des images et du texte"><img src="../img/portofolio02.PNG" alt=""
+                                        class="img-portofolio"></a></div>
+                            <div class="card"><a href="../img/portofolio03.PNG" data-lightbox="test"
+                                    data-title="un poème de Victor Hugo"><img src="../img/portofolio03.PNG" alt=""
+                                        class="img-portofolio"></a></div>
+                            <div class="card"><a href="../img/portofolio04.PNG" data-lightbox="test"
+                                    data-title="des tableaux avec des balises (input)"><img src="../img/portofolio04.PNG" alt=""
+                                        class="img-portofolio"></a></div>
+                            <div class="card"><a href="../img/portofolio05.PNG" data-lightbox="test" data-title="cahier des charges"><img
+                                        src="../img/portofolio05.PNG" alt="" class="img-portofolio"></a></div>
+                            <div class="card"><a href="../img/portofolio06.PNG" data-lightbox="test"
+                                    data-title="un formulaire de contact"><img src="../img/portofolio06.PNG" alt=""
+                                        class="img-portofolio"></a></div>
+                        </div>
+                    
+                    </section>
+                    
+                    <!-- section06 Contact -->
+                    <section id="contact">
+                        <form action="mail_handler.php" method="post">
+                            <h1>Contact</h1>
+                            <div class="cards">
+                                <!-- Input Nom -->
+                                <div class="input-group card">
+                                    <input type="text" id="nom" class="input-group__input" required />
+                                    <label for="nom" class="input-group__label">Nom*</label>
+                                </div>
+                                <!-- Input Prenom -->
+                                <div class="input-group card">
+                                    <input type="text" id="prenom" class="input-group__input" required />
+                                    <label for="prenom" class="input-group__label">Prènom*</label>
+                                </div>
+                                <!-- Input Email -->
+                                <div class="input-group card">
+                                    <input type="email" id="email" class="input-group__input" required />
+                                    <label for="email" class="input-group__label">Email*</label>
+                                </div>
+                                <!-- textarea Commentaire -->
+                                <div class="input-group card">
+                                    <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire*"
+                                        required></textarea>
+                                </div>
+                                <!-- Button Envoyer -->
+                                <div class="input-group card pulsate" id="envoyer-button">
+                                    <input type="submit" class="input-group__button" value="Envoyer" id="button">
+                                </div>
+                            </div>
+                            <!-- dialoge pour la valitation du message -->
+                            <div id="dialog" title="Message" style="display: none;"></div>
+                        </form>
+                    </section>
+                    
+                    
                 </div>
     	    	<footer class="footer">
     				<small style="margin-bottom: 20px; display: inline-block" class="background-text and-shadow">©2023 made with<span style="color: red; font-size: 18px">&#10084;</span> by - <a href="https://github.com/alexanderworldercraft" target="_blank">Patrick tarroz alias Alexander Worldercraft</a>

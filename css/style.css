@@ -168,10 +168,15 @@ html .ui-button.ui-state-disabled:active {
 h1 {
     text-align: center;
     padding: 0 0 1em 0;
+    font-size: x-large;
+    font-weight: 700;
 }
 /* centrage de présentation */
 #presentation {
   padding-top: 2em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #presentation p {
     text-align: center;
@@ -204,6 +209,75 @@ p:not(footer p, menu-title) {
 }
 #p-deux-presentation {
     grid-area: p-deux-presentation;
+}
+
+/* A propos */
+#a_propos {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* experience */
+#experience{
+  width: fit-content;
+  margin: auto;
+}
+.card-content {
+  padding: 0;
+  max-width: 800px;
+}
+.card-timeline {
+  margin-top: 30px;
+  position: relative;
+}
+.card-timeline:after {
+  background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, #516acc 100%);
+  content: "";
+  left: 42px;
+  width: 2px;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  content: "";
+}
+.card-item {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+.card-item:last-child {
+  padding-bottom: 5px;
+}
+.card-item:after {
+  content: attr(data-year);
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 37px;
+  width: 8px;
+  height: 8px;
+  line-height: 0.6;
+  border: 2px solid #fff;
+  font-size: 11px;
+  text-indent: -35px;
+  border-radius: 50%;
+  color: rgb(141, 208, 253);
+  background: linear-gradient(to bottom, #a0aee3 0%, #516acc 100%);
+}
+
+.card-item-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(141, 208, 253);
+}
+
+.card-item-desc {
+  font-size: small;
+  color: #b3b3c5;
+  line-height: 1.5;
 }
 
 /* Structure des sections */
@@ -364,20 +438,43 @@ section {
     width: 100%;
   }
 
+  /* Portofolio */
+  #portofolio{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+  }
+
  /* Responsive */
 
  /* Fait intérrèssent, je noté un zoom x3 sur l'écran externe du z fold 3 */
-@media (max-width: 600px) {
-    /* Styles pour les téléphones mobiles */
+@media (max-width: 330px) {
+  /* Styles pour les téléphones mobiles */
 
-    /* Portofolio */
-    #portofolio .img-portofolio{
-        width: 120px;
-    }
-    .menu-top .menu-arrow {
-		left: 1%;
-        right: 1%;
-    }#grid-presentation {
+  /* Portofolio */
+  #portofolio .img-portofolio{
+      width: 100px;
+  }
+  #table-competences {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "frontend"
+        "backend";
+  } 
+  .input-group__input,
+  .input-group__textarea{
+    width: 100%;
+    padding: 10px 10% 10px 10%;
+  }
+}
+  @media (min-width: 330px) and (max-width: 600px) {
+      /* Styles pour les téléphones mobiles */
+  
+      /* Portofolio */
+      #portofolio .img-portofolio {
+          width: 120px;
+      }
+    #grid-presentation {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -393,21 +490,17 @@ section {
     } 
     .input-group__input,
     .input-group__textarea{
-        width: 80%;
+        width: 100%;
         padding: 10px 10% 10px 10%;
     }
-}
+  }
 
 @media (min-width: 600px) and (max-width: 900px) {
     /* Styles pour les tablettes en mode portrait */
 
     /* Portofolio */
-    #portofolio .img-portofolio{
-        width: 200px;
-    }
-    .menu-top .menu-arrow {
-		left: 10%;
-        right: 10%;
+      #portofolio .img-portofolio{
+        width: 120px;
     }
     #table-competences {
         grid-template-columns: 1fr;
@@ -424,10 +517,6 @@ section {
     #portofolio .img-portofolio{
         width: 300px;
     }
-    .menu-top .menu-arrow {
-		left: 20%;
-        right: 20%;
-    }
     #table-competences {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -441,10 +530,6 @@ section {
     /* Portofolio */
     #portofolio .img-portofolio{
         width: 400px;
-    }
-    .menu-top .menu-arrow {
-		left: 30%;
-        right: 30%;
     }
     #table-competences {
         grid-template-columns: 1fr 1fr;
