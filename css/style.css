@@ -448,6 +448,9 @@ section {
     margin-right: auto;
     max-width: 1300px;
   }
+  #portofolio img{
+    width: 100%;
+  }
 
  /* Responsive */
 
