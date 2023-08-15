@@ -325,9 +325,9 @@ section {
   }
   .bar.lila {
     background-color: #524656;
-    background-image: repeating-linear-gradient(-45deg, #524656, #524656 30px, #5a4d5e 30px, #5a4d5e 60px);
+    background-image: linear-gradient(90deg, #ff0000, #ffa000, #fff200, #3eff00, #00ffad, #00ffee, #0018ff, #6d00ff, #ff00ff, #ff00ae, #ff0000);
     background-size: 600px 100%;
-    animation: barberpole 12s linear infinite;
+    animation: barberpole 4s linear infinite;
     border-bottom: 0.2rem solid #2a242c;
   }
   .bar.active:after, .bar.active:before {
@@ -342,6 +342,13 @@ section {
     padding: 10px;
     height: 40px;
     font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
     opacity: 0;
     transition: opacity 2s 0.6s;
   }.bar:after {
@@ -361,6 +368,15 @@ section {
     to {
       background-position: 600px 0%;
     }
+  }
+  .bar.active {
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
   .bar.active[data-percent="5"] {
     width: 5%;
