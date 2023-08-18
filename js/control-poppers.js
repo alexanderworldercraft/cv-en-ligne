@@ -52,6 +52,7 @@ MENU_ITEM_LINKS.forEach((element) => {
       tooltip.style.borderRadius = '5px';
       tooltip.style.boxShadow = '5px 5px 15px 2px rgba(0, 0, 0, 0.7)';
       tooltip.style.zIndex = 9;
+      tooltip.style.fontSize = 'medium';
       tooltip.textContent = menuTitle;
     
       document.body.appendChild(tooltip);
