@@ -314,12 +314,12 @@ section {
 
 /* Compétences beta */
 .badge-competence {
-  border: 1px solid #ea868f;
-  border-radius: 16px;
+  border: 1px solid #ffc400ab;
+  border-radius: 17px;
   padding: 8px 16px;
   font-weight: bold;
-  color: #ea868f;
-  background-color: #2c0b0e;
+  color: #ffc400ab;
+  background-color: #332701;
   width: fit-content;
 }
 
