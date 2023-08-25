@@ -59,6 +59,23 @@
   color: yellow;
 }
 
+.badge-titre {
+  border: 1px solid #6ea8fe;
+  border-radius: 32px;
+  padding: 16px 32px;
+  font-weight: bold;
+  color: #6ea8fe;
+  background-color: #031633;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.centrage {
+  width: 100%;
+  margin: auto;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -296,6 +313,16 @@ section {
 }
 
 /* Compétences beta */
+.badge-competence {
+  border: 1px solid #a7acb1;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-weight: bold;
+  color: #a7acb1;
+  background-color: #161719;
+  width: fit-content;
+}
+
 #competences {
   margin-left: auto;
   margin-right: auto;
