@@ -1,35 +1,12 @@
 /* Fond d'écran animé */
-.video-background {
+#background-video {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Cela rognera tout contenu dépassant du conteneur */
-  z-index: -1;
-}
-
-.youtube-video {
-  position: relative;
-  padding-bottom: 56.25%; /* Ceci est basé sur le ratio d'aspect 16:9. Si votre vidéo a un ratio d'aspect différent, ajustez cette valeur en conséquence. */
-  height: 0;
-}
-
-.youtube-video iframe {
-  position: absolute;
-  top: 0%; 
-  left: 0%;
-  width: 100%; 
-  height: 100%;
-  pointer-events: none;
-}
-@media only screen and (max-aspect-ratio: 16/9) {
-  .youtube-video iframe {
-      top: 00%; 
-      left: -160%;
-      width: 425%; 
-      height: 425%;
-  }
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -9999;
 }
 /* Structure auto responsive */
 .cards {
