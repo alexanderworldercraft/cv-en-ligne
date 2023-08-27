@@ -28,8 +28,6 @@
     
     <!-- Un "CSS Reset" est un ensemble de styles CSS qui réinitialise ou normalise les styles par défaut des navigateurs. Chaque navigateur a ses propres styles par défaut pour divers éléments HTML, et ces styles peuvent varier d'un navigateur à l'autre. Cela peut entraîner des incohérences dans l'apparence d'un site web lorsqu'il est visualisé sur différents navigateurs. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <!-- Police d'écriture -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Icon dans l'onglet -->
 	<link rel="shortcut icon" href="../img/profil.jpg">
     <!-- Bibliothèque RemixIcon -->
@@ -53,7 +51,7 @@
 </head>
 <body>
     <!-- vidéo de fond -->
-    <video autoplay muted loop id="background-video"><source src="http://worldercraft.42web.io/hebergeur_images/fond.mp4"></video>
+    <video preload="auto" autoplay muted loop id="background-video"><source src="../asset/fond.mp4"></video>
     
     <div class="layout has-sidebar fixed-sidebar fixed-header">
         <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
@@ -173,7 +171,7 @@
 
                     <article class="footer-box cardteam" data-visible="false">
                         <div data-card="front" class="card__front flow-content">
-                            <img class="card__img mx-auto" src="http://worldercraft.42web.io/hebergeur_images/profil.jpg" alt="photo" />
+                            <img class="card__img mx-auto" data-src="../asset/profil.jpg" alt="photo" />
                             <div class="flow-content" data-spacing="sm">
                                 <p class="card__name">Patrick Tarroz</p>
                                 <p class="card__position">Apprenti Developpeur</p>
@@ -218,7 +216,7 @@
                             <div id="grid-presentation">
                                 <p id="p-un-presentation">TARROZ Patrick</p>
                                 <p id="p-deux-presentation">Developpeur Web, Web Mobile</p>
-                                <img src="http://worldercraft.42web.io/hebergeur_images/profil.jpg" alt="photo de profil" id="photo-de-profil">
+                                <img data-src="../asset/profil.jpg" alt="photo de profil" id="photo-de-profil">
                             </div>
                     
                         </section>
@@ -306,49 +304,49 @@
                         <h1 class="badge-titre">Portofolio</h1>
                         <div class="cards">
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/01.png" data-lightbox="test" data-title="CV minimaliste adapter au format smartphone facile à glissé dans une page web.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/01.png" alt="01" class="img-portofolio">
+                                <a href="../asset/full/01.png" data-lightbox="test" data-title="CV minimaliste adapter au format smartphone facile à glissé dans une page web.">
+                                    <img data-src="../asset/mini/1.png" alt="01" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/02.png" data-lightbox="test"
+                                <a href="../asset/full/02.png" data-lightbox="test"
                                     data-title="Un tableau 100% responsive avec un effet visuel l'or du survol des cellules, Il y a aussi des horloges fonctionnels affichant plusieurs fuseaux horaire.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/02.png" alt="02" class="img-portofolio">
+                                    <img data-src="../asset/mini/2.png" alt="02" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/03.png" data-lightbox="test" data-title="le même tableau avec un format adapter au smartphone avec deux finition différente.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/03.png" alt="03" class="img-portofolio">
+                                <a href="../asset/full/03.png" data-lightbox="test" data-title="le même tableau avec un format adapter au smartphone avec deux finition différente.">
+                                    <img data-src="../asset/mini/3.png" alt="03" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/04.png" data-lightbox="test" data-title="Un exercice sur les différeentes balises (input) dans des tableaux.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/04.png" alt="04" class="img-portofolio">
+                                <a href="../asset/full/04.png" data-lightbox="test" data-title="Un exercice sur les différeentes balises (input) dans des tableaux.">
+                                    <img data-src="../asset/mini/4.png" alt="04" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/05.png" data-lightbox="test" data-title="Un exercices sur la mise en page d'un poème de Victor Hugo.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/05.png" alt="05" class="img-portofolio">
+                                <a href="../asset/full/05.png" data-lightbox="test" data-title="Un exercices sur la mise en page d'un poème de Victor Hugo.">
+                                    <img data-src="../asset/mini/5.png" alt="05" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/06.png" data-lightbox="test" data-title="Un formulaire de contact.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/06.png" alt="06" class="img-portofolio">
+                                <a href="../asset/full/06.png" data-lightbox="test" data-title="Un formulaire de contact.">
+                                    <img data-src="../asset/mini/6.png" alt="06" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/07.png" data-lightbox="test" data-title="Un formulaire de connexion.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/07.png" alt="07" class="img-portofolio">
+                                <a href="../asset/full/07.png" data-lightbox="test" data-title="Un formulaire de connexion.">
+                                    <img data-src="../asset/mini/7.png" alt="07" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/08.png" data-lightbox="test" data-title="Un site qui propose des modèles de code pour DWWM.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/08.png" alt="08" class="img-portofolio">
+                                <a href="../asset/full/08.png" data-lightbox="test" data-title="Un site qui propose des modèles de code pour DWWM.">
+                                    <img data-src="../asset/mini/8.png" alt="08" class="img-portofolio">
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="http://worldercraft.42web.io/hebergeur_images/09.png" data-lightbox="test" data-title="Vitrine de mes sites web.">
-                                    <img src="http://worldercraft.42web.io/hebergeur_images/09.png" alt="09" class="img-portofolio">
+                                <a href="../asset/full/09.png" data-lightbox="test" data-title="Vitrine de mes sites web.">
+                                    <img data-src="../asset/mini/9.png" alt="09" class="img-portofolio">
                                 </a>
                             </div>
                         </div>

@@ -303,7 +303,7 @@ section {
     border-radius: 1em;
     box-shadow: 5px 5px 15px black;
     padding: 1em 1em 2em 1em;/* top right bottom left */
-    margin: 20em 2em 20em 2em;
+    margin: 20em 0 20em 0;
     box-sizing: border-box;
 }
 
@@ -486,26 +486,20 @@ section {
   }
 
   /* Portofolio */
-  #portofolio{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1300px;
-  }
   #portofolio img{
-    width: 100px;
     border-radius: 10px;
   }
 
  /* Responsive */
 
  /* Fait intérrèssent, je noté un zoom x3 sur l'écran externe du z fold 3 */
-@media (max-width: 330px) {
+@media (max-width: 360px) {
   /* Styles pour les téléphones mobiles */
 
-  /* Portofolio */
-  #portofolio .img-portofolio{
-      width: 100px;
+  #portofolio img {
+    width: 200px;
   }
+
   #grid-presentation {
       display: grid;
       grid-template-columns: 1fr;
@@ -526,13 +520,9 @@ section {
     padding: 10px 10% 10px 10%;
   }
 }
-  @media (min-width: 330px) and (max-width: 600px) {
+  @media (min-width: 360px) and (max-width: 600px) {
       /* Styles pour les téléphones mobiles */
-  
-      /* Portofolio */
-      #portofolio .img-portofolio {
-          width: 120px;
-      }
+
     #grid-presentation {
         display: grid;
         grid-template-columns: 1fr;
@@ -557,10 +547,6 @@ section {
 @media (min-width: 600px) and (max-width: 900px) {
     /* Styles pour les tablettes en mode portrait */
 
-    /* Portofolio */
-      #portofolio .img-portofolio{
-        width: 120px;
-    }
     #table-competences {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -572,10 +558,6 @@ section {
 @media (min-width: 900px) and (max-width: 1200px) {
     /* Styles pour les tablettes en mode paysage et petits ordinateurs de bureau */ 
 
-    /* Portofolio */
-    #portofolio .img-portofolio{
-        width: 300px;
-    }
     #table-competences {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -586,10 +568,6 @@ section {
 @media (min-width: 1200px) {
     /* Styles pour les ordinateurs de bureau */
 
-    /* Portofolio */
-    #portofolio .img-portofolio{
-        width: 400px;
-    }
     #table-competences {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
