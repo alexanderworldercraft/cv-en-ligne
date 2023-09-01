@@ -10,33 +10,45 @@ const firebaseConfig = {
   };
 firebase.initializeApp(firebaseConfig);
 
-//Capturez les données du formulaire et envoyez-les à Firebase
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('envoyer-button').addEventListener('click', function (event) {
-        event.preventDefault(); // Empêche l'envoi du formulaire
+// Référence à Firestore
+const db = firebase.firestore();
 
-        // Récupère les valeurs du formulaire
-        var nom = document.getElementById('nom').value;
-        var prenom = document.getElementById('prenom').value;
-        var tel = document.getElementById('tel').value;
-        var email = document.getElementById('email').value;
-        var commentaire = document.getElementById('commentaire').value;
+// Écouteur d'événement pour le bouton d'envoi
+document.getElementById('envoyer-button').addEventListener('click', function(event) {
+  event.preventDefault();
 
-        // Envoie les données à Firebase
-        firebase.database().ref('contacts').push({
-            nom: nom,
-            prenom: prenom,
-            tel: tel,
-            email: email,
-            commentaire: commentaire
-        }).then(() => {
-            // Affiche un message de succès
-            document.getElementById('dialog').style.display = 'block';
-            document.getElementById('dialog').innerText = 'Message envoyé avec succès !';
-        }).catch((error) => {
-            // Affiche un message d'erreur
-            document.getElementById('dialog').style.display = 'block';
-            document.getElementById('dialog').innerText = 'Erreur : ' + error;
-        });
-    });
+  // Récupération des valeurs du formulaire
+  const nom = document.getElementById('nom').value;
+  const prenom = document.getElementById('prenom').value;
+  const tel = document.getElementById('tel').value;
+  const email = document.getElementById('email').value;
+  const commentaire = document.getElementById('commentaire').value;
+
+  // Ajout des données à Firestore
+  db.collection('contacts').add({
+    nom: nom,
+    prenom: prenom,
+    tel: tel,
+    email: email,
+    commentaire: commentaire
+  })
+  .then((docRef) => {
+    console.log("Document écrit avec l'ID : ", docRef.id);
+
+    // Affichage du message de succès
+    const dialog = document.getElementById('dialog');
+    dialog.style.display = 'block';
+    dialog.innerHTML = 'Votre message a été envoyé avec succès !';
+    dialog.title = 'Succès';
+  })
+  .catch((error) => {
+    console.error("Erreur en ajoutant le document : ", error);
+    
+    // Affichage du message d'erreur
+    const dialog = document.getElementById('dialog');
+    dialog.style.display = 'block';
+    dialog.innerHTML = 'Une erreur est survenue. Veuillez réessayer.';
+    dialog.title = 'Erreur';
+  });
 });
+
