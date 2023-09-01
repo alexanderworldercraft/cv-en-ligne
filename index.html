@@ -345,43 +345,43 @@
                     </section>
                     
                     <!-- section06 Contact -->
-                    <section id="contact">
+                    <section id="contact" class="centrage">
                         <form action="mail_handler.php" method="post">
                             <h1 class="badge-titre">Contact</h1>
+                            <p>requis <span class="etoile-required">*</span></p>
                             <div class="cards">
                                 <!-- Input Nom -->
                                 <div class="input-group card">
                                     <input type="text" id="nom" class="input-group__input" required />
-                                    <label for="nom" class="input-group__label">Nom *</label>
+                                    <label for="nom" class="input-group__label">Nom <span class="etoile-required">*</span></label>
                                 </div>
                                 <!-- Input Prenom -->
                                 <div class="input-group card">
                                     <input type="text" id="prenom" class="input-group__input" required />
-                                    <label for="prenom" class="input-group__label">Prènom *</label>
+                                    <label for="prenom" class="input-group__label">Prènom <span class="etoile-required">*</span></label>
                                 </div>
                                 <!-- Input Téléphone -->
                                 <div class="input-group card">
                                     <input type="text" id="tel" class="input-group__input" required />
-                                    <label for="tel" class="input-group__label">Téléphone *</label>
+                                    <label for="tel" class="input-group__label">Téléphone <span class="etoile-required">*</span></label>
                                 </div>
                                 <!-- Input Email -->
                                 <div class="input-group card">
                                     <input type="email" id="email" class="input-group__input" required />
-                                    <label for="email" class="input-group__label">Email *</label>
+                                    <label for="email" class="input-group__label">Email <span class="etoile-required">*</span></label>
                                 </div>
-                                <!-- textarea Commentaire -->
-                                <div class="input-group card">
-                                    <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire*"
-                                        required></textarea>
-                                </div>
+                            </div><div id="commentaire-box">
+                            <!-- textarea Commentaire -->
+                                <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire *"
+                                    required></textarea>
                             </div>
                             <!-- Button Reset -->
-                            <div class="input-group centrage pulsate" id="reset-button">
-                                <input type="reset" class="input-group__button" value="Reset" id="button">
+                            <div class="input-group" id="reset-button">
+                                <input type="reset" class="input-group__button pulsate" value="Reset" id="button">
                             </div>
                             <!-- Button Envoyer -->
-                            <div class="input-group centrage pulsate" id="envoyer-button">
-                                <input type="submit" class="input-group__button" value="Envoyer" id="button">
+                            <div class="input-group" id="envoyer-button">
+                                <input type="submit" class="input-group__button pulsate" value="Envoyer" id="button">
                             </div>
                             <!-- dialoge pour la valitation du message -->
                             <div id="dialog" title="Message" style="display: none;"></div>

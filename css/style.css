@@ -135,16 +135,21 @@ html .ui-button.ui-state-disabled:active {
 /* Structure du formulaire de contact */
 #contact {
   max-width: 700px;
-  margin: auto;
 }
-#reset-button{
+#reset-button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#envoyer-button{
+#envoyer-button {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#commentaire-box {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,12 +197,17 @@ html .ui-button.ui-state-disabled:active {
     background-color: white;
     color: black;
 }
+#commentaire {
+    width: 70%;
+    min-width: 202px;
+}
 .textarea {
-    max-width: 500px;
-    min-width: 475px;
-    height: 100px;
+    height: 120px;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
+}
+.etoile-required {
+    color: yellow;
 }
 
 /* Centrage des titre */
@@ -533,11 +543,6 @@ section {
         "frontend"
         "backend";
   } 
-  .input-group__input,
-  .input-group__textarea{
-    width: 100%;
-    padding: 10px 10% 10px 10%;
-  }
 }
   @media (min-width: 360px) and (max-width: 600px) {
       /* Styles pour les téléphones mobiles */
@@ -556,11 +561,6 @@ section {
             "frontend"
             "backend";
     } 
-    .input-group__input,
-    .input-group__textarea{
-        width: 100%;
-        padding: 10px 10% 10px 10%;
-    }
   }
 
 @media (min-width: 600px) and (max-width: 900px) {
