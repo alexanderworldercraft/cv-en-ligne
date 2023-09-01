@@ -346,7 +346,7 @@
                     
                     <!-- section06 Contact -->
                     <section id="contact" class="centrage">
-                        <form action="mail_handler.php" method="post">
+                        <form id="contact-form">
                             <h1 class="badge-titre">Contact</h1>
                             <p>requis <span class="etoile-required">*</span></p>
                             <div class="cards">
@@ -370,8 +370,9 @@
                                     <input type="email" id="email" class="input-group__input" required />
                                     <label for="email" class="input-group__label">Email <span class="etoile-required">*</span></label>
                                 </div>
-                            </div><div id="commentaire-box">
-                            <!-- textarea Commentaire -->
+                            </div>
+                            <div id="commentaire-box">
+                                <!-- textarea Commentaire -->
                                 <textarea id="commentaire" class="input-group__textarea textarea" placeholder="Commentaire *"
                                     required></textarea>
                             </div>
@@ -446,5 +447,12 @@
     <script src="https://unpkg.com/@popperjs/core@2" defer></script>
     <!-- contrôle popper2 -->
     <script src="./js/control-poppers.js" defer></script>
+    <!-- Firebase app -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js" defer></script>
+    <!-- Firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js" defer></script>
+    <!-- Firebase script du formulaire -->
+    <script src="./js/firebase-contact.js" defer></script>
+
 </body>
 </html>

@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $commentaire = filter_input(INPUT_POST, 'commentaire', FILTER_SANITIZE_STRING);
     
     $to = 'alexanderworldercraft+contact_dev_test@gmail.com'; // Mettre votre adresse email
-    $subject = 'Nouveau message de '.$nom.' '.$prenom.' Dev_Contact_test'; // Correction ici
+    $subject = 'Nouveau message de '.$nom.' '.$prenom.' Dev_Contact_test';
     $message = "De: ".$nom." ".$prenom."\n"."Tél : ".$tel."\n"."E-mail : ".$email."\n"."Message : ".$commentaire;
     $headers = "From: ".$email;
     

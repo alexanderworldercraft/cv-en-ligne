@@ -84,32 +84,6 @@
   'opsz' 48
 }
 
-/* boite de dialogue du contact */
-.ui-widget-content {
-    background-color: white;
-    color: black;
-    padding: 5px;
-}
-.ui-widget .ui-widget-content {
-    border: 2px solid black;
-    border-radius: 0px;
-}
-.ui-widget-header {
-    padding: 5px;
-    background: grey;
-    border: 0;
-    color: black;
-}
-.ui-state-default, 
-.ui-widget-content .ui-state-default, 
-.ui-widget-header .ui-state-default,
-.ui-button, 
-html .ui-button.ui-state-disabled:hover, 
-html .ui-button.ui-state-disabled:active {
-    background: white;
-    border: 0;
-}
-
 /* Animation du bouton ENVOYER du contact */
 .pulsate:hover {
     animation: pulse 1s infinite;
