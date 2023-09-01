@@ -377,12 +377,12 @@
                                     required></textarea>
                             </div>
                             <!-- Button Reset -->
-                            <div class="input-group" id="reset-button">
-                                <input type="reset" class="input-group__button pulsate" value="Reset" id="button">
+                            <div class="input-group" id="reset-box">
+                                <button type="reset" id="reset-button" class="input-group__button pulsate">Reset</button>
                             </div>
                             <!-- Button Envoyer -->
-                            <div class="input-group" id="envoyer-button">
-                                <input type="submit" class="input-group__button pulsate" value="Envoyer" id="button">
+                            <div class="input-group" id="envoyer-box">
+                                <button type="submit" id="envoyer-button" class="input-group__button pulsate">Envoyer</button>
                             </div>
                             <!-- dialoge pour la valitation du message -->
                             <div id="dialog" title="Message" style="display: none;"></div>
@@ -447,10 +447,31 @@
     <script src="https://unpkg.com/@popperjs/core@2" defer></script>
     <!-- contrôle popper2 -->
     <script src="./js/control-poppers.js" defer></script>
-    <!-- Firebase app -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js" defer></script>
-    <!-- Firebase database -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js" defer></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC3VFXthNOG1O3h19AuIi7uZ3oTZdQI0gQ",
+            authDomain: "curriculum-vita-tarroz-patrick.firebaseapp.com",
+            projectId: "curriculum-vita-tarroz-patrick",
+            storageBucket: "curriculum-vita-tarroz-patrick.appspot.com",
+            messagingSenderId: "526705184095",
+            appId: "1:526705184095:web:0e01008a150866b7497aea",
+            measurementId: "G-17HVHBXJ2H"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
     <!-- Firebase script du formulaire -->
     <script src="./js/firebase-contact.js" defer></script>
 
