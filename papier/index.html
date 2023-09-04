@@ -7,20 +7,97 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="cv">
-        <div id="top">
-            <div class="left-top">
-                <h1>TARROZ Patrick</h1>
-                <p>Tél: 0781010772</p>
-                <p>Mail: patrick.tarroz@gmail.com</p>
-            </div>
-            <div class="right-top">
-                <h2>DWWM</h2>
-                <h4>Developpeur Web, Web Mobile</h4>
+
+
+    <!-- En-tête -->
+
+
+    <div id="haut">
+        <div id="nom">TARROZ Patrick</div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Adresse :</td>
+                    <td>15 route d'égry, <br>45340 Barville-en-gâtinais</td>
+                </tr>
+                <tr>
+                    <td>Tél :</td>
+                    <td>07.81.01.07.72</td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td>patrick.tarroz+cv@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Site web :</td>
+                    <td>https://curriculum-vita-tarroz-patrick.web.app/</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="metier">Développer Web, Web Mobile</div>
+    </div>
+
+
+    <!-- Side -->
+
+    
+    <div id="gauche">
+        <div id="image-profil">
+            <img src="../asset/profil.jpg"alt="Photo de profil">
+        </div>
+        <h3>Formation professionnelle</h3>
+    </div>
+
+
+    <!-- Corps -->
+
+
+    <div id="bas">
+        <h3>Expérience professionnelle</h3>
+        <div class="card-item" data-year="2023">
+            <div class="card-item-title">Formation DWWM à l'AFPA</div>
+            <div class="card-item-desc">
+                <ul>
+                    <li>Création d'un compte github</li>
+                    <li>Algorithmique</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Responsive</li>
+                    <li>Apprentissage du Back-End (pas encore vue)</li>
+                </ul>
             </div>
         </div>
-        <div id="right"></div>
-        <div id="bottom"></div>
+        <div class="card-item" data-year="2023">
+            <div class="card-item-title">Création d'un site vitrine personnel</div>
+            <div class="card-item-desc">J'ai développer un site web professionnel qui reflète
+                mes capacités
+                et mes réalisations.</div>
+        </div>
+        <div class="card-item" data-year="2022">
+            <div class="card-item-title">Formation Cybersécurité</div>
+            <div class="card-item-desc">
+                <ul>
+                    <li>SecNum.</li>
+                    <li>Création d'un coffre fort pour MDP.</li>
+                    <li>Gestion de la cybersécurité.</li>
+                    <li>Pratiques et habitudes de sécurité informatique.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-item" data-year="2022">
+            <div class="card-item-title">Formation en informatique et numérique à
+                <span>l'AFPA</span></div>
+            <div class="card-item-desc">Se préparer aux métiers de l'informatique et du
+                numérique.</div>
+        </div>
+        <div class="card-item" data-year="2022">
+            <div class="card-item-title">Stage Développement d'un <span>site web</span></div>
+            <div class="card-item-desc">Création d'un serveur Windows sur lequel nous avons
+                monté un serveur
+                virtuel Linux (débian) qui nous a servi de support pour le développement du site
+                web.
+            </div>
+        </div>
     </div>
 </body>
 </html>
