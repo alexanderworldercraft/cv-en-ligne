@@ -13,30 +13,37 @@ body{
     "gauche bas";
     box-shadow: 3px 3px 10px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Haut */
 #haut {
     grid-area: haut;
     background-color: rgba(128, 128, 128, 0.366);
-    padding: 10px 15px;
+    padding: 10px 15px 0 15px;
 }
 #nom {
     font-size: x-large;
     font-weight: bold;
     font-style: italic;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #516acc;
 }
 #metier {
     position: relative;
-    top: -175px;
-    right: -210px;
+    top: -10px;
+    right: -220px;
     font-size: x-large;
     font-weight: bold;
-    color: white;
-    -webkit-text-stroke: 1px black; /* Contourage du texte pour navigateurs WebKit */
+    color: #20368f;
+    margin: 0;
+    padding: 0;
+
+}
+table {
+    margin: 0;
+    padding: 0;
 }
 td {
     padding: 5px 0;
@@ -65,6 +72,18 @@ tr td:first-of-type {
     border-radius: 50%;
     border: 2px solid #516acc;
     box-shadow: 3px 3px 20px black;
+}
+h4 {
+    position: relative;
+    left: -50px;
+    margin: 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 2px 4px;
+}
+#gauche ul {
+    position: relative;
+    left: -30px;
 }
 
 /* Bas */
@@ -130,6 +149,6 @@ h3 {
   
   .card-item-desc {
     font-size: small;
-    color: #000;
+    color: #666;
     line-height: 1.5;
   }
