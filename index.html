@@ -212,7 +212,7 @@
                     <!-- contenu -->
                     <div>
                         <!-- section01 Présentation -->
-                        <section id="presentation" class="calcul-box width-limit">
+                        <section id="presentation" class="calcul-box">
                             <div id="grid-presentation">
                                 <p id="p-un-presentation">TARROZ Patrick</p>
                                 <p id="p-deux-presentation">Developpeur Web, Web Mobile</p>
@@ -406,7 +406,7 @@
                     </section>
 
                     <!-- section06 Contact -->
-                    <section id="contact" class="calcul-box width-limit centrage">
+                    <section id="contact" class="calcul-box centrage">
                         <h2>Contact</h2>
                         <form id="noteForm">
                             <div id="noteContainer">
@@ -431,20 +431,22 @@
                                     <label for="commentaire">Commentaire <span class="etoile-required">*</span> :</label>
                                 </div>
                             </div>
-                            <button id="envoie-contact" type="submit">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Envoyer
-                            </button>
-                            <button id="envoie-contact" type="reset">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Reset
-                            </button>
+                            <div class="centrageDeux">
+                                <button id="envoie-contact" type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Envoyer
+                                </button>
+                                <button id="envoie-contact" type="reset">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Reset
+                                </button>
+                            </div>
 
                             <!-- dialoge pour la valitation du message -->
                             <div id="dialog" title="Message" style="display: none;"></div>

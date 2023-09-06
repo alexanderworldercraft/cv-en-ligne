@@ -81,6 +81,10 @@
   width: 100%;
   margin: auto;
 }
+.centrageDeux {
+  display: grid;
+  place-items: center;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -100,10 +104,6 @@
   border: 1px solid #f40303;
 }
 
-.width-limit {
-  width: 400px;
-}
-
 .calcul-box h2 {
   margin: 0 0 30px;
   padding: 0;
@@ -113,6 +113,7 @@
 
 .calcul-box .user-box {
   position: relative;
+  padding: 0 15px;
 }
 
 .calcul-box .user-box input {
@@ -130,7 +131,7 @@
 .calcul-box .user-box label {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
@@ -141,7 +142,7 @@
 .calcul-box .user-box textarea~label {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 25px;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
@@ -156,7 +157,7 @@
 .user-box input:focus~label,
 .user-box input:valid~label {
   top: -20px;
-  left: 0;
+  left: 15px;
   color: #f40303;
   font-size: 12px;
 }
@@ -164,7 +165,7 @@
 .user-box textarea:focus~label,
 .user-box textarea:valid~label {
   top: -25px;
-  left: 0;
+  left: 25px;
   color: #f40303;
   font-size: 12px;
 }
@@ -200,7 +201,7 @@
 }
 
 #contact {
-  max-width: 700px;
+  max-width: 400px;
 }
 
 #commentaire-box {
@@ -319,7 +320,7 @@ h1 {
 /* centrage de présentation */
 #presentation {
   padding-top: 2em;
-  max-width: 600px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -347,6 +348,7 @@ p:not(footer p, menu-title) {
 
 /* Grille de présentation */
 #grid-presentation {
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -446,7 +448,7 @@ section {
 
 /* Crée un décalage de position pour les ancres */
 [id]:target {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 70px;
 }
 
 /* Compétences beta */
