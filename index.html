@@ -212,7 +212,7 @@
                     <!-- contenu -->
                     <div>
                         <!-- section01 Présentation -->
-                        <section id="presentation">
+                        <section id="presentation" class="calcul-box width-limit">
                             <div id="grid-presentation">
                                 <p id="p-un-presentation">TARROZ Patrick</p>
                                 <p id="p-deux-presentation">Developpeur Web, Web Mobile</p>
@@ -223,7 +223,7 @@
                     </div>
 
                     <!-- section02 À propos -->
-                    <section id="a_propos">
+                    <section id="a_propos" class="calcul-box">
                         <h1 class="badge-titre">À propos</h1>
                         <p>
                             Le développement est une de mes passions : j'aime imaginer et créer des jeux, des pages web,
@@ -243,11 +243,11 @@
                     </section>
 
                     <!-- section02 À propos -->
-                    <section id="competences">
+                    <section id="competences" class="calcul-box">
                         <h1 class="badge-titre">Compétences professionnelle</h1>
                         <div id="table-competences">
                             <div id="frontend">
-                                <h2 class="badge-competence">Front-end</h2>
+                                <h3 class="badge-competence">Front-end</h3>
                                 <!-- test https://www.alsacreations.com/quiz/ -->
 
                                 <!-- 95% -->
@@ -260,7 +260,7 @@
                                 <div class="active bar lila" data-percent="90" data-skill="Responsive"></div>
                             </div>
                             <div id="backend">
-                                <h2 class="badge-competence">Back-end</h2>
+                                <h3 class="badge-competence">Back-end</h3>
                                 <div class="active bar lila" data-percent="0" data-skill="PHP"></div>
                                 <div class="active bar lila" data-percent="0" data-skill="Python"></div>
                                 <div class="active bar lila" data-percent="0" data-skill="Node.js"></div>
@@ -273,7 +273,7 @@
                     </section>
 
                     <!-- section04 expérience -->
-                    <section id="experience">
+                    <section id="experience" class="calcul-box">
                         <h1 class="badge-titre">expérience professionnelle</h1>
                         <div class="card-content">
                             <div class="card-timeline">
@@ -309,7 +309,8 @@
                                 </div>
                                 <div class="card-item" data-year="2022">
                                     <div class="card-item-title">Formation en informatique et numérique à
-                                        <span>l'AFPA</span></div>
+                                        <span>l'AFPA</span>
+                                    </div>
                                     <div class="card-item-desc">Se préparer aux métiers de l'informatique et du
                                         numérique.</div>
                                 </div>
@@ -326,7 +327,7 @@
                     </section>
 
                     <!-- section05 portofolio -->
-                    <section id="portofolio">
+                    <section id="portofolio" class="calcul-box">
                         <h1 class="badge-titre">Portofolio</h1>
                         <div class="cards">
                             <div class="card">
@@ -405,56 +406,50 @@
                     </section>
 
                     <!-- section06 Contact -->
-                    <section id="contact" class="centrage">
-                        <form id="contact-form">
-                            <h1 class="badge-titre">Contact</h1>
-                            <p>requis <span class="etoile-required">*</span></p>
-                            <div class="cards">
-                                <!-- Input Nom -->
-                                <div class="input-group card">
-                                    <input type="text" id="nom" class="input-group__input" required />
-                                    <label for="nom" class="input-group__label">Nom <span
-                                            class="etoile-required">*</span></label>
+                    <section id="contact" class="calcul-box width-limit centrage">
+                        <h2>Contact</h2>
+                        <form id="noteForm">
+                            <div id="noteContainer">
+                                <div class="user-box">
+                                    <input type="text" name="Nom" id="nom" required>
+                                    <label for="nom">Nom <span class="etoile-required">*</span> :</label>
                                 </div>
-                                <!-- Input Prenom -->
-                                <div class="input-group card">
-                                    <input type="text" id="prenom" class="input-group__input" required />
-                                    <label for="prenom" class="input-group__label">Prènom <span
-                                            class="etoile-required">*</span></label>
+                                <div class="user-box">
+                                    <input type="text" name="Prénom" id="prenom" required>
+                                    <label for="prenom">Prénom <span class="etoile-required">*</span> :</label>
                                 </div>
-                                <!-- Input Téléphone -->
-                                <div class="input-group card">
-                                    <input type="text" id="tel" class="input-group__input" required />
-                                    <label for="tel" class="input-group__label">Téléphone <span
-                                            class="etoile-required">*</span></label>
+                                <div class="user-box">
+                                    <input type="email" name="email" id="email" required>
+                                    <label for="email">Email <span class="etoile-required">*</span> :</label>
                                 </div>
-                                <!-- Input Email -->
-                                <div class="input-group card">
-                                    <input type="email" id="email" class="input-group__input" required />
-                                    <label for="email" class="input-group__label">Email <span
-                                            class="etoile-required">*</span></label>
+                                <div class="user-box">
+                                    <input type="text" name="tel" id="tel" required>
+                                    <label for="tel">Tél <span class="etoile-required">*</span> :</label>
+                                </div>
+                                <div class="user-box" id="commentaire-box">
+                                    <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+                                    <label for="commentaire">Commentaire <span class="etoile-required">*</span> :</label>
                                 </div>
                             </div>
-                            <div id="commentaire-box">
-                                <!-- textarea Commentaire -->
-                                <textarea id="commentaire" class="input-group__textarea textarea"
-                                    placeholder="Commentaire *" required></textarea>
-                            </div>
-                            <!-- Button Reset -->
-                            <div class="input-group" id="reset-box">
-                                <button type="reset" id="reset-button"
-                                    class="input-group__button pulsate">Reset</button>
-                            </div>
-                            <!-- Button Envoyer -->
-                            <div class="input-group" id="envoyer-box">
-                                <button type="submit" id="envoyer-button"
-                                    class="input-group__button pulsate">Envoyer</button>
-                            </div>
+                            <button id="envoie-contact" type="submit">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Envoyer
+                            </button>
+                            <button id="envoie-contact" type="reset">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Reset
+                            </button>
+
                             <!-- dialoge pour la valitation du message -->
                             <div id="dialog" title="Message" style="display: none;"></div>
                         </form>
                     </section>
-
 
                 </div>
                 <footer class="footer">
