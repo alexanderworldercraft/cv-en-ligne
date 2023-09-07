@@ -49,7 +49,7 @@ body {
     border-radius: 4px;
   }
   .sidebar:hover::-webkit-scrollbar-thumb {
-    background-color: #ffc400ab;
+    background-color: #f05438;
   }
   .sidebar::-webkit-scrollbar {
     width: 6px;
@@ -356,7 +356,8 @@ body {
     width: 180px;
     min-width: 190px;
     margin: 0 auto;
-    background-color: #162d4a;
+    background-color: rgba(0, 0, 0, 0.1); /* fond */
+    border: 1px solid #f40303;
   }
   .layout .sidebar .footer-box a {
     color: #fff;

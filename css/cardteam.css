@@ -1,6 +1,5 @@
 
 .cardteam {
-    background-image: linear-gradient(45deg, #5c340f, #856d5f);
     width: min(100% - 2rem, 35ch);
     margin-inline: auto;
     text-align: center;
@@ -34,17 +33,19 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #ddd;
+    border: 2px solid #ccc;
   }
   .card__name {
     font-size: medium;
     font-weight: 700;
     margin: auto;
+    padding: 0;
   }
   .card__position {
     font-style: italic;
     color: #ccc;
     margin: 0;
+    padding: 0;
   }
   .card__back {
     position: absolute;
@@ -70,7 +71,7 @@
     margin: 0;
   }
   .card__footer {
-    background-color: #0d1a2d;
+    /* background-color: #0d1a2d; */
     height: 0px;
     position: relative;
     z-index: 5;
