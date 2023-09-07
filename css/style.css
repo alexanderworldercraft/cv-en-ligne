@@ -684,7 +684,9 @@ section {
   /* Styles pour les téléphones mobiles */
 
   /* présentation / contact */
-  #competences .badge-titre {
+  
+  #competences .badge-titre,
+  #experience .badge-titre {
     padding: 16px 0;
     width: 220px;
   }
