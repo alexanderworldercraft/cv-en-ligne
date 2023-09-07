@@ -372,7 +372,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-image: linear-gradient(45deg, #603813, #b29f94);
+    background-image: linear-gradient(45deg, #F40076 , #9055FF );
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -496,7 +496,7 @@ section {
 
 .bar.lila {
   background-color: #524656;
-  background-image: linear-gradient(90deg, #ff0000, #ffa000, #fff200, #3eff00, #00ffad, #00ffee, #0018ff, #6d00ff, #ff00ff, #ff00ae, #ff0000);
+  background-image: linear-gradient(90deg, #FF0000, #FFA500, #FFFF00, #008000, #00FFFF, #0000FF, #4B0082, #800080, #FF0000);
   background-size: 600px 100%;
   animation: barberpole 4s linear infinite;
   border-bottom: 0.2rem solid #2a242c;
@@ -518,8 +518,8 @@ section {
   font-style: italic;
   font-weight: bold;
   color: white;
-  -webkit-text-stroke: 1px black;
-  /* Contourage du texte pour navigateurs WebKit */
+  -webkit-text-stroke: 1px black; /* Largeur et couleur du contour */
+  text-stroke: 1px black; /* Largeur et couleur du contour (non standard, utilisez le préfixe -webkit- pour la compatibilité) */
   opacity: 0;
   transition: opacity 2s 0.6s;
 }
@@ -549,11 +549,8 @@ section {
 .bar.active {
   color: white;
   font-weight: bold;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+  -webkit-text-stroke: 1px black; /* Largeur et couleur du contour */
+  text-stroke: 1px black; /* Largeur et couleur du contour (non standard, utilisez le préfixe -webkit- pour la compatibilité) */
 }
 
 .bar.active[data-percent="5"] {
