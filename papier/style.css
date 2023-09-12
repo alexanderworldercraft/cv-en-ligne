@@ -59,12 +59,14 @@ tr td:first-of-type {
 #gauche {
     grid-area: gauche;
     background-color: rgba(0, 0, 255, 0.129);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding: 8px 16px;
+}
+#image-centre {
+    display: grid;
+    place-items: center;
 }
 #image-profil {
-    margin: 56px 0;
+    margin: 40px 0;
     width: 60%;
 }
 #gauche div img {
@@ -74,16 +76,16 @@ tr td:first-of-type {
     box-shadow: 3px 3px 20px black;
 }
 h4 {
-    position: relative;
-    left: -50px;
+    width: 75px;
+    text-align: center;
     margin: 0;
     border-top: 2px solid;
     border-bottom: 2px solid;
     padding: 2px 4px;
+    text-transform: capitalize;
 }
 #gauche ul {
-    position: relative;
-    left: -30px;
+    text-transform: capitalize;
 }
 
 /* Bas */
