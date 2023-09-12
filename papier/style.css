@@ -15,6 +15,25 @@ body{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.diplome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diplome img{
+    margin-right: 8px;
+}
+.interet {
+    list-style: none;
+    display: grid;
+    padding: 0;
+    margin: 30px 0 0 ;
+    place-items: center;
+}
+
+.interet li {
+    padding: 8px 0;
+}
 
 /* Haut */
 #haut {
@@ -86,6 +105,7 @@ h4 {
 }
 #gauche ul {
     text-transform: capitalize;
+    margin-bottom: 50px;
 }
 
 /* Bas */
@@ -118,7 +138,7 @@ h3 {
     position: relative;
     padding-left: 60px;
     padding-right: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     z-index: 1;
     margin: 15px 25px;
   }
@@ -153,4 +173,46 @@ h3 {
     font-size: small;
     color: #666;
     line-height: 1.5;
+  }
+  .card-item-title p {
+    color: black;
+  }
+
+  /* CHARGEMENT */
+
+  .spinner {
+    /*définit la largeur de l'élément comme étant de 50 pixels.*/
+    width: 15px;
+    /*définit la hauteur de l'élément comme étant de 50 pixels.*/
+    height: 15px;
+    /*définit la propriété de bordure de l'élément.*/
+    border: 5px solid #fff;
+    /*définit le rayon de l'arrondi des coins de l'élément.*/
+    border-radius: 50%;
+    /*définit la couleur de la bordure supérieure de l'élément*/
+    border-top-color: #3498db;
+    /*définit une animation pour l'élément. Elle utilise une animation nommée 
+      "spin" et spécifie une durée de 1 seconde, une fonction de temporisation 
+      (timing function) "ease-in-out" et la répétition infinie de l'animation.*/
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  /* définit une règle d'animation*/
+  @keyframes spin {
+    /*À cette étape de l'animation, représentant le début, la transformation 
+    (transform) appliquée est une rotation de 0 degré (rotate(0deg)). Cela 
+    signifie que l'élément est initialement sans rotation.*/
+    0% {
+      transform: rotate(0deg);
+    }
+    /*À cette étape de l'animation, représentant la fin, la transformation 
+    (transform) appliquée est une rotation de 360 degrés (rotate(360deg)). 
+    Cela signifie que l'élément effectuera une rotation complète de 360 degrés.*/
+    100% {
+      transform: rotate(360deg);
+    }
   }
