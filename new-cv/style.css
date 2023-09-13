@@ -1,9 +1,9 @@
 /* Palette de Couleurs */
 :root {
     --primaire: #D9D9D9;
-    --Secondaire: #A6A6A6;
-    --Fond: #404040;
-    --Fond2: #737373;
+    --Secondaire: #000000;
+    --Fond: #ffffff;
+    --Fond2: #000000;
     --contrastlight: #FFF;
     --contrastdark: #000;
 }
@@ -20,6 +20,10 @@ body, html {
     width: fit-content;
     border-radius: 100px;
     padding: 16px 32px;
+}
+.portofolio-centre {
+    position: relative;
+    top: 10px;
 }
 p {
     line-height: 1.2;
@@ -55,7 +59,7 @@ p {
 #profil-img {
     width: 250px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid var(--Secondaire);
 }
 .snap-section:nth-child(1) article {
     margin: auto;
@@ -64,12 +68,4 @@ p {
 .snap-section:nth-child(2) {
     background-color: var(--Fond2);
     color: var(--primaire);
-}
-.snap-section:nth-child(2) article:nth-child(2) {
-    background-color: var(--contrastdark);
-    color: var(--contrastlight);
-    padding: 8px 16px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
 }

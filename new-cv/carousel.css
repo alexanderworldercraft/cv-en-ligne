@@ -78,13 +78,14 @@
 }
 
 .carousel {
-    width: 90vw;
+    width: 80vw;
     border: 2px solid white;
     border-radius: 10px;
+    aspect-ratio: 16/9;
 }
 
 .carousel-item {
-    height: 90vh;
+    aspect-ratio: 16/9;
 }
 
 .carousel-caption h1 {
