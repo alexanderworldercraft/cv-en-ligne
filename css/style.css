@@ -57,6 +57,20 @@
   color: rgb(255, 255, 255);
 }
 
+#portofolio img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+.card {
+  background-color: rgba(0, 0, 0, .3);
+  border-color: red;
+  color: red;
+}
+.card-text {
+  margin: 0;
+  padding: 0;
+}
+
 .footer small a {
   color: white;
 }
@@ -443,7 +457,7 @@ p:not(footer p, menu-title) {
 section {
   padding: 1em 1em 2em 1em;
   /* top right bottom left */
-  margin: 20em 0 20em 0;
+  margin: 10em 0;
 }
 
 /* Crée un décalage de position pour les ancres */
@@ -633,10 +647,6 @@ section {
   width: 100%;
 }
 
-/* Portofolio */
-#portofolio img {
-  border-radius: 10px;
-}
 
 /* Responsive */
 
@@ -645,10 +655,6 @@ section {
   /* Styles pour les téléphones mobiles */
 
   /* présentation / contact */
-
-  #portofolio img {
-    width: 200px;
-  }
   
   #competences .badge-titre,
   #experience .badge-titre {
