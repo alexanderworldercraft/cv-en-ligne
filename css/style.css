@@ -60,11 +60,12 @@
 #portofolio img {
   border-radius: 5px 5px 0 0;
   width: 100%;
+  border-bottom: 1px solid red;
 }
 .card {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .7);
   border-color: red;
-  color: red;
+  color: #c7cadb;
 }
 .card-text {
   margin: 0;
@@ -566,7 +567,6 @@ section {
   color: white;
   font-weight: bold;
   -webkit-text-stroke: 1px black; /* Largeur et couleur du contour */
-  text-stroke: 1px black; /* Largeur et couleur du contour (non standard, utilisez le préfixe -webkit- pour la compatibilité) */
 }
 
 .bar.active[data-percent="5"] {
