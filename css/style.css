@@ -110,6 +110,7 @@
 
 /* new contact */
 .calcul-box {
+  margin: 10em auto;
   padding: 40px;
   background: rgba(0, 0, 0, .6);
   box-sizing: border-box;
@@ -381,7 +382,7 @@ p:not(footer p, menu-title) {
 /* A propos */
 #a_propos {
   max-width: 800px;
-  margin: auto;
+  margin: 10em auto;
 }
 
 /* experience */
@@ -455,6 +456,7 @@ p:not(footer p, menu-title) {
 
 /* Structure des sections */
 section {
+  max-width: 1200px;
   padding: 1em 1em 2em 1em;
   /* top right bottom left */
   margin: 10em 0;
