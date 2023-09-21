@@ -47,7 +47,7 @@ body{
 /* Haut */
 #haut {
     grid-area: haut;
-    background-color: rgba(128, 128, 128, 0.366);
+    background: linear-gradient(108deg, #c8d026, #1a801c 90%);
     padding: 10px 15px 0 15px;
 }
 #nom {
@@ -56,7 +56,8 @@ body{
     font-style: italic;
     margin-top: 10px;
     margin-bottom: 20px;
-    color: #516acc;
+    color: white;
+    letter-spacing: 1px;
 }
 #metier {
     position: relative;
@@ -86,8 +87,9 @@ tr td:first-of-type {
 /* Gauche */
 #gauche {
     grid-area: gauche;
-    background-color: rgba(0, 0, 255, 0.129);
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
     padding: 8px 16px;
+    color: white;
 }
 #image-centre {
     display: grid;
@@ -100,7 +102,7 @@ tr td:first-of-type {
 #gauche div #profil {
     width: 100%;
     border-radius: 50%;
-    border: 2px solid #516acc;
+    border: 2px solid #ffffff;
     box-shadow: 3px 3px 20px black;
 }
 h4 {
@@ -126,7 +128,7 @@ h4 {
 }
 h3 {
     text-align: center;
-    color: #516acc;
+    color: #000000;
 }
 .card-content {
     padding: 0;
@@ -178,7 +180,9 @@ h3 {
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 5px;
-    color: rgb(141, 208, 253);
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
   }
   
   .card-item-desc {
@@ -188,4 +192,23 @@ h3 {
   }
   .card-item-title p {
     color: black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    filter: grayscale(00%);
   }

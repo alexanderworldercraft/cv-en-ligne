@@ -212,7 +212,7 @@ body {
     color: #dee2ec;
   }
   .layout .sidebar .menu > ul > .sub-menu > .sub-menu-list {
-    background-color: #0b1a2c;
+    background-color: #2c0b0b;
   }
   .layout .sidebar .menu.icon-shape-circle .menu-item a .menu-icon, .layout .sidebar .menu.icon-shape-rounded .menu-item a .menu-icon, .layout .sidebar .menu.icon-shape-square .menu-item a .menu-icon {
     background-color: #0b1a2c;
@@ -268,7 +268,7 @@ body {
     background-color: rgba(11, 26, 44, 0.6); /* sous-menu fond */
   }
   .layout .sidebar.has-bg-image:not(.collapsed) .menu > ul > .sub-menu > .sub-menu-list {
-    background-color: rgba(11, 26, 44, 0.6); /* sous-menu fond */
+    background-color: rgba(44, 11, 11, 0.6); /* sous-menu fond */
   }
   .layout.rtl .sidebar .menu .menu-item a .menu-icon {
     margin-left: 10px;
