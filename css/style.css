@@ -113,11 +113,13 @@
 .calcul-box {
   margin: 10em auto;
   padding: 40px;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
   border-radius: 10px;
   border: 1px solid #f40303;
+  backdrop-filter: blur(1px); /* Applique un flou de 10 pixels */
+  -webkit-backdrop-filter: blur(1px); /* Pour assurer la compatibilité avec certains navigateurs */
 }
 
 .calcul-box h2 {
