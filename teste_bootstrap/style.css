@@ -1,0 +1,31 @@
+#background {
+    background: var(--bs-body-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9999;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    z-index: 9999;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Crée un décalage de position pour les ancres */
+[id]:target {
+    scroll-margin-top: 2em;
+}
