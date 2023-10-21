@@ -1,0 +1,140 @@
+:root {
+    --bs-body-bg: #0b1627!important;
+    --bs-tertiary-bg: #020a15!important;
+}
+
+nav,
+footer,
+footer ul.nav {
+    background-color: var(--bs-body-bg)!important;
+}
+
+.dropdown-menu[data-bs-popper],
+#sidebarSupportedContent[data-bs-popper] {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    z-index: 9999;
+    
+}
+
+main {
+    flex-grow: 1;
+}
+
+ul.nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+}
+
+/* Fond d'écran */
+#background {
+    background: linear-gradient(to bottom, #0b1627, #020a15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -9999;
+}
+
+[id]:target {
+    scroll-margin-top: 70px;
+}
+
+/* Styles pour la partie mobile (pouce) de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #00000000;
+    /* Couleur de fond du pouce */
+    border: 1px solid #495057;
+    /* Bordure de couleur grise */
+    border-radius: 4px;
+    /* Bordures légèrement arrondies pour le pouce */
+}
+
+/* Styles généraux pour la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Largeur de la barre de défilement verticale */
+    background-color: #000;
+    /* Fond noir pour la barre de défilement */
+}
+
+/* Styles pour le pouce de la barre de défilement horizontale (pour les scénarios où le défilement est horizontal) */
+::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 4px;
+    /* Bordures légèrement arrondies pour le pouce horizontal */
+    border: 1px solid #495057;
+    /* Bordure de couleur grise */
+    background-color: #00000000;
+    /* Couleur de fond du pouce horizontal */
+}
+
+/* Styles pour la barre de défilement horizontale */
+::-webkit-scrollbar:horizontal {
+    height: 8px;
+    /* Hauteur de la barre de défilement horizontale */
+    background-color: #000;
+    /* Fond noir pour la barre de défilement horizontale */
+}
+
+@media screen and (min-width:1440px) {
+    #contact iframe {
+        width: 768px;
+        height: 700px;
+    }
+}
+
+/* @media (min-width:1023px) and (max-width:1439px) {
+    #contact iframe {
+        width: 900px;
+        height: 500px;
+    }
+}
+
+@media (min-width:767px) and (max-width:1023px) {
+    #contact iframe {
+        width: 650px;
+        height: 400px;
+    }
+}
+
+@media (min-width:424px) and (max-width:767px) {
+    #contact iframe {
+        width: 350px;
+        height: 600px;
+    }
+}
+
+@media (min-width:374px) and (max-width:424px) {
+    #contact iframe {
+        width: 350px;
+        height: 700px;
+    }
+}
+
+@media (min-width:319px) and (max-width:374px) {
+    #contact iframe {
+        width: 250px;
+        height: 700px;
+    }
+} */
+
+@media (min-width:319px) and (max-width:1439px) {
+    #contact {
+        width: 90%;
+        max-width: 768px;
+    }
+    #contact iframe {
+        height: 700px;
+    }
+}

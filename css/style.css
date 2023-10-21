@@ -99,6 +99,10 @@
     margin: auto;
 }
 
+.centrage-2 {
+    margin: auto;
+}
+
 .centrageDeux {
     display: grid;
     place-items: center;
@@ -219,9 +223,9 @@
     color: yellow;
 }
 
-#contact {
+/* #contact {
     max-width: 400px;
-}
+} */
 
 #commentaire-box {
     margin-top: 20px;
@@ -800,5 +804,22 @@ section {
         grid-template-areas:
             "frontend backend"
             "logiciel logiciel";
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #contact iframe {
+        width: 768px;
+        height: 700px;
+    }
+}
+
+@media (min-width:319px) and (max-width:1439px) {
+    #contact {
+        width: 90%;
+        max-width: 768px;
+    }
+    #contact iframe {
+        height: 700px;
     }
 }
