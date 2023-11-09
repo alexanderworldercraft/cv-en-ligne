@@ -340,18 +340,6 @@ h1 {
     font-weight: 700;
 }
 
-/* centrage de présentation */
-#presentation {
-    padding-top: 2em;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#presentation p {
-    text-align: center;
-}
-
 /* blocs des paragraphs */
 p:not(footer p, menu-title) {
     padding: 1em 1em;
@@ -490,33 +478,6 @@ section {
 #competences {
     margin-left: auto;
     margin-right: auto;
-}
-
-#table-competences {
-    padding: 0 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "frontend backend"
-        "logiciel logiciel";
-}
-
-#frontend {
-    grid-area: frontend;
-    padding: 0 1em;
-    margin: 10px 0;
-}
-
-#backend {
-    grid-area: backend;
-    padding: 0 1em;
-    margin: 10px 0;
-}
-
-#logiciel {
-    grid-area: logiciel;
-    padding: 0 1em;
-    margin: 10px 0;
 }
 
 .bar {
