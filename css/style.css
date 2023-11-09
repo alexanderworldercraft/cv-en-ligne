@@ -671,23 +671,6 @@ section {
         padding: 40px 0;
     }
 
-    #grid-presentation {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "photo-de-profil"
-            "p-un-presentation"
-            "p-deux-presentation";
-    }
-
-    #table-competences {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "frontend"
-            "backend"
-            "logiciel";
-    }
-
     .bar:after {
         display: none;
     }
@@ -705,82 +688,10 @@ section {
     }
 
     .calcul-box {
-        padding: 20px;
-    }
-
-    .calcul-box {
         padding: 32px 0;
-    }
-
-    #grid-presentation {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "photo-de-profil"
-            "p-un-presentation"
-            "p-deux-presentation";
-    }
-
-    #table-competences {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "frontend"
-            "backend"
-            "logiciel";
     }
 
     .bar:after {
         display: none;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-    /* Styles pour les tablettes en mode portrait */
-
-    #table-competences {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "frontend"
-            "backend"
-            "logiciel";
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1200px) {
-    /* Styles pour les tablettes en mode paysage et petits ordinateurs de bureau */
-
-    #table-competences {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "frontend backend"
-            "logiciel logiciel";
-    }
-}
-
-@media (min-width: 1200px) {
-    /* Styles pour les ordinateurs de bureau */
-
-    #table-competences {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "frontend backend"
-            "logiciel logiciel";
-    }
-}
-
-@media screen and (min-width:1440px) {
-    #contact iframe {
-        width: 768px;
-        height: 700px;
-    }
-}
-
-@media (min-width:319px) and (max-width:1439px) {
-    #contact {
-        width: 90%;
-        max-width: 768px;
-    }
-    #contact iframe {
-        height: 700px;
     }
 }
