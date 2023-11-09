@@ -425,13 +425,13 @@ p:not(footer p, menu-title) {
     width: 10px;
     position: absolute;
     top: 0;
-    left: 37px;
+    left: 39px;
     width: 8px;
     height: 8px;
     line-height: 0.6;
     border: 2px solid #fff;
-    font-size: 11px;
-    text-indent: -35px;
+    font-size: medium;
+    text-indent: -45px;
     border-radius: 50%;
     color: rgb(141, 208, 253);
     background: linear-gradient(to bottom, #a0aee3 0%, #516acc 100%);
@@ -439,13 +439,13 @@ p:not(footer p, menu-title) {
 
 .card-item-title {
     font-weight: 500;
-    font-size: 14px;
+    font-size: large;
     margin-bottom: 5px;
     color: rgb(141, 208, 253);
 }
 
 .card-item-desc {
-    font-size: small;
+    font-size: medium;
     color: #b3b3c5;
     line-height: 1.5;
 }
