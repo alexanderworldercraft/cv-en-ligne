@@ -51,6 +51,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- chargement -->
     <link rel="stylesheet" href="./css/chargement.css">
+    <!-- cardteam -->
+    <link rel="stylesheet" href="./css/cardteam.css">
 </head>
 
 <body>
@@ -67,7 +69,7 @@
                 <div class="sidebar-header">
                     <div class="pro-sidebar-logo">
                         <div>CV</div>
-                        <h5>Curriculum Vitae</h5>
+                        <h5 data-key="cv">Curriculum Vitae</h5>
                     </div>
                 </div>
                 <div class="sidebar-content">
@@ -137,7 +139,7 @@
                                             import_contacts
                                         </span>
                                     </span>
-                                    <span class="menu-title">Portfolio</span>
+                                    <span class="menu-title" data-key="port">Portfolio</span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
                                             <span class="material-symbols-outlined">
@@ -173,7 +175,7 @@
                                             mail
                                         </span>
                                     </span>
-                                    <span class="menu-title">Contact</span>
+                                    <span class="menu-title" data-key="contact">Contact</span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
                                             <span class="material-symbols-outlined">
@@ -247,9 +249,7 @@
 
                     <article class="footer-box cardteam" data-visible="false">
                         <div data-card="front" class="card__front flow-content">
-                            <img class="card__img mx-auto"
-                                data-src="https://worldercraft-hebergement.web.app/asset/photo/profil.jpg"
-                                alt="photo" />
+                            <img class="card__img mx-auto" src="https://worldercraft-hebergement.web.app/asset/photo/profil.jpg" alt="photo" />
                             <div class="flow-content" data-spacing="sm">
                                 <p class="card__name">Patrick Tarroz</p>
                                 <p class="card__position" data-key="metier">Apprenti Developpeur</p>
@@ -277,6 +277,7 @@
                             </button>
                         </footer>
                     </article>
+                    
                 </div>
         </aside>
         <div id="overlay" class="overlay"></div>
@@ -406,7 +407,7 @@
                     <!-- section05 portofolio -->
                     <section id="portofolio" class="calcul-box">
 
-                        <h1 class="badge-titre">Portfolio</h1>
+                        <h1 class="badge-titre" data-key="port">Portfolio</h1>
                         <div class="container">
 
                             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
@@ -696,8 +697,8 @@
                             Alexander Worldercraft</a>
                         <br>
                         <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
-                        Image génére par IA sous licence commercial <br>
-                        Dernière Maj le: 09/11/2023
+                        <p style="margin-bottom: 0;" data-key="img">Image génére par IA sous licence commercial</p>
+                        <p style="margin-bottom: 0;" data-key="maj">Dernière Maj le: 10/11/2023</p>
                     </small>
                     <br>
                 </footer>
@@ -749,6 +750,8 @@
     <script src="https://unpkg.com/@popperjs/core@2" defer></script>
     <!-- contrôle popper2 -->
     <script src="./js/control-poppers.js" defer></script>
+    <!-- contrôle cardteam -->
+    <script src="./js/cardteam.js" defer></script>
     <!-- Script de transcription -->
     <script src="./js/lang.js"></script>
 
