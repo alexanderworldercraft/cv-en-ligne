@@ -71,6 +71,10 @@ const translations = {
         'port_16': "Creation of a site grouping together courses, practical work and tests on PHP and databases.",
         'port_t17': "Template for TP",
         'port_17': "Creation of a template for the practical courses held at the AFPA, with a light and dark theme.",
+        'port_t18': "Dynamic web page",
+        'port_18': "Linked to a DB that manages the addition, modification and deletion of data in the DB.",
+        'port_t19': "Dynamic real estate website",
+        'port_19': "Personal end-of-study project currently being designed with a database to personalize as much of the site's content as possible, making it Dev-free.",
         
         // à propos
         'About_us': 'About us',
@@ -151,6 +155,10 @@ const translations = {
         'port_16': "Création d'un site regroupant les cours, TP, et les test sur le PHP et les bases de données.",
         'port_t17': "Template de TP",
         'port_17': "Création d'un template pour les TP réaliser pour les cours à l'AFPA disposant d'un thème claire et un thème sombre.",
+        'port_t18': "Page web Dynamique",
+        'port_18': "Relié à une BDD qui gére l'ajout, la modification et la suppression des données de la BDD.",
+        'port_t19': "Site Immobilier dynamique",
+        'port_19': "Projet personnel de fin d'étude en cours de conception disposant d'une Base de données pour personnaliser un maximun de contenu du site afin de rendre son utilisation sans Dev.",
 
         // à propos
         'About_us': 'à propos',
@@ -232,6 +240,10 @@ const translations = {
         'port_16': "PHPとデータベースに関するコース、実習、テストを含むウェブサイトの作成。",
         'port_t17': "TPテンプレート",
         'port_17': "AFPAのコースで実施される実習のためのテンプレートを、明るいテーマと暗いテーマで作成。",
+        'port_t18': "動的ウェブページ",
+        'port_18': "DBにリンクされ、DB内のデータの追加、変更、削除を管理する。",
+        'port_t19': "ダイナミック不動産サイト",
+        'port_19': "現在、個人的な学習終了プロジェクトとして、データベースを使ってサイトのコンテンツをできる限りパーソナライズし、デヴァイスフリーにするためにデザイン中である。",
 
         // à propos
         'About_us': '私について',
