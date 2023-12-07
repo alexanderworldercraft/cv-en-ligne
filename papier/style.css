@@ -22,7 +22,7 @@ body{
 }
 .centre {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -117,9 +117,12 @@ h4 {
 #gauche ul {
     text-transform: capitalize;
     margin-bottom: 20px;
+    padding-left: 0;
+    text-align: center;
+    list-style-type: none;
 }
 #ul li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Bas */
