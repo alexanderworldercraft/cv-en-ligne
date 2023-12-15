@@ -20,6 +20,9 @@ const translations = {
 
         'Software': 'Software',
         'Systeme': 'Operating system',
+        'langue': "Languages",
+        'français': "French (maternal)",
+        'anglais': "English (TOEIC 535 = A2+)",
 
         // Xp
         'xp': 'Professional Experience',
@@ -105,6 +108,9 @@ const translations = {
 
         'Software': 'Logiciels',
         'Systeme': "Système d'exploitation",
+        'langue': "Langues",
+        'français': "Français (maternel)",
+        'anglais': "Anglais (TOEIC 535 = A2+)",
 
         // Xp
         'xp': 'Expérience Professionnelle',
@@ -191,6 +197,9 @@ const translations = {
         // Compétences professionnelle
         'Software': 'ソフトウェア',
         'Systeme': "オペレーティングシステム",
+        'langue': "言語",
+        'français': "フランス語 (母性的)",
+        'anglais': "英語 (TOEIC 535 = A2+)",
 
         // Xp
         'xp': 'プロとしての経験',
