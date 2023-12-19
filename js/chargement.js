@@ -46,18 +46,12 @@ function loadCss() {
 // Chargement des script secondaire après le chargement principal
 function loadScript() {
     var javascript = [
-        // reload page
-        '../js/reload-page.js',
         // cardteam
         '../js/cardteam.js',
         // Bibliothèque lightbox
         'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js',
-        // Bibliothèque jQuery
-        'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
         // Bibliothèque jQueryUI
         'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js',
-        // contrôle de jQuery
-        '../js/formulaire-jQueryUI.js',
     ];
 
     javascript.forEach(function(javascript) {

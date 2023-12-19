@@ -38,6 +38,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- portofolio -->
     <link rel="stylesheet" href="./css/portofolio.css">
     <!-- Bibliothèque googleicon -->
@@ -61,6 +63,17 @@
         <source src="./asset/fond.mp4">
     </video>
 
+    <div class="position-absolute bottom-0 end-0 m-3 btn-zIndex">
+        <div class="btn-group-vertical group-test" role="group" aria-label="Vertical button group">
+            <button id="plus" type="button" class="btn btn-outline-danger">
+                <span class="material-symbols-outlined redimensionner">zoom_in</span>
+            </button>
+            <button id="moins" type="button" class="btn btn-outline-danger">
+                <span class="material-symbols-outlined redimensionner">zoom_out</span>
+            </button>
+        </div>
+    </div>
+
     <div class="layout has-sidebar fixed-sidebar fixed-header">
         <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
             <a id="btn-collapse" class="sidebar-collapser"><span
@@ -75,20 +88,20 @@
                 <div class="sidebar-content">
                     <nav class="menu open-current-submenu">
                         <ul>
-                            <li class="menu-header"><span data-key="general"></span></li>
+                            <li class="menu-header redimensionner"><span data-key="general"></span></li>
 
 
                             <li class="menu-item">
                                 <a href="#presentation">
                                     <span class="menu-icon">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined redimensionner">
                                             sentiment_satisfied
                                         </span>
                                     </span>
-                                    <span class="menu-title" data-key="Presentation"></span>
+                                    <span class="menu-title redimensionner" data-key="Presentation"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -99,14 +112,14 @@
                             <li class="menu-item">
                                 <a href="#competences">
                                     <span class="menu-icon">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined redimensionner">
                                             browse_activity
                                         </span>
                                     </span>
-                                    <span class="menu-title" data-key="competences"></span>
+                                    <span class="menu-title redimensionner" data-key="competences"></span>
                                     <span class="menu-suffix">
                                         <span class="badge two">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 hourglass
                                             </span>
                                         </span>
@@ -117,14 +130,14 @@
                             <li class="menu-item">
                                 <a href="#experience">
                                     <span class="menu-icon">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined redimensionner">
                                             monitoring
                                         </span>
                                     </span>
-                                    <span class="menu-title" data-key="xp"></span>
+                                    <span class="menu-title redimensionner" data-key="xp"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -135,14 +148,14 @@
                             <li class="menu-item">
                                 <a href="#portofolio">
                                     <span class="menu-icon">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined redimensionner">
                                             import_contacts
                                         </span>
                                     </span>
-                                    <span class="menu-title" data-key="port"></span>
+                                    <span class="menu-title redimensionner" data-key="port"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -153,14 +166,14 @@
                             <li class="menu-item">
                                 <a href="#a_propos">
                                     <span class="menu-icon">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined redimensionner">
                                             info_i
                                         </span>
                                     </span>
-                                    <span class="menu-title" data-key="About_us"></span>
+                                    <span class="menu-title redimensionner" data-key="About_us"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -171,14 +184,14 @@
                             <li class="menu-item">
                                 <a href="http://worldercraft.42web.io/contactCvJapon.html">
                                     <span class="menu-icon">
-                                        <span class="material-symbols-outlined">
+                                        <span class="material-symbols-outlined redimensionner">
                                             mail
                                         </span>
                                     </span>
-                                    <span class="menu-title" data-key="contact"></span>
+                                    <span class="menu-title redimensionner" data-key="contact"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -186,16 +199,17 @@
                                 </a>
                             </li>
 
-                            <li class="menu-header" style="padding-top: 20px"><span data-key="extra"></span></li>
+                            <li class="menu-header redimensionner" style="padding-top: 20px"><span
+                                    data-key="extra"></span></li>
 
                             <li class="menu-item">
                                 <a href="https://curriculum-vita-tarroz-patrick.web.app/autre_cv">
                                     <span class="menu-icon"><span
-                                            class="material-symbols-outlined">autorenew</span></span>
-                                    <span class="menu-title" data-key="autre_cv"></span>
+                                            class="material-symbols-outlined redimensionner">autorenew</span></span>
+                                    <span class="menu-title redimensionner" data-key="autre_cv"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -203,16 +217,17 @@
                                 </a>
                             </li>
 
-                            <li class="menu-header" style="padding-top: 20px"><span data-key="paper"></span></li>
+                            <li class="menu-header redimensionner" style="padding-top: 20px"><span
+                                    data-key="paper"></span></li>
 
                             <li class="menu-item sub-menu">
                                 <a href="#">
                                     <span class="menu-icon"><span
-                                            class="material-symbols-outlined">description</span></span>
-                                    <span class="menu-title" data-key="format_papier"></span>
+                                            class="material-symbols-outlined redimensionner">description</span></span>
+                                    <span class="menu-title redimensionner" data-key="format_papier"></span>
                                     <span class="menu-suffix">
                                         <span class="badge one">
-                                            <span class="material-symbols-outlined">
+                                            <span class="material-symbols-outlined redimensionner">
                                                 done
                                             </span>
                                         </span>
@@ -224,17 +239,17 @@
                                         <li class="menu-item">
                                             <a href="./asset/papier/CV_TARROZ_Patrick.png" data-lightbox="test"
                                                 data-title="CV versoin papier.">
-                                                <span class="menu-title" data-key="viewed"></span>
+                                                <span class="menu-title redimensionner" data-key="viewed"></span>
                                             </a>
                                         </li>
                                         <li class="menu-item">
                                             <a href="./asset/papier/CV_TARROZ_Patrick.pdf" download>
-                                                <span class="menu-title" data-key="pdf"></span>
+                                                <span class="menu-title redimensionner" data-key="pdf"></span>
                                             </a>
                                         </li>
                                         <li class="menu-item">
                                             <a href="./asset/papier/CV_TARROZ_Patrick.png" download>
-                                                <span class="menu-title" data-key="img"></span>
+                                                <span class="menu-title redimensionner" data-key="img"></span>
                                             </a>
                                         </li>
                                     </ul>
@@ -249,16 +264,17 @@
 
                     <article class="footer-box cardteam" data-visible="false">
                         <div data-card="front" class="card__front flow-content">
-                            <img class="card__img mx-auto" src="https://worldercraft-hebergement.web.app/asset/photo/profil.jpg" alt="photo" />
+                            <img class="card__img mx-auto"
+                                src="https://worldercraft-hebergement.web.app/asset/photo/profil.jpg" alt="photo" />
                             <div class="flow-content" data-spacing="sm">
-                                <p class="card__name">Patrick Tarroz</p>
-                                <p class="card__position" data-key="metier"></p>
+                                <p class="card__name redimensionner">Patrick Tarroz</p>
+                                <p class="card__position redimensionner" data-key="metier"></p>
                             </div>
                         </div>
                         <div data-card="back" class="card__back flow-content">
-                            <p class="card__name">Patrick Tarroz</p>
-                            <q data-key="desc"></q>
-                            <ul role="list" class="card__social flex-group">
+                            <p class="card__name redimensionner">Patrick Tarroz</p>
+                            <q class=" redimensionner" data-key="desc"></q>
+                            <ul role="list" class="card__social flex-group redimensionner">
                                 <li>
                                     <a href="https://www.linkedin.com/in/patrick-tarroz-56116a1aa/" target="_blank">
                                         <i class="fa-brands fa-linkedin fa-xls"></i>
@@ -277,7 +293,7 @@
                             </button>
                         </footer>
                     </article>
-                    
+
                 </div>
         </aside>
         <div id="overlay" class="overlay"></div>
@@ -295,8 +311,8 @@
                             <div class="col-md-8">
                                 <div
                                     class="card-body d-flex justify-content-center align-items-center flex-column h-100">
-                                    <h5 class="card-title">Patrick Tarroz</h5>
-                                    <p class="card-text" data-key="metier"></p>
+                                    <h5 class="card-title redimensionner">Patrick Tarroz</h5>
+                                    <p class="card-text redimensionner" data-key="metier"></p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -307,61 +323,112 @@
                     </div>
 
 
-                    <!-- section02 À propos -->
+                    <!-- section02 À competences -->
                     <section id="competences" class="calcul-box">
-                        <h1 class="badge-titre" data-key="competences"></h1>
+                        <h1 class="badge-titre redimensionner" data-key="competences"></h1>
                         <div class="row row-cols-1 g-4 m-1">
 
                             <div class="col">
-                                <h3 class="badge-competence">Front-end</h3>
+                                <h3 class="badge-competence redimensionner">Front-end </h3>
                                 <!-- test https://www.alsacreations.com/quiz/ -->
 
-                                <div class="active bar lila" data-percent="80" data-skill="HTML5"></div>
-                                <div class="active bar lila" data-percent="80" data-skill="Responsive"></div>
-                                <div class="active bar lila" data-percent="75" data-skill="CSS3"></div>
-                                <div class="active bar lila" data-percent="75" data-skill="Boostrap"></div>
-                                <div class="active bar lila" data-percent="60" data-skill="JavaScript"></div>
-                                <div class="active bar lila" data-percent="60" data-skill="Clipboard"></div>
-                                <div class="active bar lila" data-percent="60" data-skill="Prism / Highlight"></div>
-                                <div class="active bar lila" data-percent="50" data-skill="LightBox"></div>
-                                <div class="active bar lila" data-percent="40" data-skill="Popper2"></div>
-                                <div class="active bar lila" data-percent="40" data-skill="jQuery"></div>
+                                <div class="competences">
+                                    <div class="active bar lila redimensionner" data-percent="80" data-skill="HTML5">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="80"
+                                        data-skill="Responsive"></div>
+                                    <div class="active bar lila redimensionner" data-percent="75" data-skill="CSS3">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="75" data-skill="Boostrap">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="60"
+                                        data-skill="JavaScript"></div>
+                                    <div class="active bar lila redimensionner" data-percent="60"
+                                        data-skill="Clipboard"></div>
+                                    <div class="active bar lila redimensionner" data-percent="60"
+                                        data-skill="Prism / Highlight"></div>
+                                    <div class="active bar lila redimensionner" data-percent="50" data-skill="LightBox">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="40" data-skill="Popper2">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="40" data-skill="jQuery">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col">
-                                <h3 class="badge-competence" data-key="Software"></h3>
-                                <div class="active bar lila" data-percent="90" data-skill="ChatGPT"></div>
-                                <div class="active bar lila" data-percent="75" data-skill="Visual Studio Code"></div>
-                                <div class="active bar lila" data-percent="75" data-skill="Sublime Text"></div>
-                                <div class="active bar lila" data-percent="75" data-skill="Excel / Sheet"></div>
-                                <div class="active bar lila" data-percent="70" data-skill="GitHub"></div>
-                                <div class="active bar lila" data-percent="70" data-skill="Word / Docs"></div>
-                                <div class="active bar lila" data-percent="70" data-skill="DALL.E 3 / Midjourney"></div>
-                                <div class="active bar lila" data-percent="65" data-skill="Wamp / Xampp"></div>
-                                <div class="active bar lila" data-percent="60" data-skill="FileZilla"></div>
-                                <div class="active bar lila" data-percent="60" data-skill="Looping"></div>
-                                <div class="active bar lila" data-percent="50" data-skill="XD / Figma"></div>
-                                <div class="active bar lila" data-percent="45" data-skill="PowerPoints"></div>
-                                <div class="active bar lila" data-percent="40" data-skill="Photoshop"></div>
+                                <h3 class="badge-competence redimensionner" data-key="Software"></h3>
+
+                                <div class="competences">
+                                    <div class="active bar lila redimensionner" data-percent="90" data-skill="ChatGPT">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="75"
+                                        data-skill="Visual Studio Code"></div>
+                                    <div class="active bar lila redimensionner" data-percent="75"
+                                        data-skill="Sublime Text">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="75"
+                                        data-skill="Excel / Sheet"></div>
+                                    <div class="active bar lila redimensionner" data-percent="70" data-skill="GitHub">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="70"
+                                        data-skill="Word / Docs">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="70"
+                                        data-skill="DALL.E 3 / Midjourney"></div>
+                                    <div class="active bar lila redimensionner" data-percent="65"
+                                        data-skill="Wamp / Xampp">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="60"
+                                        data-skill="FileZilla">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="60" data-skill="Looping">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="50"
+                                        data-skill="XD / Figma">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="45"
+                                        data-skill="PowerPoints">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="40"
+                                        data-skill="Photoshop">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col">
-                                <h3 class="badge-competence">Back-end</h3>
-                                <div class="active bar lila" data-percent="50" data-skill="PHP"></div>
-                                <div class="active bar lila" data-percent="45" data-skill="MySQL"></div>
+                                <h3 class="badge-competence redimensionner">Back-end</h3>
+
+                                <div class="competences">
+                                    <div class="active bar lila redimensionner" data-percent="50" data-skill="PHP">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="45" data-skill="MySQL">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col">
-                                <h3 class="badge-competence" data-key="Systeme"></h3>
-                                <div class="active bar lila" data-percent="80" data-skill="Windows"></div>
-                                <div class="active bar lila" data-percent="65" data-skill="Linux"></div>
-                                <div class="active bar lila" data-percent="65" data-skill="Android"></div>
+                                <h3 class="badge-competence redimensionner" data-key="Systeme"></h3>
+
+                                <div class="competences">
+                                    <div class="active bar lila redimensionner" data-percent="80" data-skill="Windows">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="65" data-skill="Linux">
+                                    </div>
+                                    <div class="active bar lila redimensionner" data-percent="65" data-skill="Android">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col">
-                                <h3 class="badge-competence" data-key="langue"></h3>
-                                <div class="active bar lila lang-competence" data-percent="90" data-key="français" data-skill=""></div>
-                                <div class="active bar lila lang-competence" data-percent="50" data-key="anglais" data-skill=""></div>
+                                <h3 class="badge-competence redimensionner" data-key="langue"></h3>
+
+                                <div class="competences">
+                                    <div class="active bar lila lang-competence redimensionner" data-percent="90"
+                                        data-key="français" data-skill=""></div>
+                                    <div class="active bar lila lang-competence redimensionner" data-percent="50"
+                                        data-key="anglais" data-skill=""></div>
+                                </div>
                             </div>
 
                         </div>
@@ -370,33 +437,33 @@
 
                     <!-- section04 expérience -->
                     <section id="experience" class="calcul-box" style="font-size: large;">
-                        <h1 class="badge-titre" style="text-transform: capitalize;" data-key="xp"></h1>
+                        <h1 class="badge-titre redimensionner" style="text-transform: capitalize;" data-key="xp"></h1>
                         <div class="card-content m-3">
                             <div class="card-timeline">
                                 <div class="card-item" data-year="2023">
-                                    <div class="card-item-title" data-key="xp_t6"></div>
-                                    <div class="card-item-desc" data-key="xp_6"></div>
+                                    <div class="card-item-title redimensionner" data-key="xp_t6"></div>
+                                    <div class="card-item-desc redimensionner" data-key="xp_6"></div>
                                 </div>
                                 <div class="card-item" data-year="2023">
-                                    <div class="card-item-title" data-key="xp_t5"></div>
-                                    <div class="card-item-desc" data-key="xp_5"></div>
+                                    <div class="card-item-title redimensionner" data-key="xp_t5"></div>
+                                    <div class="card-item-desc redimensionner" data-key="xp_5"></div>
                                 </div>
                                 <div class="card-item" data-year="2023">
-                                    <div class="card-item-title" data-key="xp_t4"></div>
-                                    <div class="card-item-desc" data-key="xp_4"></div>
+                                    <div class="card-item-title redimensionner" data-key="xp_t4"></div>
+                                    <div class="card-item-desc redimensionner" data-key="xp_4"></div>
                                 </div>
                                 <div class="card-item" data-year="2022">
-                                    <div class="card-item-title" data-key="xp_t3"></div>
-                                    <div class="card-item-desc" data-key="xp_3"></div>
+                                    <div class="card-item-title redimensionner" data-key="xp_t3"></div>
+                                    <div class="card-item-desc redimensionner" data-key="xp_3"></div>
                                 </div>
                                 <div class="card-item" data-year="2022">
-                                    <div class="card-item-title" data-key="xp_t2">
+                                    <div class="card-item-title redimensionner" data-key="xp_t2">
                                     </div>
-                                    <div class="card-item-desc" data-key="xp_2"></div>
+                                    <div class="card-item-desc redimensionner" data-key="xp_2"></div>
                                 </div>
                                 <div class="card-item" data-year="2022">
-                                    <div class="card-item-title" data-key="xp_t1"></div>
-                                    <div class="card-item-desc" data-key="xp_1"></div>
+                                    <div class="card-item-title redimensionner" data-key="xp_t1"></div>
+                                    <div class="card-item-desc redimensionner" data-key="xp_1"></div>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +472,7 @@
                     <!-- section05 portofolio -->
                     <section id="portofolio" class="calcul-box">
 
-                        <h1 class="badge-titre" data-key="port"></h1>
+                        <h1 class="badge-titre redimensionner" data-key="port"></h1>
                         <div class="container">
 
                             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
@@ -417,8 +484,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t1"></h5>
-                                            <p class="card-text" data-key="port_1"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t1"></h5>
+                                            <p class="card-text redimensionner" data-key="port_1"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -432,8 +499,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t2"></h5>
-                                            <p class="card-text" data-key="port_2"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t2"></h5>
+                                            <p class="card-text redimensionner" data-key="port_2"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -445,8 +512,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t3"></h5>
-                                            <p class="card-text" data-key="port_3"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t3"></h5>
+                                            <p class="card-text redimensionner" data-key="port_3"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -458,8 +525,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t4"></h5>
-                                            <p class="card-text" data-key="port_4"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t4"></h5>
+                                            <p class="card-text redimensionner" data-key="port_4"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -473,8 +540,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t5"></h5>
-                                            <p class="card-text" data-key="port_5"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t5"></h5>
+                                            <p class="card-text redimensionner" data-key="port_5"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -486,8 +553,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t6"></h5>
-                                            <p class="card-text" data-key="port_6"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t6"></h5>
+                                            <p class="card-text redimensionner" data-key="port_6"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -499,8 +566,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t7"></h5>
-                                            <p class="card-text" data-key="port_7"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t7"></h5>
+                                            <p class="card-text redimensionner" data-key="port_7"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -512,8 +579,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t8"></h5>
-                                            <p class="card-text" data-key="port_8"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t8"></h5>
+                                            <p class="card-text redimensionner" data-key="port_8"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -526,8 +593,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t9"></h5>
-                                            <p class="card-text" data-key="port_9"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t9"></h5>
+                                            <p class="card-text redimensionner" data-key="port_9"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -540,8 +607,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t10"></h5>
-                                            <p class="card-text" data-key="port_10"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t10"></h5>
+                                            <p class="card-text redimensionner" data-key="port_10"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -554,8 +621,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t11"></h5>
-                                            <p class="card-text" data-key="port_11"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t11"></h5>
+                                            <p class="card-text redimensionner" data-key="port_11"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -568,8 +635,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t12"></h5>
-                                            <p class="card-text" data-key="port_12"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t12"></h5>
+                                            <p class="card-text redimensionner" data-key="port_12"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -583,8 +650,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t13"></h5>
-                                            <p class="card-text" data-key="port_13"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t13"></h5>
+                                            <p class="card-text redimensionner" data-key="port_13"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -597,8 +664,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t14"></h5>
-                                            <p class="card-text" data-key="port_14"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t14"></h5>
+                                            <p class="card-text redimensionner" data-key="port_14"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -612,40 +679,38 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t15"></h5>
-                                            <p class="card-text" data-key="port_15"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t15"></h5>
+                                            <p class="card-text redimensionner" data-key="port_15"></p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="card shadow-sm h-100">
-                                        <a href="./asset/full/16.png" data-lightbox="test"
-                                            data-title="Création d'un site regroupant les cours, TP, et les
+                                        <a href="./asset/full/16.png" data-lightbox="test" data-title="Création d'un site regroupant les cours, TP, et les
                                             test sur le PHP et les bases de données.">
                                             <img data-src="./asset/full/16.png" alt="16eme Image"
                                                 class="img-portofolio">
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t16"></h5>
-                                            <p class="card-text" data-key="port_16"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t16"></h5>
+                                            <p class="card-text redimensionner" data-key="port_16"></p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="card shadow-sm h-100">
-                                        <a href="./asset/full/17.png" data-lightbox="test"
-                                            data-title="Création d'un template pour les TP réaliser pour les
+                                        <a href="./asset/full/17.png" data-lightbox="test" data-title="Création d'un template pour les TP réaliser pour les
                                             cours à l'AFPA disposant d'un thème claire et un thème sombre.">
                                             <img data-src="./asset/full/17.png" alt="17eme Image"
                                                 class="img-portofolio">
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t17"></h5>
-                                            <p class="card-text" data-key="port_17"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t17"></h5>
+                                            <p class="card-text redimensionner" data-key="port_17"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -659,8 +724,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t18"></h5>
-                                            <p class="card-text" data-key="port_18"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t18"></h5>
+                                            <p class="card-text redimensionner" data-key="port_18"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -674,8 +739,8 @@
                                         </a>
                                         <!-- <img data-src="./asset/full/01.png" alt="01" class="img-portofolio"> -->
                                         <div class="card-body">
-                                            <h5 class="card-title" data-key="port_t19"></h5>
-                                            <p class="card-text" data-key="port_19"></p>
+                                            <h5 class="card-title redimensionner" data-key="port_t19"></h5>
+                                            <p class="card-text redimensionner" data-key="port_19"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -686,23 +751,27 @@
 
                     <!-- section02 À propos -->
                     <section id="a_propos" class="calcul-box">
-                        <h1 class="badge-titre" data-key="About_us"></h1>
-                        <p data-key="About_us_1"></p>
-                        <p data-key="About_us_2"></p>
-                        <h1 class="badge-titre" data-key="interests">Mes centres d'intérêt</h1>
-                        <p data-key="interests_1"></p>
+                        <h1 class="badge-titre redimensionner" data-key="About_us"></h1>
+                        <p class="redimensionner" data-key="About_us_1"></p>
+                        <p class="redimensionner" data-key="About_us_2"></p>
+                        <div style="padding: 16px;">
+                            <a href="#" class="suite" data-key="showMore"></a>
+                        </div>
+                        <h1 class="badge-titre redimensionner" data-key="interests">Mes centres d'intérêt</h1>
+                        <p class="redimensionner" data-key="interests_1"></p>
                     </section>
 
                 </div>
                 <footer class="footer">
-                    <small style="margin-bottom: 20px; display: inline-block" class="background-text and-shadow">©2023
+                    <small style="margin-bottom: 20px; display: inline-block"
+                        class="background-text and-shadow redimensionner">©2023
                         made with<span style="color: red; font-size: 18px">&#10084;</span> by - <a
                             href="https://github.com/alexanderworldercraft" target="_blank">Patrick tarroz alias
                             Alexander Worldercraft</a>
                         <br>
                         <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
-                        <p style="margin-bottom: 0;" data-key="ia"></p>
-                        <p style="margin-bottom: 0;" data-key="maj"></p>
+                        <p style="margin-bottom: 0;" class="redimensionner" data-key="ia"></p>
+                        <p style="margin-bottom: 0;" class="redimensionner" data-key="maj"></p>
                     </small>
                     <br>
                 </footer>
@@ -758,6 +827,8 @@
     <script src="./js/cardteam.js" defer></script>
     <!-- Script de transcription -->
     <script src="./js/lang.js"></script>
+    <!-- contrôle jQuery -->
+    <script src="./js/jQuery.js" defer></script>
 
     <!-- Script firebase Analytic -->
     <script type="module">

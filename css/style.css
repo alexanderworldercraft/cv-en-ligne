@@ -22,6 +22,11 @@
     flex: 1 0 1;
 }
 
+.btn-zIndex {
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
 .background-text {
     /*définit l'image d'arrière-plan du contenu. Elle utilise un dégradé linéaire.*/
     background: linear-gradient(180deg, #870000, #34150a);
@@ -44,7 +49,7 @@
     /*définit l'image d'arrière-plan du contenu. Elle utilise un dégradé linéaire.*/
     background: linear-gradient(180deg, #870000, #34150a);
     /*spécifie d'espace autour du contenu à l'intérieur de l'élément.*/
-    padding: 2px;
+    padding: 5px;
     /*détermine le rayon de l'arrondi des coins de l'élément.*/
     border-radius: 5px;
     /*ajoute une ombre au texte à l'intérieur de l'élément.*/
@@ -471,8 +476,12 @@ section {
     margin-bottom: 15px;
     font-weight: bold;
     color: #ffc400ab;
-    background-color: #3327016c;
     width: fit-content;
+    cursor: pointer;
+    background: #3327016c url(../asset/arrow_down.svg) no-repeat right 0 -5px;
+}
+.badge-competence.active {
+    background: #3327016c url(../asset/arrow_up.svg) no-repeat right ;
 }
 
 #competences {
@@ -513,7 +522,6 @@ section {
     padding: 10px;
     height: 40px;
     opacity: 0;
-    overflow: hidden;
     transition: opacity 2s 0.6s;
 }
 
