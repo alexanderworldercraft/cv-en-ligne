@@ -457,6 +457,7 @@ p:not(footer p, menu-title) {
 
 /* Structure des sections */
 section {
+    border-radius: 25px!important;
     max-width: 1200px;
     padding: 1em 1em 2em 1em;
     /* top right bottom left */
@@ -472,16 +473,16 @@ section {
 .badge-competence {
     border: 1px solid #ffc400ab;
     border-radius: 17px;
-    padding: 8px 16px;
+    padding: 8px 25px 8px 16px;
     margin-bottom: 15px;
     font-weight: bold;
     color: #ffc400ab;
     width: fit-content;
     cursor: pointer;
-    background: #3327016c url(../asset/arrow_down.svg) no-repeat right 0 -5px;
+    background: #3327016c url(../asset/arrow_down1.png) no-repeat right;
 }
 .badge-competence.active {
-    background: #3327016c url(../asset/arrow_up.svg) no-repeat right ;
+    background: #3327016c url(../asset/arrow_up1.png) no-repeat right ;
 }
 
 #competences {
