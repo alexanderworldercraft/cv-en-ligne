@@ -105,7 +105,7 @@ const translations = {
         'cv': 'Curriculum Vitae',
         'general': 'général',
         'Presentation': 'Présentation',
-        'metier': 'Développeur Web, Web Mobile<br><br>Titre professionelle de niveau 5',
+        'metier': 'Développeur Web, Web Mobile<br>Titre professionelle de niveau 5',
         'competences': 'Compétences professionnelle',
         'autre_cv': 'Autre CV',
         'format_papier': 'CV Format PDF',

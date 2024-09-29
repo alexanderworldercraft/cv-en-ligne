@@ -509,7 +509,7 @@ a {
     height: 30px;
     border-radius: 50%;
     background: var(--color-principal-unie);
-    border: 1.5px solid var(--color-principal-autre);
+    border: 1.5px solid var(--color-text-menu);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -520,7 +520,7 @@ a {
     transform: translateX(50%);
     z-index: 111;
     cursor: pointer;
-    color: var(--color-principal-autre);
+    color: var(--color-text-menu);
     text-transform: capitalize;
     box-shadow: 1px 1px 4px #0c1e35;
 }
