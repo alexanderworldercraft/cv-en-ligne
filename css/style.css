@@ -8,3 +8,65 @@
     object-fit: cover;
     z-index: -9999;
 }
+
+
+
+
+.card-content {
+    padding: 0;
+    max-width: 800px;
+}
+
+.card-timeline {
+    margin-top: 30px;
+    position: relative;
+}
+
+.card-timeline:after {
+    background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, #516acc 100%);
+    content: "";
+    left: 40px;
+    width: 2px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    content: "";
+}
+
+.card-item {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+.card-item:last-child {
+    padding-bottom: 5px;
+}
+
+.card-item:after {
+    content: attr(data-year);
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 8px;
+    height: 8px;
+    line-height: 0.6;
+    border: 2px solid #fff;
+    text-indent: -45px;
+    border-radius: 50%;
+    color: rgb(141, 208, 253);
+    background: linear-gradient(to bottom, #a0aee3 0%, #516acc 100%);
+}
+
+.card-item-title {
+    margin-bottom: 5px;
+    color: rgb(141, 208, 253);
+}
+
+.card-item-desc {
+    color: #b3b3c5;
+    line-height: 1.5;
+}
