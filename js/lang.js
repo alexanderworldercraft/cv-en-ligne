@@ -14,7 +14,13 @@ const translations = {
         'desc': 'Perseverance and determination always pay off in the end.',
         'extra': 'EXTRA',
 
-        'Software': 'Software',
+        // Compétence
+        'lptw': "Programming languages and web technologies",
+        'fl': "Frameworks and libraries",
+        'ode': "Databases and management",
+        'bddg': "Databases and management",
+        'cgom': "Graphic design and multimedia tools",
+        'iaml': "Artificial intelligence and machine learning",
         'Systeme': 'Operating system',
         'langue': "Languages",
         'français': "French (maternal)",
@@ -118,7 +124,13 @@ const translations = {
         'desc': 'La persévérance et la détermination finissent toujours par porter leurs fruits.',
         'extra': 'EXTRA',
 
-        'Software': 'Logiciels',
+        // Compétence
+        'lptw': "Langages de programmation et technologies web",
+        'fl': "Frameworks et bibliothèques",
+        'ode': "Outils de développement et environnement",
+        'bddg': "Bases de données et gestion",
+        'cgom': "Conception graphique et outils multimédia",
+        'iaml': "Intelligence artificielle et machine learning",
         'Systeme': "Système d'exploitation",
         'langue': "Langues",
         'français': "Français (maternel)",
@@ -223,7 +235,12 @@ const translations = {
         'extra': 'おまけ',
 
         // Compétences professionnelle
-        'Software': 'ソフトウェア',
+        'lptw': "プログラミング言語とウェブ技術",
+        'fl': "フレームワークとライブラリ",
+        'ode': "データベースと管理",
+        'bddg': "データベースと管理",
+        'cgom': "グラフィック・デザインとマルチメディア・ツール",
+        'iaml': "人工知能および機械学習",
         'Systeme': "オペレーティングシステム",
         'langue': "言語",
         'français': "フランス語 (母性的)",
