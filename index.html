@@ -27,7 +27,7 @@
     <!-- Titre de l'onglet -->
     <title>CV en ligne (Mr Patrick TARROZ)</title>
     <!-- Icon dans l'onglet -->
-    <link rel="shortcut icon" href="https://curriculum-vita-tarroz-patrick.web.app/asset/japon.png">
+    <link rel="shortcut icon" href="https://curriculum-vita-tarroz-patrick.web.app/asset/japon_white.png">
 
 
     <!-- Tailwindcss -->
@@ -173,6 +173,24 @@
                                 </a>
                             </li>
 
+                            <li class="menu-item">
+                                <a href="#contact">
+                                    <span class="menu-icon">
+                                        <span class="material-symbols-outlined redimensionner">
+                                            contact_support
+                                        </span>
+                                    </span>
+                                    <span class="menu-title redimensionner capitalize" data-key="contact"></span>
+                                    <span class="menu-suffix">
+                                        <span class="badge one">
+                                            <span class="material-symbols-outlined redimensionner">
+                                                done
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+
                             <!-- Bouton a refaire pour le redomensionnage des elements -->
                             <!-- <li class="menu-header redimensionner" style="padding-top: 20px"><span
                                     data-key="extra"></span></li>
@@ -264,8 +282,8 @@
                         class="container m-auto border border-stone-50 shadow-2xl rounded-2xl p-5 mb-20 mt-20 bg-stone-950/60 backdrop-blur">
                         <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
                             <div class="flex-initial m-auto">
-                                <h1 class="redimensionner text-3xl sm:text-4xl mb-4">Patrick Tarroz</h1>
-                                <p class="redimensionner" data-key="metier"></p>
+                                <h1 class="redimensionner italic text-blue-300 text-5xl sm:text-7xl mb-4">Patrick Tarroz</h1>
+                                <p class="redimensionner text-xl sm:text-2xl" data-key="metier"></p>
                             </div>
                             <div class="flex-initial w-56 m-auto rounded-full"><img
                                     src="https://worldercraft-hebergement.web.app/asset/photo/profil.jpg"
@@ -276,70 +294,100 @@
 
                     <section id="competences"
                         class="container m-auto border border-stone-50 shadow-2xl rounded-2xl p-5 mb-20 bg-stone-950/60 backdrop-blur">
-                        <h1 class="redimensionner text-center mb-10 font-bold text-3xl sm:text-4xl"
+                        <h1 class="redimensionner italic text-center mb-10 font-bold text-3xl sm:text-5xl"
                             data-key="competences"></h1>
-                        <div
-                            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
 
                             <div class="group">
                                 <h3
-                                    class="redimensionner text-xl border border-stone-50 bg-stone-950 p-2 text-center rounded-xl hover:bg-stone-50 hover:text-stone-900 hover:outline-amber-400 hover:outline hover:outline-offset-4 mb-5">
-                                    Front-end</h3>
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Langages de programmation et technologies web</h3>
                                 <div class="opacity-1 transition-opacity group-hover:opacity-100">
                                     <ul class="flex flex-col gap-2">
                                         <li class="border-b p-2">HTML5 / CSS3</li>
                                         <li class="border-b p-2">JavaScript</li>
-                                        <li class="border-b p-2">Responsive</li>
-                                        <li class="border-b p-2">Bootstrap</li>
-                                        <li class="border-b p-2">TailwindCSS</li>
-                                        <li class="border-b p-2">Prism / Highlight</li>
-                                        <li class="border-b p-2">Lightbox</li>
-                                        <li class="border-b p-2">Popper2</li>
-                                        <li class="border-b p-2">jQuery</li>
+                                        <li class="border-b p-2">PHP</li>
+                                        <li class="border-b p-2">NodeJS</li>
                                         <li class="border-b p-2">Markdown</li>
                                     </ul>
                                 </div>
                             </div>
+
                             <div class="group">
                                 <h3
-                                    class="redimensionner text-xl border border-stone-50 bg-stone-950 p-2 text-center rounded-xl hover:bg-stone-50 hover:text-stone-900 hover:outline-amber-400 hover:outline hover:outline-offset-4 mb-5">
-                                    Back-end</h3>
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Frameworks et bibliothèques</h3>
                                 <div class="opacity-1 transition-opacity group-hover:opacity-100">
                                     <ul class="flex flex-col gap-2">
-                                        <li class="border-b p-2">PHP</li>
-                                        <li class="border-b p-2">NodeJS</li>
-                                        <li class="border-b p-2">MySQL</li>
-                                        <li class="border-b p-2">Docker</li>
+                                        <li class="border-b p-2">Bootstrap</li>
+                                        <li class="border-b p-2">TailwindCSS</li>
+                                        <li class="border-b p-2">jQuery</li>
+                                        <li class="border-b p-2">Prism / Highlight</li>
+                                        <li class="border-b p-2">Popper2</li>
                                         <li class="border-b p-2">ViteJS</li>
-                                        <li class="border-b p-2">Machine learning</li>
                                     </ul>
                                 </div>
                             </div>
+
                             <div class="group">
-                                <h3 class="redimensionner text-xl border border-stone-50 bg-stone-950 p-2 text-center rounded-xl hover:bg-stone-50 hover:text-stone-900 hover:outline-amber-400 hover:outline hover:outline-offset-4 mb-5"
-                                    data-key="Software"></h3>
+                                <h3
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Outils de développement et environnement</h3>
                                 <div class="opacity-1 transition-opacity group-hover:opacity-100">
                                     <ul class="flex flex-col gap-2">
-                                        <li class="border-b p-2">Visual studio Code</li>
-                                        <li class="border-b p-2">Sublime text</li>
-                                        <li class="border-b p-2">Excel / Sheet</li>
+                                        <li class="border-b p-2">Visual Studio Code</li>
+                                        <li class="border-b p-2">Sublime Text</li>
+                                        <li class="border-b p-2">Docker</li>
                                         <li class="border-b p-2">Github</li>
-                                        <li class="border-b p-2">Word / Docs</li>
                                         <li class="border-b p-2">Wamp / Xampp</li>
                                         <li class="border-b p-2">Filezilla</li>
-                                        <li class="border-b p-2">ChatGPT / Mistral</li>
-                                        <li class="border-b p-2">Dall.E 3 / Midjourney</li>
-                                        <li class="border-b p-2">XD / Figma</li>
-                                        <li class="border-b p-2">Powerpoints / Slide</li>
-                                        <li class="border-b p-2">Photoshop</li>
-                                        <li class="border-b p-2">...</li>
                                     </ul>
                                 </div>
-
                             </div>
+
                             <div class="group">
-                                <h3 class="redimensionner text-xl border border-stone-50 bg-stone-950 p-2 text-center rounded-xl hover:bg-stone-50 hover:text-stone-900 hover:outline-amber-400 hover:outline hover:outline-offset-4 mb-5"
-                                    data-key="Systeme"></h3>
+                                <h3
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Bases de données et gestion</h3>
+                                <div class="opacity-1 transition-opacity group-hover:opacity-100">
+                                    <ul class="flex flex-col gap-2">
+                                        <li class="border-b p-2">MySQL</li>
+                                        <li class="border-b p-2">Excel / Sheet</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <h3
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Conception graphique et outils multimédia</h3>
+                                <div class="opacity-1 transition-opacity group-hover:opacity-100">
+                                    <ul class="flex flex-col gap-2">
+                                        <li class="border-b p-2">XD / Figma</li>
+                                        <li class="border-b p-2">Photoshop</li>
+                                        <li class="border-b p-2">Dall.E 3 / Midjourney</li>
+                                        <li class="border-b p-2">Powerpoints / Slide</li>
+                                        <li class="border-b p-2">Lightbox</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <h3
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Intelligence artificielle et machine learning</h3>
+                                <div class="opacity-1 transition-opacity group-hover:opacity-100">
+                                    <ul class="flex flex-col gap-2">
+                                        <li class="border-b p-2">Machine learning</li>
+                                        <li class="border-b p-2">ChatGPT / Mistral</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <h3
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Systèmes d'exploitation</h3>
                                 <div class="opacity-1 transition-opacity group-hover:opacity-100">
                                     <ul class="flex flex-col gap-2">
                                         <li class="border-b p-2">Windows</li>
@@ -348,9 +396,11 @@
                                     </ul>
                                 </div>
                             </div>
+
                             <div class="group">
-                                <h3 class="redimensionner text-xl border border-stone-50 bg-stone-950 p-2 text-center rounded-xl hover:bg-stone-50 hover:text-stone-900 hover:outline-amber-400 hover:outline hover:outline-offset-4 mb-5"
-                                    data-key="langue"></h3>
+                                <h3
+                                    class="redimensionner text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 p-2 text-center rounded-xl mb-5">
+                                    Langues</h3>
                                 <div class="opacity-1 transition-opacity group-hover:opacity-100">
                                     <ul class="flex flex-col gap-2">
                                         <li class="border-b p-2">Français (maternel)</li>
@@ -364,7 +414,7 @@
 
                     <section id="experience"
                         class="container m-auto border border-stone-50 shadow-2xl rounded-2xl p-5 mb-20 bg-stone-950/60 backdrop-blur">
-                        <h1 class="redimensionner text-center mb-10 font-bold text-3xl sm:text-4xl" data-key="xp"></h1>
+                        <h1 class="redimensionner italic text-center mb-10 font-bold text-3xl sm:text-5xl" data-key="xp"></h1>
 
                         <div class="card-content m-auto">
                             <div class="card-timeline">
@@ -430,282 +480,322 @@
 
                     <section id="portofolio"
                         class="container m-auto border border-stone-50 shadow-2xl rounded-2xl p-10 mb-20 bg-stone-950/60 backdrop-blur">
-                        <h1 class="redimensionner text-center mb-10 font-bold text-3xl sm:text-4xl" data-key="port">
+                        <h1 class="redimensionner italic text-center mb-10 font-bold text-3xl sm:text-5xl" data-key="port">
                         </h1>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/23.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur flex flex-col">
+                                <a class="group" href="./asset/full/24.png" data-lightbox="test" data-title="">
+                                    <img data-src="./asset/min/24.png" alt="..."
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
+                                </a>
+                                <div class="p-3 grow">
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t24"></h5>
+                                    <p class="redimensionner" data-key="port_24"></p>
+                                </div>
+                                <a target="_blank" href="https://alexanderworldercraft.github.io/SimulationDeRemboursement/public/index.html" class="p-2 border-t bg-blue-950 hover:bg-blue-300 hover:text-blue-900 text-center">Live</a>
+                            </div>
+
+                            <div
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/23.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/23.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t23"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t23"></h5>
                                     <p class="redimensionner" data-key="port_23"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/22.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/22.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/22.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t22"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t22"></h5>
                                     <p class="redimensionner" data-key="port_22"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/21.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/21.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/21.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t21"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t21"></h5>
                                     <p class="redimensionner" data-key="port_21"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/20.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/20.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/20.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t20"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t20"></h5>
                                     <p class="redimensionner" data-key="port_20"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/19.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/19.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/19.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t19"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t19"></h5>
                                     <p class="redimensionner" data-key="port_19"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/18.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/18.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/18.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t18"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t18"></h5>
                                     <p class="redimensionner" data-key="port_18"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/17.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/17.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/17.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t17"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t17"></h5>
                                     <p class="redimensionner" data-key="port_17"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/16.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/16.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/16.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t16"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t16"></h5>
                                     <p class="redimensionner" data-key="port_16"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/15.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/15.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/15.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t15"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t15"></h5>
                                     <p class="redimensionner" data-key="port_15"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/14.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/14.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/14.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t14"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t14"></h5>
                                     <p class="redimensionner" data-key="port_14"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/13.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/13.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/13.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t13"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t13"></h5>
                                     <p class="redimensionner" data-key="port_13"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/12.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/12.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/12.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t12"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t12"></h5>
                                     <p class="redimensionner" data-key="port_12"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/11.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/11.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/11.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t11"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t11"></h5>
                                     <p class="redimensionner" data-key="port_11"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/10.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/10.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/10.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t10"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t10"></h5>
                                     <p class="redimensionner" data-key="port_10"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/09.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/09.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/09.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t9"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t9"></h5>
                                     <p class="redimensionner" data-key="port_9"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/08.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur flex flex-col">
+                                <a class="group" href="./asset/full/08.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/08.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
-                                <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t8"></h5>
+                                <div class="p-3 grow">
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t8"></h5>
                                     <p class="redimensionner" data-key="port_8"></p>
                                 </div>
+                                <a target="_blank" href="https://modeles-et-aide.web.app/" class="p-2 border-t bg-blue-950 hover:bg-blue-300 hover:text-blue-900 text-center">Live</a>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/07.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/07.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/07.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t7"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t7"></h5>
                                     <p class="redimensionner" data-key="port_7"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/06.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/06.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/06.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t6"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t6"></h5>
                                     <p class="redimensionner" data-key="port_6"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/05.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur flex flex-col">
+                                <a class="group" href="./asset/full/05.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/05.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
-                                <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t5"></h5>
+                                <div class="p-3 grow">
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t5"></h5>
                                     <p class="redimensionner" data-key="port_5"></p>
                                 </div>
+                                <a target="_blank" href="https://jeux-by-alexander-worldercraft.web.app/" class="p-2 border-t bg-blue-950 hover:bg-blue-300 hover:text-blue-900 text-center">Live</a>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/04.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/04.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/04.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t4"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t4"></h5>
                                     <p class="redimensionner" data-key="port_4"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/03.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/03.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/03.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t3"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t3"></h5>
                                     <p class="redimensionner" data-key="port_3"></p>
                                 </div>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/02.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur flex flex-col">
+                                <a class="group" href="./asset/full/02.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/02.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
-                                <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t2"></h5>
+                                <div class="p-3 grow">
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t2"></h5>
                                     <p class="redimensionner" data-key="port_2"></p>
                                 </div>
+                                <a target="_blank" href="https://le-pays-du-soleil-le-vent.web.app/" class="p-2 border-t bg-blue-950 hover:bg-blue-300 hover:text-blue-900 text-center">Live</a>
                             </div>
 
                             <div
-                                class="container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
-                                <a href="./asset/full/01.png" data-lightbox="test" data-title="">
+                                class="overflow-clip container border border-stone-50 shadow-2xl rounded-2xl bg-stone-950/60 backdrop-blur">
+                                <a class="group" href="./asset/full/01.png" data-lightbox="test" data-title="">
                                     <img data-src="./asset/min/01.png" alt="..."
-                                        class="aspect-video border-b border-stone-50 rounded-t-2xl" loading="lazy">
+                                        class="group-hover:scale-125 aspect-video border-b border-stone-50 rounded-t-2xl"
+                                        loading="lazy">
                                 </a>
                                 <div class="p-3">
-                                    <h5 class="text-xl redimensionner" data-key="port_t1"></h5>
+                                    <h5 class="text-2xl text-blue-300 redimensionner" data-key="port_t1"></h5>
                                     <p class="redimensionner" data-key="port_1"></p>
                                 </div>
                             </div>
@@ -715,23 +805,33 @@
 
                     <section id="a_propos"
                         class="container m-auto border border-stone-50 shadow-2xl rounded-2xl p-5 mb-20 bg-stone-950/60 backdrop-blur">
-                        <h1 class="capitalize redimensionner text-center mb-10 font-bold text-3xl sm:text-4xl" data-key="About_us"></h1>
+                        <h1 class="capitalize redimensionner italic text-center mb-10 font-bold text-3xl sm:text-5xl"
+                            data-key="About_us"></h1>
                         <p class="redimensionner" data-key="About_us_1"></p>
                         <p class="redimensionner" data-key="About_us_2"></p>
                         <div style="padding: 16px;">
                             <a href="#" class="suite text-blue-300" data-key="showMore"></a>
                         </div>
-                        <h1 class="capitalize redimensionner text-center mb-10 font-bold text-3xl sm:text-4xl" data-key="interests"></h1>
+                        <h1 class="capitalize redimensionner italic text-center mb-10 font-bold text-3xl sm:text-5xl"
+                            data-key="interests"></h1>
                         <p class="redimensionner" data-key="interests_1"></p>
+                    </section>
+
+                    <section id="contact"
+                        class="container m-auto border border-stone-50 shadow-2xl rounded-2xl p-5 mb-20 bg-stone-950/60 backdrop-blur text-center">
+                        <h1 class="capitalize redimensionner italic text-center mb-10 font-bold text-3xl sm:text-5xl"
+                            data-key="contact"></h1>
+                            <p class="redimensionner mb-3"><a class="redimensionner text-xs sm:text-2xl font-bold text-blue-300 border border-stone-50 bg-stone-950 px-5 py-3 text-center rounded-xl mb-5 hover:text-red-300 hover:border-red-500 hover:border-2" href="mailto:patrick.tarroz+cv@gmail.com">patrick.tarroz+cv@gmail.com</a></p>
                     </section>
 
                 </div>
 
-                <footer class="text-center m-auto border border-stone-50 shadow-2xl rounded-2xl p-5  bg-stone-950/60 backdrop-blur">
-                    <small style="display: inline-block"
-                        class="redimensionner">©2023-2024
+                <footer
+                    class="text-center m-auto border border-stone-50 shadow-2xl rounded-2xl p-5  bg-stone-950/60 backdrop-blur">
+                    <small style="display: inline-block" class="redimensionner">©2023-2024
                         made with<span style="color: red; font-size: 18px">&#10084;</span> by - <a
-                            href="https://github.com/alexanderworldercraft" target="_blank" class="text-blue-300">Patrick tarroz alias
+                            href="https://github.com/alexanderworldercraft" target="_blank"
+                            class="text-blue-300">Patrick tarroz alias
                             Alexander Worldercraft</a>
                         <br>
                         <!-- User ID: f2509192-73e1-49bd-97e7-51703866a878 -->
