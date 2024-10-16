@@ -1,6 +1,6 @@
-package-lock.json
-package.json
-src/
-node_modules/
-tailwind.config.js
-.vscode/
+/package-lock.json
+/package.json
+/src/
+/node_modules/
+/tailwind.config.js
+/.vscode/

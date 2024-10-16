@@ -38,8 +38,8 @@ const translations = {
         'xp_7': "Creation of a \"click and collect\" web application for a grocery store.",
         'xp_t8': "Obtaining the level 5 professional title",
         'xp_8': "Taking the exam for the level 5 professional title in DWWM (Associate's degree).",
-        'xp_t8': "Full Stack Development Training (Bac+3) at Coda",
-        'xp_8': "3 weeks on the job / 1 week in training<br>Docker<br>Machine learning",
+        'xp_t9': "Full Stack Development Training (Bac+3) at Coda",
+        'xp_9': "3 weeks on the job / 1 week in training<br>Docker<br>Machine learning",
 
         // portfolio
         'port': "Portfolio",
